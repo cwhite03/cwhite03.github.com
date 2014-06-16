@@ -21,10 +21,10 @@ nav {
     text-align:center;
 }
 
-pre {tab-size: 16; }
-pre {-moz-tab-size: 16; } /* Code for Firefox */
-pre {-webkit-tab-size:16; }
-pre {-o-tab-size: 16; } /* Code for Opera */
+pre {tab-size: 20; }
+pre {-moz-tab-size: 20; } /* Code for Firefox */
+pre {-webkit-tab-size:20; }
+pre {-o-tab-size: 20; } /* Code for Opera */
  
 nav ul {
   font-family: Cambria;
