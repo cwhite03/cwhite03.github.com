@@ -42,7 +42,7 @@ nav ul li a {
   color: #FFFFFF; 
   white-space: nowrap;
   height:30px; /* Width and height of top-level nav items */
-  width:90px;
+  width:100px;
   text-align:center;
  
 }
