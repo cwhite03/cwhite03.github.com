@@ -20,6 +20,7 @@ nav {
 nav ul {
   font-family: Cambria;
   font-size: 20px;
+  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,8 +41,8 @@ nav ul li a {
   display: block;
   text-decoration: none;
   padding: 7px 15px 3px 15px;
-  background: #2C5463;
-  color: #BABABF; 
+  background: BABABF;
+  color: #0000; 
   margin-left: 1px;
   white-space: nowrap;
   height:30px; /* Width and height of top-level nav items */
