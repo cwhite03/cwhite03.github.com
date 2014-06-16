@@ -15,7 +15,11 @@ nav {
     		-webkit-opacity: 0.5; /* opacity [0-1] */
     		-o-opacity: 0.5; /* opacity [0-1] */
 }
- 
+
+pre {tab-size: 16; }
+pre {-moz-tab-size: 16; } /* Code for Firefox */
+pre {-webkit-tab-size:16; }
+pre {-o-tab-size: 16; } /* Code for Opera */
  
 nav ul {
   font-family: Cambria;
