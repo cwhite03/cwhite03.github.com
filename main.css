@@ -37,6 +37,8 @@ nav ul {
 nav ul li {
   display: inline;
   position: relative;
+  margin:auto;
+  float: right;
  
 }
  
