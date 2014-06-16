@@ -34,14 +34,6 @@ nav ul {
   list-style: none;
 }
  
-nav ul li {
-  display: inline;
-  position: relative;
-  margin:auto;
-  float: right;
- 
-}
- 
 nav ul li a {
   display: inline-block;
   text-decoration: none;
@@ -54,6 +46,15 @@ nav ul li a {
   text-align:center;
  
 }
+
+nav ul li {
+  display: inline;
+  position: relative;
+  margin:auto;
+  float: left;
+ 
+}
+ 
  
 nav ul li a:hover { 
   background: #617F8A; 
