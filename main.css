@@ -14,6 +14,11 @@ nav {
    	 		-moz-opacity: 0.5; /* opacity [0-1] */
     		-webkit-opacity: 0.5; /* opacity [0-1] */
     		-o-opacity: 0.5; /* opacity [0-1] */
+    		  border-width:1px 0;
+	list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
 }
 
 pre {tab-size: 16; }
@@ -24,21 +29,19 @@ pre {-o-tab-size: 16; } /* Code for Opera */
 nav ul {
   font-family: Cambria;
   font-size: 20px;
-  
   margin: 0;
   padding: 0;
   list-style: none;
 }
  
 nav ul li {
-  display: block;
+  display: inline;
   position: relative;
-  float: left;
  
 }
  
 nav li ul { 
-  display: none; 
+  display: inline; 
 }
  
 nav ul li a {
@@ -47,7 +50,6 @@ nav ul li a {
   padding: 7px 15px 3px 15px;
   background: BABABF;
   color: #FFFFFF; 
-  margin-left: 1px;
   white-space: nowrap;
   height:30px; /* Width and height of top-level nav items */
   width:90px;
