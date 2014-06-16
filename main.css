@@ -51,6 +51,7 @@ nav ul li a {
   white-space: nowrap;
   height:30px; /* Width and height of top-level nav items */
   width:90px;
+  text-align:center;
  
 }
  
