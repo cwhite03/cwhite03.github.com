@@ -29,6 +29,7 @@ nav ul {
 nav ul li {
   display: block;
   position: relative;
+  float: left;
  
 }
  
@@ -42,7 +43,7 @@ nav ul li a {
   padding: 7px 15px 3px 15px;
   background: BABABF;
   color: #FFFFFF; 
-  margin-left: 1px;
+  margin-left: 5px;
   white-space: nowrap;
   height:30px; /* Width and height of top-level nav items */
   width:90px;
