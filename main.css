@@ -116,14 +116,9 @@ aside ul {
 }
  
 aside ul li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 15px 3px 15px;
   background: BABABF;
   color: #FFFFFF; 
   white-space: nowrap;
-  height: 40px; /* Height & Width of top-level nav items */
-  width: 70%;
   text-align:center;
 }
 
