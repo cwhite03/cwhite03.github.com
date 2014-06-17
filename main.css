@@ -24,7 +24,7 @@ nav {
 }
 
 nav ul {
-  font-family: Cambria;
+  font-family: Calibri, Cambria, Serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -87,6 +87,7 @@ text-align: left; /* Top-level items and nested list items are centered */
 body {
 	width: 80%;
 	margin: 0 auto;
+	font-family: Calibri, Cambria, Serif;
 	}
 header {
 	font-family: Calibri, Cambria, Serif;
