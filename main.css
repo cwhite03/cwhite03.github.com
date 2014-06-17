@@ -20,6 +20,7 @@ nav {
     text-align:center;
     font-style: italic;
     position: relative;
+    clear: both;
 }
 
 nav ul {
@@ -90,20 +91,18 @@ body {
 header {
 	height: 40px;
 	margin-bottom: 1em;
+	clear: both;
 	}
 /* START SIDE NAV*/
 aside {
   background-color:#BABABF;
-  height:35px;
   opacity: 0.5; /* opacity [0-1] */
    	 		-moz-opacity: 0.5; /* opacity [0-1] */
     		-webkit-opacity: 0.5; /* opacity [0-1] */
     		-o-opacity: 0.5; /* opacity [0-1] */
-	list-style:none;
-    margin: 0;
-    padding: 0;
     text-align:center;
     font-style: italic;
+    float: left;
 }
 
 aside ul {
