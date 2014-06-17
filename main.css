@@ -92,7 +92,6 @@ header {
 	margin-bottom: 1em;
 	}
 /* START SIDE NAV*/
-
 aside {
   background-color:#BABABF;
   height:35px;
@@ -120,40 +119,6 @@ aside ul li a {
   color: #FFFFFF; 
   white-space: nowrap;
   text-align:center;
-}
-
-nav ul li {
-  display: inline;
-  position: relative;
-  margin: 0;
-}
- 
-aside ul li a:hover { 
-  background: #617F8A; 
-}
- 
-aside li:hover ul {
-  display: block;
-  position: absolute;
-  height: 30px;
-}
- 
-aside li:hover li {
-  float: none;
-  font-size: 1em;
-}
-
-aside li:hover a { 
-  background: #3A464F; 
-  height:30px; /* Height of lower-level nav items is shorter than main level */
-}
- 
-aside li:hover li a:hover { 
-  background: #95A9B1; 
-}
- 
-aside ul li a {
-    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
 }
 /* END SIDE NAV*/
 
