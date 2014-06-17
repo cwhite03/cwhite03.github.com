@@ -92,13 +92,21 @@ header {
 	margin-bottom: 1em;
 	}
 aside {
-	width: 15%;
-	position: relative;
 	background-color:#BABABF;
+	display: inline-block;
+	color: #FFFFFF;
+	font-family: Cambria;
+  	font-size: 1em;
+  	font-style: italic;
 	opacity: 0.5; /* opacity [0-1] */
    	 	-moz-opacity: 0.5;
     	-webkit-opacity: 0.5;
     	-o-opacity: 0.5;
+    position: relative;
+    width: 15%;
+}
+aside:hover { 
+  background: #617F8A; 
 }
 article {
 	float: right;
