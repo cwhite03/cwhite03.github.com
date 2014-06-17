@@ -14,7 +14,6 @@ nav {
    	 		-moz-opacity: 0.5; /* opacity [0-1] */
     		-webkit-opacity: 0.5; /* opacity [0-1] */
     		-o-opacity: 0.5; /* opacity [0-1] */
-    		  border-width:1px 0;
 	list-style:none;
     margin: 0;
     padding: 0;
@@ -87,7 +86,6 @@ nav ul li ul li a {
 body {
 	width: 80%;
 	margin: 0 auto;
-	bakground: white;
 	}
 header {
 	height: 40px;
@@ -95,11 +93,22 @@ header {
 	}
 aside {
 	width: 15%;
+	position: relative;
+	background-color:#BABABF;
+	opacity: 0.5; /* opacity [0-1] */
+   	 	-moz-opacity: 0.5;
+    	-webkit-opacity: 0.5;
+    	-o-opacity: 0.5;
 }
 article {
 	float: right;
-	width: 55%;
+	width: 60%;
 	background: white;
+	opacity: 0.5; /* opacity [0-1] */
+   	 	-moz-opacity: 0.5;
+    	-webkit-opacity: 0.5;
+    	-o-opacity: 0.5;
+	position: relative;
 }
 
 
