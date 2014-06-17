@@ -24,7 +24,7 @@ nav {
 }
 
 nav ul {
-  font-family: Candara, Calibri, Cambria, Serif;
+  font-family: "News Gothic MT", Calibri, Cambria, Serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ nav ul {
 nav ul li a {
   display: inline-block;
   text-decoration: none;
-  padding: 7px 15px 3px 15px;
+  padding: 5px 15px 5px 15px;
   background: BABABF;
   color: #FFFFFF; 
   white-space: nowrap;
@@ -87,10 +87,10 @@ text-align: left; /* Top-level items and nested list items are centered */
 body {
 	width: 80%;
 	margin: 0 auto;
-	font-family: Candara, Calibri, Cambria, Serif;
+	font-family: "News Gothic MT", Calibri, Cambria, Serif;
 	}
 header {
-	font-family: Candara, Calibri, Cambria, Serif;
+	font-family: "News Gothic MT", Calibri, Cambria, Serif;
 	height: 40px;
 	margin-bottom: 1em;
 	clear: both;
@@ -110,7 +110,7 @@ aside {
 }
 
 aside ul {
-  font-family: Candara, Calibri, Cambria, Serif;
+  font-family: "News Gothic MT", Calibri, Cambria, Serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -131,7 +131,7 @@ aside ul li a {
 /* END SIDE NAV*/
 
 article {
-	font-family: Candara, Calibri, Cambria, Serif;
+	font-family: "News Gothic MT", Calibri, Cambria, Serif;
 	float: right;
 	width: 80%;
 	background: white;
