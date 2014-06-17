@@ -1,11 +1,3 @@
-html { 
-  background-color: silver;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 /* START NAV MENU */
 nav {
   background-color:#BABABF;
