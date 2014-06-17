@@ -37,7 +37,7 @@ nav ul li a {
   background: BABABF;
   color: #FFFFFF; 
   white-space: nowrap;
-  height: 30px; /* Width and height of top-level nav items */
+  height: 40px; /* Height & Width of top-level nav items */
   width: 70%;
   text-align:center;
  
@@ -91,30 +91,82 @@ header {
 	height: 40px;
 	margin-bottom: 1em;
 	}
-aside ul li a {
-	background-color:#BABABF;
-	display: inline-block;
-	color: #FFFFFF;
-	font-family: Cambria;
-  	font-size: 1em;
-  	font-style: italic;
-	opacity: 0.5; /* opacity [0-1] */
-   	 	-moz-opacity: 0.5;
-    	-webkit-opacity: 0.5;
-    	-o-opacity: 0.5;
-    width: 15%;
+/* START SIDE NAV*/
+
+aside {
+  background-color:#BABABF;
+  height:35px;
+  opacity: 0.5; /* opacity [0-1] */
+   	 		-moz-opacity: 0.5; /* opacity [0-1] */
+    		-webkit-opacity: 0.5; /* opacity [0-1] */
+    		-o-opacity: 0.5; /* opacity [0-1] */
+	list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    font-style: italic;
+    position: relative;
 }
+
+aside ul {
+  font-family: Cambria;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+aside ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: BABABF;
+  color: #FFFFFF; 
+  white-space: nowrap;
+  height: 40px; /* Height & Width of top-level nav items */
+  width: 70%;
+  text-align:center;
+}
+
+nav ul li {
+  display: inline;
+  position: relative;
+  margin: 0;
+}
+ 
 aside ul li a:hover { 
   background: #617F8A; 
 }
+ 
+aside li:hover ul {
+  display: block;
+  position: absolute;
+  height: 30px;
+}
+ 
+aside li:hover li {
+  float: none;
+  font-size: 1em;
+}
+
+aside li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+aside li:hover li a:hover { 
+  background: #95A9B1; 
+}
+ 
+aside ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+/* END SIDE NAV*/
+
 article {
 	float: right;
 	width: 60%;
 	background: white;
-	opacity: 0.5; /* opacity [0-1] */
-   	 	-moz-opacity: 0.5;
-    	-webkit-opacity: 0.5;
-    	-o-opacity: 0.5;
 	position: relative;
 }
 
