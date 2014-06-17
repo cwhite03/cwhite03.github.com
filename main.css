@@ -59,7 +59,7 @@ nav ul li a:hover {
  
 nav li:hover ul {
   display: block;
-  position: absolute;
+  position: fixed;
   height: 30px;
 }
  
