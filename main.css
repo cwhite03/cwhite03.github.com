@@ -60,7 +60,7 @@ nav ul li a:hover {
 nav li:hover ul {
   display: block;
   position: fixed;
-  height: 30px;
+  height: 40px;
 }
  
 nav li:hover li {
@@ -89,6 +89,7 @@ body {
 	margin: 0 auto;
 	}
 header {
+	font-family: Calibri, Cambria, Serif;
 	height: 40px;
 	margin-bottom: 1em;
 	clear: both;
@@ -108,7 +109,7 @@ aside {
 }
 
 aside ul {
-  font-family: Cambria;
+  font-family: Calibri, Cambria, Serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -129,6 +130,7 @@ aside ul li a {
 /* END SIDE NAV*/
 
 article {
+	font-family: Calibri, Cambria, Serif;
 	float: right;
 	width: 80%;
 	background: white;
