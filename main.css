@@ -20,7 +20,7 @@ nav {
     padding:0;
     text-align:center;
     font-style: italic;
-    position: fixed;
+    position: relative;
 }
 
 pre {tab-size: 20; }
