@@ -1,5 +1,5 @@
 html { 
-  background: url(mybackground.jpg) no-repeat center center fixed; 
+  background-color: silver;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -88,6 +88,7 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	font-family: "Lantinghei TC Extralight", Calibri, Cambria, Serif;
+	background-color: silver;
 	}
 header {
 	font-family: "News Gothic MT", Calibri, Cambria, Serif;
