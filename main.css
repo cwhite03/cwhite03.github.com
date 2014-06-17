@@ -79,7 +79,8 @@ nav li:hover li a:hover {
 }
  
 nav ul li a {
-    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+text-align: center; /* Top-level items and nested list items are centered */
+position: fixed;
 }
  
 /* END NAV MENU */
