@@ -16,8 +16,8 @@ nav {
     		-o-opacity: 0.5; /* opacity [0-1] */
     		  border-width:1px 0;
 	list-style:none;
-    margin: 1em;
-    padding:0;
+    margin: 0;
+    padding: 0;
     text-align:center;
     font-style: italic;
     position: relative;
@@ -47,7 +47,7 @@ nav ul li a {
 nav ul li {
   display: inline;
   position: relative;
-  margin: 1em;
+  margin: 0;
   float: left;
  
 }
