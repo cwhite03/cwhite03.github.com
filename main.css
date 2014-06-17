@@ -80,7 +80,6 @@ nav li:hover li a:hover {
  
 nav ul li a {
 text-align: left; /* Top-level items and nested list items are centered */
-position: fixed;
 }
  
 /* END NAV MENU */
