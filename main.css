@@ -38,8 +38,8 @@ nav ul li a {
   background: BABABF;
   color: #FFFFFF; 
   white-space: nowrap;
-  height: 25px; /* Width and height of top-level nav items */
-  width: 80%;
+  height: 30px; /* Width and height of top-level nav items */
+  width: 70%;
   text-align:center;
  
 }
@@ -60,7 +60,7 @@ nav ul li a:hover {
 nav li:hover ul {
   display: block;
   position: absolute;
-  height: 25px;
+  height: 30px;
 }
  
 nav li:hover li {
