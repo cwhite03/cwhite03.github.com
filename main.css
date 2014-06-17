@@ -39,7 +39,7 @@ nav ul li a {
   color: #FFFFFF; 
   white-space: nowrap;
   height: 25px; /* Width and height of top-level nav items */
-  width: 120px;
+  width: auto;
   text-align:center;
  
 }
@@ -85,7 +85,7 @@ nav ul li ul li a {
 /* END NAV MENU */
 
 body {
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 	bakground: white;
 	}
