@@ -9,7 +9,7 @@ header {
   display: flex;
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
-  width: 97.56%;
+  width: 97.58%;
   background: gray;
   color: white;
   position: fixed;
@@ -52,7 +52,7 @@ margin: 0 0.2rem;
   background: white;
 	height: 86px;
 	width: 860px;
-	opacity: 0.80; 
+	opacity: 0.70; 
   justify-content: center;
   padding: 7rem;
   justify-content: center;
