@@ -1,5 +1,8 @@
 html {
-background-color: ;
+	background: url(mybackground.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 /* START NAV MENU */
 nav {
@@ -91,41 +94,7 @@ header {
 	margin-bottom: 1em;
 	clear: both;
 	}
-/* START SIDE NAV*/
-aside {
-  background-color:#BABABF;
-  opacity: 0.5; /* opacity [0-1] */
-   	 		-moz-opacity: 0.5; /* opacity [0-1] */
-    		-webkit-opacity: 0.5; /* opacity [0-1] */
-    		-o-opacity: 0.5; /* opacity [0-1] */
-    text-align:center;
-    font-style: italic;
-    float: left;
-    position: relative;
-    width: 15%;
-}
-
-aside ul {
-  font-family: "News Gothic MT", Calibri, Cambria, Serif;
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  float: left;
-  position: relative;
-}
- 
-aside ul li a {
-  background: BABABF;
-  color: #FFFFFF; 
-  white-space: nowrap;
-  text-align:center;
-  float: left;
-  padding: 1em;
-  position: relative;
-}
-/* END SIDE NAV*/
-
+	
 article {
 	font-family: "News Gothic MT", Calibri, Cambria, Serif;
 	float: right;
@@ -133,6 +102,7 @@ article {
 	background: white;
 	padding: 1em;
 }
+
 footer ul li a{
 	background-color:#BABABF;
 	clear: both;
