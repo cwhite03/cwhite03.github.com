@@ -18,7 +18,7 @@ header {
   z-index: 10;
 }
 
-header .address .nav .socialmedia{
+header > .address .nav .socialmedia{
 padding: 0px 5px 0px 5px;
 }
 
