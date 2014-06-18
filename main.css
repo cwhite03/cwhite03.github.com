@@ -107,8 +107,7 @@ justify-content: center;
 
 .clientele{
   display: flex;
-  margin: 0;
-  padding:0;
+  flex-grow: 1;
   justify-content: center;
 }
 
