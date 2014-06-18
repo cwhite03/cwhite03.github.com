@@ -103,12 +103,13 @@ article {
 	padding: 1em;
 }
 
-footer ul li a{
+footer ul li a {
 	background-color:#BABABF;
 	clear: both;
+	display: inline;
 	font-style: italic;
 	float: left;
-	margin-top: 1em
+	margin: 0;
   	opacity: 0.5; /* opacity [0-1] */
    	 		-moz-opacity: 0.5; /* opacity [0-1] */
     		-webkit-opacity: 0.5; /* opacity [0-1] */
