@@ -15,11 +15,9 @@ header {
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
-  -webkit-transition: opacity 350ms ease;
-  -moz-transition: opacity 350ms ease;
-  -o-transition: opacity 350ms ease;
-  transition: opacity 350ms ease;
-}
+  opacity: 0.5;
+  -moz-opacity: 0.5; /* opacity [0-1] */
+  -webkit-opacity: 0.5; /* opacity [0-1] */
 
 .address {
   padding: 20px 10px;
@@ -66,6 +64,14 @@ margin: 0 0.2rem;
     text-align:center;
     margin:7px;  /* and that, will result in a 10px gap */
 	justify-content: center;
+}
+
+.services > branding{
+background-color: gray;
+opacity:0.5;
+-moz-opacity: 0.5; /* opacity [0-1] */
+-webkit-opacity: 0.5; /* opacity [0-1] */
+
 }
 
 .whaticando4u{
