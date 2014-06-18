@@ -63,6 +63,7 @@ margin: 0 0.2rem;
 }
 
 .services branding videopro webdesign{
+flex-grow: 1;
 padding: 1px 50px 1px 50px;
 margin: 0 10rem;
 }
