@@ -65,6 +65,7 @@ margin: 0 0.2rem;
 	flex:1 1 auto;
     text-align:center;
     margin:7px;  /* and that, will result in a 10px gap */
+	justify-content: center;
 }
 
 .whaticando4u{
@@ -78,4 +79,13 @@ margin: 0 0.2rem;
   padding:0;
   justify-content: center;
 }
+
+.clientele > div{
+	flex:1 1 auto;
+    text-align:center;
+    margin:7px;  /* and that, will result in a 10px gap */
+	justify-content: center;
+}
+
+
 
