@@ -133,7 +133,7 @@ article {
 	background: white;
 	padding: 1em;
 }
-footer{
+footer ul li a{
 	background-color:#BABABF;
 	clear: both;
 	font-style: italic;
