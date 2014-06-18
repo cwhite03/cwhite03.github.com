@@ -64,7 +64,7 @@ margin: 0 0.2rem;
 .services > div{
 	flex:1 1 auto;
     text-align:center;
-    margin:5px;  /* and that, will result in a 10px gap */
+    margin:7px;  /* and that, will result in a 10px gap */
 }
 
 .whaticando4u{
