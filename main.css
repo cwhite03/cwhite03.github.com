@@ -72,6 +72,7 @@ opacity: 1;
 
 .services {
   display: flex;
+  font-family: Copperplate, Times, Sans Serif;
   flex-grow: 1;
   justify-content: center;
   z-index: -1;
@@ -124,6 +125,7 @@ opacity: 1;
 
 .whaticando4u{
   display: flex;
+  font-family: Copperplate, Times, Sans Serif;
   padding: 7rem;
   justify-content: center;
   z-index: -1;
@@ -131,6 +133,7 @@ opacity: 1;
 
 .clientele{
   display: flex;
+  font-family: Copperplate, Times, Sans Serif;
   flex-grow: 1;
   justify-content: center;
   z-index: -1;
