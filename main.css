@@ -61,6 +61,11 @@ margin: 0 0.2rem;
   flex-grow: 1;
   justify-content: center;
 }
+.services > div{
+	flex:1 1 auto;
+    text-align:center;
+    margin:5px;  /* and that, will result in a 10px gap */
+}
 
 .whaticando4u{
   display: flex;
