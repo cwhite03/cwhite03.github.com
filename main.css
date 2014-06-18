@@ -75,6 +75,9 @@ opacity: 0.45;
 justify-content: center;
 }
 
+.branding > h2 {
+padding: 150px;
+}
 .whaticando4u{
   display: flex;
   justify-content: center;
