@@ -58,11 +58,11 @@ margin: 0 0.2rem;
 
 .services {
   display: flex;
-  margin: 0;
+  margin: 10rem;
 }
 
 .services branding videopro webdesign{
-padding: 1rem 4rem;
+padding: 20px 40px;
 margin: 0 10rem;
 width: 100%;
 }
