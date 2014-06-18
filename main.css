@@ -52,13 +52,14 @@ margin: 0 0.2rem;
 
 .whaticando{
   display: flex;
-  padding:50px 480px
+  justify-content: center;
 }
 
 .services{
   display: flex;
   margin: 0;
   padding:0;
+  justify-content: center;
 }
 
 .whaticando4u{
@@ -70,5 +71,6 @@ margin: 0 0.2rem;
   display: flex;
   margin: 0;
   padding:0;
+  justify-content: center;
 }
 
