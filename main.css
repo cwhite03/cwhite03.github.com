@@ -28,7 +28,7 @@ padding: 0px 5px 0px 5px;
   margin:0 2.3rem;
 }
 
-header nav a{
+header nav {
   display: inline-block;
   justify-content: center;
   padding: 10px 10px;
