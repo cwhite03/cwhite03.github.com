@@ -49,6 +49,11 @@ margin: 0 0.2rem;
 
 .whaticando{
   display: flex;
+  background: white;
+	height: 330px;
+	width: 860px;
+	opacity: 0.80; 
+  justify-content: center;
   padding: 7rem;
   justify-content: center;
   z-index: -1;
