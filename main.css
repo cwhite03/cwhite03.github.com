@@ -58,14 +58,8 @@ margin: 0 0.2rem;
 
 .services {
   display: flex;
-  margin: 0;
+  flex-grow: 1;
   justify-content: center;
-}
-
-.services branding videopro webdesign{
-flex-grow: 1;
-padding: 1px 50px 1px 50px;
-margin: 0 10rem;
 }
 
 .whaticando4u{
