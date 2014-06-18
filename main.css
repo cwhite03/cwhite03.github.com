@@ -4,6 +4,7 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
+
 /* START NAV MENU */
 nav {
   background-color:#BABABF;
@@ -47,9 +48,7 @@ nav ul li {
   position: relative;
   margin: 0;
   float: left;
- 
 }
- 
  
 nav ul li a:hover { 
   background: #617F8A; 
@@ -64,7 +63,6 @@ nav li:hover ul {
 nav li:hover li {
   float: none;
   font-size: 1em;
- 
 }
  
 nav li:hover a { 
@@ -86,8 +84,8 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	font-family: "Lantinghei TC Extralight", Calibri, Cambria, Serif;
-	background-color: silver;
 	}
+	
 header {
 	font-family: "News Gothic MT", Calibri, Cambria, Serif;
 	height: 40px;
@@ -118,5 +116,3 @@ footer ul li a {
     text-align:center;
     width: 15%;
 }
-
-
