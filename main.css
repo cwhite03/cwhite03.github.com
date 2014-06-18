@@ -37,8 +37,9 @@ header nav a{
   color: white;
 }
 
-header nav img{
+header nav{
 display: block;
+margin: 0 5px 10px;
 }
 
 .socialmedia {
