@@ -70,7 +70,7 @@ margin: 0 0.2rem;
 .branding {
 background: gray;
 height: 350px;
-width: 400px;
+width: 320px;
 opacity: 0.45; 
 justify-content: center;
 }
@@ -82,7 +82,7 @@ padding: 150px;
 .videopro {
 background: gray;
 height: 350px;
-width: 400px;
+width: 320px;
 opacity: 0.45; 
 justify-content: center;
 }
@@ -94,7 +94,7 @@ padding: 150px;
 .webdesign {
 background: gray;
 height: 350px;
-width: 400px;
+width: 320px;
 opacity: 0.45; 
 justify-content: center;
 }
@@ -122,5 +122,40 @@ padding: 150px;
 	justify-content: center;
 }
 
+.indiv {
+background: gray;
+height: 350px;
+width: 320px;
+opacity: 0.45; 
+justify-content: center;
+}
+
+.indiv > h2 {
+padding: 150px;
+}
+
+.sbs {
+background: gray;
+height: 350px;
+width: 320px;
+opacity: 0.45; 
+justify-content: center;
+}
+
+.sbs > h2 {
+padding: 150px;
+}
+
+.cds {
+background: gray;
+height: 350px;
+width: 320px;
+opacity: 0.45; 
+justify-content: center;
+}
+
+.cds > h2 {
+padding: 150px;
+}
 
 
