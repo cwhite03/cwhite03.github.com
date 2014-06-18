@@ -67,6 +67,10 @@ margin: 0 0.2rem;
 	justify-content: center;
 }
 
+.branding {
+background: gray;
+opacity: 0.45; 
+}
 
 .whaticando4u{
   display: flex;
