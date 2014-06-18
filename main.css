@@ -34,7 +34,8 @@ header nav a{
 }
 
 header nav img{
-margin: 0;
+margin: -20px 0 0;
+display: block;
 }
 
 .socialmedia {
