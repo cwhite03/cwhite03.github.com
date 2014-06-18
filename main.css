@@ -5,6 +5,10 @@ html {
 	-o-background-size: cover;
 }
 
+body{
+width: 80%;
+}
+
 header {
   display: flex;
   font-family: Copperplate, Times, Sans Serif;
