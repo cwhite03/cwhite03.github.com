@@ -63,7 +63,7 @@ margin: 0 0.2rem;
 
 .whaticando4u{
   display: flex;
-  padding:50px 421px
+  justify-content: center;
 }
 
 .clientele{
