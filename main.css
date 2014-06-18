@@ -66,38 +66,41 @@ margin: 0 0.2rem;
 
 .branding {
 background: gray;
-height: 350px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 justify-content: center;
 }
 
 .branding > h2 {
 padding: 150px 75px 150px 75px;
+opacity: 1;
 }
 
 .videopro {
 background: gray;
-height: 350px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 justify-content: center;
 }
 
 .videopro > h2 {
 padding: 150px 75px 150px 75px;
+opacity: 1;
 }
 
 .webdesign {
 background: gray;
-height: 350px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 }
 
 .webdesign > h2 {
 padding: 150px 75px 150px 75px;
 justify-content: center;
+opacity: 1;
 }
 
 .whaticando4u{
@@ -120,38 +123,41 @@ justify-content: center;
 
 .indiv {
 background: gray;
-height: 300px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 justify-content: center;
 }
 
 .indiv > h2 {
 padding: 150px 75px 150px 75px;
+opacity: 1;
 }
 
 .sbs {
 background: gray;
-height: 300px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 justify-content: center;
 }
 
 .sbs > h2 {
 padding: 150px 75px 150px 75px;
+opacity: 1;
 }
 
 .cds {
 background: gray;
-height: 300px;
-width: 320px;
+height: 330px;
+width: 330px;
 opacity: 0.45; 
 justify-content: center;
 }
 
 .cds > h2 {
 padding: 150px 75px 150px 75px;
+opacity: 1;
 }
 
 
