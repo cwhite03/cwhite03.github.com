@@ -51,7 +51,7 @@ margin: 0 0.2rem;
 
 .whaticando{
   display: flex;
-  padding: 10rem;
+  padding: 7rem;
   justify-content: center;
 }
 
@@ -69,7 +69,7 @@ margin: 0 0.2rem;
 
 .branding {
 background: gray;
-height: 400px;
+height: 350px;
 width: 400px;
 opacity: 0.45; 
 justify-content: center;
@@ -78,6 +78,31 @@ justify-content: center;
 .branding > h2 {
 padding: 150px;
 }
+
+.videopro {
+background: gray;
+height: 350px;
+width: 400px;
+opacity: 0.45; 
+justify-content: center;
+}
+
+.videopro > h2 {
+padding: 150px;
+}
+
+.webdesign {
+background: gray;
+height: 350px;
+width: 400px;
+opacity: 0.45; 
+justify-content: center;
+}
+
+.webdesign > h2 {
+padding: 150px;
+}
+
 .whaticando4u{
   display: flex;
   justify-content: center;
