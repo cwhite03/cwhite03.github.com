@@ -15,9 +15,6 @@ header {
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0.5;
-  -moz-opacity: 0.5; /* opacity [0-1] */
-  -webkit-opacity: 0.5; /* opacity [0-1] */
 }
 
 .address {
@@ -76,7 +73,7 @@ justify-content: center;
 }
 
 .branding > h2 {
-padding: 150px 100px 150px 50px;
+padding: 150px 75px 150px 75px;
 }
 
 .videopro {
