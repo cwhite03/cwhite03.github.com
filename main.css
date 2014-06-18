@@ -59,12 +59,12 @@ margin: 0 0.2rem;
 .services {
   display: flex;
   margin: 0;
+  justify-content: center;
 }
 
 .services branding videopro webdesign{
-padding: 20px 40px;
+padding: 1px 50px 1px 50px;
 margin: 0 10rem;
-width: 100%;
 }
 
 .whaticando4u{
