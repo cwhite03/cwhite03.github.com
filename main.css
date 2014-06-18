@@ -35,6 +35,10 @@ header nav a{
   justify-content: center;
 }
 
+header nav img{
+margin: 0 0.2rem;
+}
+
 .socialmedia {
   padding: 20px 15px;
   text-align: center;
