@@ -56,7 +56,6 @@ margin: 0 0.2rem;
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  position: absolute;
 }
 .services > div{
 	flex:1 1 auto;
