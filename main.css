@@ -25,6 +25,7 @@ padding: 0px 3px 0px 3px;
 .address {
   padding: 25px 15px 10px 5px;
   font-size: 0.6rem;
+  font-style: none;
   margin:0 2.3rem;
   letter-spacing: 1px;
 }
