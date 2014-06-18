@@ -96,11 +96,11 @@ background: gray;
 height: 350px;
 width: 320px;
 opacity: 0.45; 
-justify-content: center;
 }
 
 .webdesign > h2 {
 padding: 150px;
+justify-content: center;
 }
 
 .whaticando4u{
