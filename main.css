@@ -68,7 +68,7 @@ margin: 0 0.2rem;
 background: gray;
 height: 330px;
 width: 330px;
-opacity: 0.45; 
+opacity: 0.75; 
 justify-content: center;
 }
 
@@ -81,7 +81,7 @@ opacity: 1;
 background: gray;
 height: 330px;
 width: 330px;
-opacity: 0.45; 
+opacity: 0.80; 
 justify-content: center;
 }
 
@@ -94,7 +94,7 @@ opacity: 1;
 background: gray;
 height: 330px;
 width: 330px;
-opacity: 0.45; 
+opacity: 0.85; 
 }
 
 .webdesign > h2 {
