@@ -28,13 +28,12 @@ header nav a{
   display: inline-block;
   justify-content: center;
   padding: 10px 5px;
-  margin: 0 0.2rem;
+  margin: -20px 0 0;
   text-align: center;
   color: white;
 }
 
 header nav img{
-margin: -20px 0 0;
 display: block;
 }
 
