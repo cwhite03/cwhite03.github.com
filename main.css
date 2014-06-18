@@ -107,12 +107,13 @@ footer ul li a{
 	background-color:#BABABF;
 	clear: both;
 	font-style: italic;
+	float: left;
 	margin-top: 1em
   	opacity: 0.5; /* opacity [0-1] */
    	 		-moz-opacity: 0.5; /* opacity [0-1] */
     		-webkit-opacity: 0.5; /* opacity [0-1] */
     		-o-opacity: 0.5; /* opacity [0-1] */
-    position: relative;
+    position: bottom;
     text-align:center;
     width: 15%;
 }
