@@ -25,7 +25,8 @@ header {
 }
 
 header nav a{
-display: inline-block;
+  display: inline-block;
+  justify-content: center;
   padding: 3px 3px;
   margin: 0 0.2rem;
   text-align: center;
