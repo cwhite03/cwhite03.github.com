@@ -35,6 +35,7 @@ header {
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: 200ms ease-in-out;
   z-index: 10;
 }
 
