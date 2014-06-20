@@ -109,14 +109,17 @@ opacity: 1;
 
 .webdesign {
 background: gray;
-background-image: url('responsive.jpg');
+background-image: url(responsive.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 height: 15em;
 width: 15em; 
 justify-content: center;
 }
 
-.webdesign h2 {
-opacity: 1;
+.webdesign .img{
+    image-orientation: center;
 }
 
 .whaticando4u{
