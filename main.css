@@ -162,16 +162,20 @@ padding: 90px 75px 150px 75px;
 opacity: 1;
 }
 
-.footer {
+footer{
+    background: black; 
+    height: 15%
+    width: 100%;
+}
+
+footer h5 a {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
   justify-content: center;
   text-align: center;
-  width: 1024px;
-  background: black;
   color: white;
-  position: fixed;
+  position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
