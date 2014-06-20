@@ -47,7 +47,7 @@ wddsmenu title-area li h1 a {
     height:35em;
     width: 100%;
   opacity: 0.70; 
-  padding: 7rem;
+  padding: 10rem;
   justify-content: center;
   z-index: -1;
 }
