@@ -1106,7 +1106,7 @@ button, .button {
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #2285a2; }
+    background-color: #FF0000; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1376,7 +1376,7 @@ meta.foundation-mq-topbar {
         border-color: #2285a2;
         color: white; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #2285a2; }
+          background-color: #FF0000; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: white; }
       .top-bar-section ul li > a.button.secondary {
@@ -1443,10 +1443,10 @@ meta.foundation-mq-topbar {
       background: #272727;
       color: white; }
     .top-bar-section ul li.active > a {
-      background: #2ba6cb;
+      background: #FF0000;
       color: white; }
       .top-bar-section ul li.active > a:hover {
-        background: #258faf;
+        background: #FF0000;
         color: white; }
   .top-bar-section .has-form {
     padding: 15px; }
@@ -1575,9 +1575,9 @@ meta.foundation-mq-topbar {
       padding: 0 15px;
       line-height: 45px;
       color: white;
-      background: #2ba6cb; }
+      background: #FF0000; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #258faf; }
+        background: #FF0000; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -1665,7 +1665,7 @@ meta.foundation-mq-topbar {
     background: #272727;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: #2ba6cb;
+    background: #FF0000;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -3455,7 +3455,7 @@ dialog[open] {
     .sub-nav li.active a {
       border-radius: 3px;
       font-weight: normal;
-      background: #2ba6cb;
+      background: #FF0000;
       padding: 0.1875rem 1rem;
       cursor: default;
       color: white; }
