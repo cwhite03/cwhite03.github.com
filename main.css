@@ -41,11 +41,13 @@ wddsmenu title-area li h1 a {
 .socialmedia a {
   color: white;
 }
-
-.whaticando logo {
+.whaticando {
   background: white;
     height:100%;
     width: 100%;
+}
+
+.whaticando logo {
   opacity: 0.70; 
   justify-content: center;
   z-index: -1;
