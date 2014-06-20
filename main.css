@@ -9,7 +9,7 @@ header {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
-  width: 100%;
+  padding: 25px 15px 10px 15px;
   background: black;
   color: white;
   position: fixed;
@@ -33,6 +33,7 @@ header nav a{
 
 .socialmedia {
   font-size:0.5rem;
+  padding: 25px 15px 10px 15px;
   color: white;
 }
 
