@@ -36,10 +36,11 @@ html {
 .socialmedia a {
   color: white;
 }
+
+
 .whaticando {
   background: white;
-    height:80%;
-    width: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -47,43 +48,41 @@ html {
   justify-content: center;
 padding-top: 3em;
   z-index: -1;
+    position: static;
 }
 
 .services {
   font-family: Copperplate, Times, Sans Serif;
-  width:100%;
-    align-items: center;
-    align-content:center
+    border-top: 0.2em;
+    border-top-color: black;
+    border-top-style: solid;
+    border-bottom: 0.2em;
+    border-bottom-color: black;
+    border-bottom-style: solid;
   z-index: -1;
 }
 
-.services div .container {
-    display: inline-block;
-    display: inline-flex;
-    align-items: center
-   padding: 2em;
-    width: 100%;
-}
-
 .services div {
-    flex-wrap: wrap-reverse;
-    align-items: center
-    padding: 3em 3em 3em 3em;
+    display:flex;
+    align-items: center;
+    padding: 0.5em;
     width: 100%;
 }
 
-.services h2 {
+
+.services div h2{
     font-family: Copperplate, Times, Sans Serif;
     color: white;
     text-align:center;
-    padding-top: 2em;
+    justify-content: center;
+    align-items: center
 }
+
 
 .branding {
 background: gray;
 height: 15em;
-width: 15em;
-opacity: 0.75; 
+width: 15em; 
 justify-content: center;
 }
 
@@ -95,7 +94,7 @@ opacity: 1;
 background: gray;
 height: 15em;
 width: 15em;
-opacity: 0.80; 
+justify-content: center;
 }
 
 .videopro h2 {
@@ -105,8 +104,8 @@ opacity: 1;
 .webdesign {
 background: gray;
 height: 15em;
-width: 15em;
-opacity: 0.85; 
+width: 15em; 
+justify-content: center;
 }
 
 .webdesign h2 {
