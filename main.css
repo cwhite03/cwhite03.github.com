@@ -15,7 +15,7 @@ header {
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
- width: auto;
+  width: 46em;
   z-index: 10;
 }
 
