@@ -9,7 +9,6 @@ nav {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
-  padding: 25px 15px 10px 15px;
   background: black;
   color: white;
   position: fixed;
@@ -19,10 +18,9 @@ nav {
   z-index: 10;
 }
 
-.menu {
+wddsmenu {
   font-size: 1rem;
   font-style: normal;
-  float: left;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -34,7 +32,6 @@ nav ul li a{
 
 .socialmedia {
   font-size:0.5rem;
-  padding: 25px 15px 10px 15px;
   color: white;
 }
 
