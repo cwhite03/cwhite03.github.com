@@ -73,16 +73,15 @@ html {
     align-items: center;
     padding: 0.5em;
     width: 100%;
+}
+
+
+.services div h2{
     font-family: Copperplate, Times, Sans Serif;
     color: black;
     text-align:center;
     justify-content: center;
     align-items: center
-}
-
-.services div h2 {
-    position: relative;
-    z-index: 1000;
 }
 
 
@@ -97,9 +96,20 @@ justify-content: center;
 opacity: 1;
 }
 
-videopro h2 {
+
+.videopro {
+background-position: center;
+height: 20em;
+width: 20em;
+justify-content: center;
+    position:relative;
+}
+
+.tabname {
     justify-content: center;
-    position: relative;
+    text-align-last: center;
+    position:relative;
+    z-index: 1200;
 }
 
 .webdesign {
@@ -195,23 +205,20 @@ footer h5 {
 }
 
 #video-container {
-	position: relative;;
+	position: absolute;
 	top:0%;
 	left:0%;
 	height:100%;
 	width:100%;
-overflow: hidden;
+    overflow: hidden;
+    z-index: 1;
 }
 
 video {
     position: relative;
-	z-index:-1;
+    z-index: 1;
 }
 
-video h2 {
-    position: relative;
-	z-index:999;
-}
 video.fillWidth {
 	width: 100%;
 }
