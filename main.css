@@ -33,6 +33,12 @@ wddsmenu title-area li h1 a {
     text-decoration: none;
 }
 
+h1 {
+font-family: Copperplate, Times, Sans Serif;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
 .socialmedia {
   font-size:0.5rem;
   color: white;
