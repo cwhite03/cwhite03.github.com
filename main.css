@@ -78,7 +78,7 @@ html {
 
 .services div h2{
     font-family: Copperplate, Times, Sans Serif;
-    color: white;
+    color: black;
     text-align:center;
     justify-content: center;
     align-items: center
@@ -108,7 +108,6 @@ opacity: 1;
 }
 
 .webdesign {
-background: gray;
 background-image: url(responsive.jpg);
 background-repeat: no-repeat;
 background-size: cover;
@@ -198,6 +197,24 @@ footer h5 a {
   position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
 }
 
 
