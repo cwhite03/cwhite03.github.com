@@ -73,15 +73,16 @@ html {
     align-items: center;
     padding: 0.5em;
     width: 100%;
-}
-
-
-.services div h2{
     font-family: Copperplate, Times, Sans Serif;
     color: black;
     text-align:center;
     justify-content: center;
     align-items: center
+}
+
+.services div h2 {
+    position: relative;
+    z-index: 1000;
 }
 
 
@@ -96,15 +97,9 @@ justify-content: center;
 opacity: 1;
 }
 
-.videopro {
-height: 15em;
-width: 15em;
-justify-content: center;
-}
-
-.videopro h2 {
+videopro h2 {
     justify-content: center;
-    
+    position: relative;
 }
 
 .webdesign {
@@ -209,13 +204,13 @@ overflow: hidden;
 }
 
 video {
-	z-index:-1;
     position: relative;
+	z-index:-1;
 }
 
-#video-container video h2 {
+video h2 {
     position: relative;
-	z-index:;
+	z-index:999;
 }
 video.fillWidth {
 	width: 100%;
