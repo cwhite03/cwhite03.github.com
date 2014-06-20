@@ -167,6 +167,8 @@ footer{
     color: white;
     height: 15%;
     width:100%;
+    text-decoration: none;
+    text-decoration-color: none;
 }
 
 footer h5 a {
