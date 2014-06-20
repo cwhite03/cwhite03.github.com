@@ -163,7 +163,8 @@ opacity: 1;
 }
 
 footer{
-    background: black; 
+    background: black;
+    color: white;
     height: 15%
     width: 100%;
 }
