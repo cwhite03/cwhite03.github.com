@@ -15,8 +15,7 @@ header {
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: 200ms ease-in-out;
-  min-width: 100%;
+ width: auto;
   z-index: 10;
 }
 
