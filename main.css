@@ -109,6 +109,7 @@ opacity: 1;
 
 .webdesign {
 background: gray;
+background-image: url('responsive.jpg');
 height: 15em;
 width: 15em; 
 justify-content: center;
