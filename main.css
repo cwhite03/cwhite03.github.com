@@ -27,14 +27,11 @@ header {
 }
 
 header nav a{
-  justify-content: center;
-  text-align: center;
   text-decoration: none;
   color: white;
 }
 
 .socialmedia {
-  text-align: center;
   font-size:0.5rem;
   color: white;
 }
