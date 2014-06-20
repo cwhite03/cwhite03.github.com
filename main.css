@@ -48,12 +48,11 @@ html {
 }
 
 .logo {
-  opacity: 0.70; 
   justify-content: center;
     padding-top: 3em;
     padding-bottom: 1em;
-  z-index: -1;
-    position: static;
+    z-index: -1;
+    position: relative;
 }
 
 .services {
