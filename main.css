@@ -86,15 +86,18 @@ html {
 
 
 .branding {
-background: gray;
+background-image: url("branding.jpg");
+background-repeat: repeat;
+background-position: center;
 height: 15em;
 width: 15em; 
 justify-content: center;
 }
 
-.branding h2 {
-opacity: 1;
+.branding .img{
+    image-orientation: center;
 }
+
 
 
 .videopro {
