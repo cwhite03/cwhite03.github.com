@@ -97,14 +97,14 @@ opacity: 1;
 }
 
 .videopro {
-background: gray;
 height: 15em;
 width: 15em;
 justify-content: center;
 }
 
 .videopro h2 {
-opacity: 1;
+    justify-content: center;
+    
 }
 
 .webdesign {
@@ -189,7 +189,7 @@ footer{
     text-decoration-color: none;
 }
 
-footer h5 a {
+footer h5 {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
@@ -200,18 +200,22 @@ footer h5 a {
 }
 
 #video-container {
-	position: absolute;
-}
-#video-container {
+	position: relative;;
 	top:0%;
 	left:0%;
 	height:100%;
 	width:100%;
-	overflow: hidden;
+overflow: hidden;
 }
+
 video {
-	position:absolute;
-	z-index:0;
+	z-index:-1;
+    position: relative;
+}
+
+#video-container video h2 {
+    position: relative;
+	z-index:;
 }
 video.fillWidth {
 	width: 100%;
