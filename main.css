@@ -18,7 +18,7 @@ nav top-bar {
   z-index: 10;
 }
 
-wddsmenu title-area {
+wddsmenu title-area li h1 a {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
