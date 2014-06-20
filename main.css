@@ -73,7 +73,7 @@ justify-content: center;
 }
 
 .branding > h2 {
-padding: 150px 75px 150px 75px;
+padding: 150px 30px 150px 30px;
 opacity: 1;
 }
 
@@ -86,7 +86,7 @@ justify-content: center;
 }
 
 .videopro > h2 {
-padding: 150px 75px 150px 75px;
+padding: 150px 30px 150px 30px;
 opacity: 1;
 }
 
@@ -98,7 +98,7 @@ opacity: 0.85;
 }
 
 .webdesign > h2 {
-padding: 150px 75px 150px 75px;
+padding: 150px 30px 150px 30px;
 justify-content: center;
 opacity: 1;
 }
