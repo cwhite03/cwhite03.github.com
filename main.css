@@ -66,8 +66,8 @@ wddsmenu title-area li h1 a {
 
 .branding {
 background: gray;
-height: 330px;
-width: 330px;
+height: 250px;
+width: 250px;
 opacity: 0.75; 
 justify-content: center;
 }
@@ -79,8 +79,8 @@ opacity: 1;
 
 .videopro {
 background: gray;
-height: 330px;
-width: 330px;
+height: 250px;
+width: 250px;
 opacity: 0.80; 
 justify-content: center;
 }
@@ -92,8 +92,8 @@ opacity: 1;
 
 .webdesign {
 background: gray;
-height: 330px;
-width: 330px;
+height: 250px;
+width: 250px;
 opacity: 0.85; 
 }
 
