@@ -20,34 +20,22 @@ header {
 }
 
 .cname {
-  padding: 35px 15px 10px 25px;
   font-size: 1rem;
   font-style: normal;
   text-decoration: none;
-  margin:0 2.3rem;
   letter-spacing: 1px;
 }
 
 header nav a{
-  display: inline-block;
   justify-content: center;
-  padding: 25px 15px 10px 15px;
-  margin: 10px 0 0;
   text-align: center;
   text-decoration: none;
   color: white;
 }
 
-header nav{
-display: block;
-margin: 0 20px 30px;
-}
-
 .socialmedia {
-  padding: 35px 5px 10px 5px;
   text-align: center;
   font-size:0.5rem;
-  margin: 0 2.3rem;
   color: white;
 }
 
