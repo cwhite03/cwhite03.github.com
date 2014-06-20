@@ -9,6 +9,7 @@ header {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
+  padding: 25px 15px 10px 15px;
   background: black;
   color: white;
   position: fixed;
