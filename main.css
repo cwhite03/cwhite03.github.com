@@ -44,9 +44,9 @@ wddsmenu title-area li h1 a {
 
 .whaticando logo {
   background: white;
-    height:35em;
+    height:25em;
     width: 100%;
-  opacity: 0.70; 
+  opacity: 0.50; 
   margin-top: 10em
   justify-content: center;
   z-index: -1;
