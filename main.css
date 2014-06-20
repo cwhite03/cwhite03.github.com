@@ -42,8 +42,7 @@ wddsmenu title-area li h1 a {
   color: white;
 }
 
-.whaticando{
-  display: flex;
+.whaticando logo {
   background: white;
     height:30em;
     width: 100%;
