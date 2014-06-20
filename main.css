@@ -9,7 +9,7 @@ html {
   font-family: Copperplate, Times, Sans Serif;
   font-size: 0.8rem;
   font-style: normal;
-  background: black;
+  background: silver;
   color: white;
   position: fixed;
   letter-spacing: 1px;
@@ -20,12 +20,15 @@ html {
 
 .title-area {
   font-family: Copperplate, Times, Sans Serif;
-  background: black;
+  background: silver;
   color: white;
   position: fixed;
   letter-spacing: 1px;
   text-transform: uppercase;
   z-index: 10;
+}
+.title-area img {
+    padding-bottom: 0.1em;
 }
 
 .socialmedia {
