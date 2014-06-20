@@ -60,8 +60,6 @@ wddsmenu title-area li h1 a {
 }
 .services > div{
     text-align:center;
-    margin:7px;  /* and that, will result in a 10px gap */
-	justify-content: center;
 }
 
 .branding {
