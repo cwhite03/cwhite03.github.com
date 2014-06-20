@@ -43,7 +43,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Copperplate, Times, Sans Serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1086,7 +1086,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Copperplate, Times, Sans Serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2026,7 +2026,7 @@ meta.foundation-mq-topbar {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Copperplate, Times, Sans Serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2034,7 +2034,7 @@ meta.foundation-mq-topbar {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Copperplate, Times, Sans Serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -2492,7 +2492,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Copperplate, Times, Sans Serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -2553,7 +2553,7 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: Copperplate, Times, Sans Serif;
   font-weight: bold;
   color: #910b0e; }
 
@@ -2776,7 +2776,7 @@ blockquote p {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+     font-family: Copperplate, Times, Sans Serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background: #e1e1e1; }
@@ -2878,7 +2878,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Copperplate, Times, Sans Serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -2893,7 +2893,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #67c3df;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+     font-family: Copperplate, Times, Sans Serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3436,7 +3436,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Copperplate, Times, Sans Serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4843,7 +4843,7 @@ kbd {
   border-style: solid;
   border-width: 1px;
   margin: 0;
-  font-family: "Consolas", "Menlo", "Courier", monospace;
+  font-family: Copperplate, Times, Sans Serif;
   font-size: inherit;
   padding: 0.125rem 0.25rem 0;
   border-radius: 3px; }
