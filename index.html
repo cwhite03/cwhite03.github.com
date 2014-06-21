@@ -125,31 +125,21 @@ Your browser does not support the video tag. I suggest you upgrade your browser.
     </div>
 </div>
 </section>
-  
-<section class ="clientele">
-<div class="row">
-    <div>    
-    <div class = "indiv large-4 columns">
-     	<a href = ""><img src='' border='0' width='' height=''></a>
-    	<h2>Individual Solutions</h2>
-    </div>
-</div>
-    
-<div>
-	<div class = "sbs large-4 columns">
-     	<a href = ""><img src='' border='0' width='' height=''></a>
-    	<h2>Small Business Solutions</h2>
-    </div>
-</div>
 
-<div>    
-    <div class = "cds large-4 columns">
-    	 <a href = ""><img src='' border='0' width='' height=''></a>
+    <ul data-orbit>    
+    <li>
+     	<a href= "personalweb.png"><img src='' border='0' width='' height=''></a>
+    	<h2>Individual Solutions</h2>
+    </li>
+	<li>
+     	<a href= "sbweb.png"><img src='' border='0' width='' height=''></a>
+    	<h2>Small Business Solutions</h2>
+    </li>    
+    <li>
+    	 <a href= "corporateweb.png"><img src='' border='0' width='' height=''></a>
     	<h2>Corporate Digital Solutions</h2>
-    </div>
-</div>
-</div>
-</section>
+    </li>
+    </ul>
     
     <footer class ="container">
     <div class="row" data-equalizer>
@@ -170,7 +160,12 @@ Your browser does not support the video tag. I suggest you upgrade your browser.
   <script src="jquery.js"></script>
     <script src="foundation.min.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+      orbit: {
+        animation: 'fade',
+        timer_speed: 4000
+      }
+      });
     </script>
     
 </body> 
