@@ -15,7 +15,7 @@ html {
   letter-spacing: 1px;
   text-transform: uppercase;
   width: 100%;
-  z-index: 10;
+  z-index: 2000;
 }
 
 .title-area {
@@ -26,7 +26,7 @@ html {
   padding-left: 1em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 2000;
 }
 .title-area img {
     padding-bottom: 0.1em;
