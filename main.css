@@ -55,6 +55,19 @@ html {
     position: static;
 }
 
+h6{
+    font-family: Copperplate, Times, Sans Serif;
+    color: black;
+}
+
+h1 {
+    font-family: Copperplate, Times, Sans Serif;
+    color: black;
+}
+.pitch h1{
+
+}
+
 .services {
   font-family: Copperplate, Times, Sans Serif;
     border-top: 0.2em;
