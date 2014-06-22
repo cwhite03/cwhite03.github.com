@@ -4,33 +4,44 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
-
- .top-bar {
-  font-family: Copperplate, Times, Sans Serif;
-  font-size: 0.8rem;
-  font-style: normal;
-  background: red;
-  color: white;
-  position: fixed;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width: 100%;
-  z-index: 2000;
+.fixed-header{
+background:#FFF;
+display:none;
+font-family: Copperplate, Times, Sans Serif;
+letter-spacing: 1px;
+padding:10px;
+position:fixed;
+text-transform: uppercase;
+top:0;
+width:100%;
+z-index:10000;
 }
-
-.title-area {
-  font-family: Copperplate, Times, Sans Serif;
-  background: red;
-  color: white;
-  position: fixed;
-  padding-left: 1em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  z-index: 2000;
+.fixed-header .header-content{
+margin:auto;
+width:600px;
 }
-.title-area img {
-    padding-bottom: 0.1em;
+.fixed-header .subheading{
+display:none;
 }
+.fixed-header h1.title{
+float:left;
+font-size:24px;
+margin:0;
+}
+.fixed-header ul.nav{
+float:right;
+margin:0;
+padding:5px;
+}
+.fixed-header ul.nav li{
+margin:0 0 0 10px;
+}
+.header{
+padding:20px 0;
+}
+ul.nav{margin-bottom:0;padding-left:0;text-align:center;}
+ul.nav li{display:inline-block;list-style-type:none;margin:0 20px;}
+ul.nav li a{font-size:12px;text-decoration:none;}
 
 .socialmedia {
   font-size:0.5rem;
@@ -63,12 +74,6 @@ h6{
 h1 {
     font-family: Copperplate, Times, Sans Serif;
     color: black;
-}
-.pitch h1{
-padding: 0.5em 0em 0.5em 0em;
-    border-top: 0.1em;
-    border-top-color: black;
-    border-top-style: solid;
 }
 
 .services {
@@ -198,7 +203,7 @@ opacity: 0.75;
 justify-content: center;
 }
 
-.cds > h2 {
+.cds h2 {
 padding: 90px 75px 150px 75px;
 opacity: 1;
 }
