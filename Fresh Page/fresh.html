@@ -16,9 +16,164 @@
 
 <html lang='en'>
 <head>
-    <title>WDDS|White Digital Design Studio</title>
-    <meta name="description" content="WDDS designs and builds the best responsive digital media for personal, small business, and corporate clients.">
-    <meta name="keywords" content="web, design, website, personal, small, business, responsive, digital, media, content, production">
-                                      
+<title>WDDS|White Digital Design Studio</title>
+<!--Searchable Content-->
+<meta name="description" content="WDDS designs and builds the best responsive digital media for personal, small business, and corporate clients.">
+<meta name="keywords" content="web, design, website, personal, small, business, responsive, digital, media, content, production">
+<!--End Searchable Content-->
+<meta content="text/html" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<!--CSS & JavaScript Links-->
+<link rel="stylesheet" type="text/css" href="freshgrid.css" />
+<link rel="stylesheet" type="text/css" href="freshreset.css" />
+<link rel="stylesheet" type="text/css" href="freshmain.css" />
+
+<!--End CSS & JavaScript Links-->
 </head>
+<!--The Website will be divided into 5 equal sections to simplify the design process-->
+    <body>
+        <header>
+            <div id="top">
+            <section class="group" id="screen1">
+            <div class="leadimg">
+            <div class="logoimg span_12_of_12">
+            <a href="#portfolio"><img src="freshlogo.png" height="70%" width="70%"></a>
+            </div></div>
+            </section>
+            </div>
+            <nav class="group">
+                <section class="hnav">
+                <div class="cname">
+                    <p class="span_4_of_12"><a href="#top">WDDS</a></p></div>
+                <ul class="menu span_8_of_12">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#webdes">Design</a></li>
+					<li><a href="#videoprod">Video</a></li>
+					<li><a href="#brand">Brand</a></li>
+					<li><a href="#support">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+<!--Test Scroll Arrow-->
+<div>
+<a class="arrow-wrap" href="#about">
+<span class="arrow"></span>
+</a>
+</div>
+<!--<span class="hint">scroll</span>-->
+<!--End Test Scroll Arrow-->
+                </section>
+            </nav>
+            </header>        
+<section id="screen2">
+        <div id="about"></div>
+        </section>
+<section id="screen3">
+            <div id="webdes"></div>
+            </section>
+<section id="screen4">
+        <div id="videoprod"></div>
+        </section>
+<section id="screen5">
+        <div id="brand"></div>
+        </section>
+<section id="screen6">
+        <div id="support"></div>
+        </section>
+<section id="screen7">
+        <div id="contact"></div>
+        </section>
+            
+<!--jQuery for Fixed Navigation Effect-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+        
+<script>//this is where we apply opacity to the arrow
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
+
+});
+
+//Code stolen from css-tricks for smooth scrolling:
+
+$(document).ready(function() {
+
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+ 
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+ 
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+
+});
+</script>
+<!--End of jQuery for Fixed Navigation Effect--> 
+    </body>
 </html>
