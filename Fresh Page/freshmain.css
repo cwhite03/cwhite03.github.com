@@ -1,12 +1,27 @@
 /* Fresh Custom Stylesheet */
-.leadimg{
-image-orientation: center;
-padding-left: 10em;
+#animated-gif-container { 
+  background: url(giphy.gif) no-repeat center center;  
+  height:29em;
+  margin-left: 17em;
+  width:50em;
+  position:absolute;
+  top: 0px;
+  bottom: 280px;
 }
-div.logoimg{
+.subtitle{
+font-size: 20px;
+padding-left: .5em;
+}
+.title{
+text-decoration-line: overline;
+font-size: 3.7em;
 float:left;
-padding-left: 7em;
+padding-top: 8em;
+padding-left: 9.5em;
+position: absolute;
+color: white;
 }
+
 nav{
 position: absolute;
 	bottom: 0;
@@ -31,19 +46,20 @@ position: absolute;
     text-decoration: none;
     width:100%;
 }
-
 div.cname {
     float:left;
 }
 .cname a{
     color: #757575;
-    font-family: Copperplate, Times, Sans Serif;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
     padding:1em;
     line-height: 3em;
     text-decoration: none;
 }
 div.cname a:hover{
     background-color: #d8d8d8;
+    box-shadow: 1px 1px 1px #888888;
 }
 ul.menu{
     display: inline-flex;
@@ -51,17 +67,199 @@ ul.menu{
 }
 ul.menu li a{
     color: #757575;
-    font-family: Copperplate, Times, Sans Serif;
+    font-family: 'Lato', sans-serif;
+    font-style: light;
     padding:1em 3em;
     line-height: 3em;
     text-decoration: none;
 }
 ul.menu li a:hover{
     background-color: #d8d8d8;
+    box-shadow: 1px 1px 1px #888888;
+}
+article.homescreen{
+background-image: url('hometile.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: center;
+width:100%;
+font-size: 30px;
+font-family: 'Lato', sans-serif;
+font-style: italic;
+text-transform: uppercase;
+color:#fff;
+padding: 2.5em;
 }
 
-/* the important styles */
+article.homescreen h1{
+padding-left: 37em;
+}
+article.about{
+background-image: url('tile.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: bottom;
+color:#FF9E00;
+padding: 5em;
+}
 
+.services article {
+background-image: url('tile1.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: center;
+color:#FF9E00;
+padding: 5em;
+}
+/* CSS for Vertical Services Accordion */
+    /* This resets the margin and padding on the form. */
+div form {
+  margin: 0;
+  padding: 0;
+  position:relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul.vacc{
+list-style: none;
+}
+    /* This hides the radio buttons from the screen. */
+.vacc input {
+  position: absolute;
+  opacity:0;
+}
+label {
+  background: #663300;
+  display:inline-block;
+  float:left;
+  font: 15px/32em 'Lato', sans-serif;
+  height: 34em;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+  width: 10em;
+ 
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+     
+     -webkit-transform:rotate(0deg);  
+     -moz-transform:rotate(0deg);  
+     -o-transform: rotate(0deg);  
+     transform: rotate(0deg);   
+}
+
+#rad2 + label {
+  background: #754719;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+}
+#rad3 + label {
+  background: #855C33;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+}
+#rad4 + label {
+  background: #94704D;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+}
+#rad5 + label {
+  background: #A38566;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+}
+ 
+label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover, #rad5 + label:hover {
+  background: #0033CC;
+  box-shadow:4px 3px 9px 5px #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*SLIDES*/
+.accslide {
+  display: block;
+  height: 40.8em;
+  width: 0px;
+  padding: 10px 0;
+  float: left;
+  overflow: hidden;
+  color: #333;
+  background: #fff;
+  font: 12px/1.5 Helvetica, Verdana, sans-serif;
+   
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+h2.accs {
+  width: 420px;
+  padding-left: 10px;
+}
+p.accs {
+  width: 420px;
+  padding-left: 10px;
+}
+ 
+.accslide img {
+  margin-top: 10px;
+}
+input[type="radio"]:checked ~ .accslide {
+  width: 450px;
+}
+
+/* End of CSS for Vertical Services Accordion */
+
+.services h1{
+color:#333;
+float:right;
+font-size: 2em;
+font-family: 'Lato', sans-serif;
+font-style: italic;
+text-transform: uppercase;
+padding: 0em 3em;
+}
+div.about_content {
+    background-color: #8f6d3b;
+    opacity: 0.9;
+    padding:1em;
+}
+div.about_content p{
+    padding:1em;
+    justify-content: center;
+}
+div.about_content h2{
+background-color: #FFFFCC;
+box-shadow:0.2px 1px 0.5px 1px #333;
+color:#000;
+font-size: 1.5em;
+font-style: oblique;
+padding: 0.5em;
+width:17em;
+}
+/* the important styles */
 .arrow-wrap {
   position:absolute;
   z-index:1;
@@ -77,7 +275,6 @@ ul.menu li a:hover{
   display:inline-block;
   box-shadow:1px 1px 1px 1px #333;
 }
-
 .arrow {
 display: flex;
 flex-direction: column;
@@ -91,7 +288,6 @@ border-width: 3em 3em 3em 3em;
 border-color: #ffffff transparent transparent transparent;
 -webkit-transform:rotate(360deg)
 }
-
 .arrow:after {
   content:"";
   position:relative;
@@ -104,8 +300,6 @@ border-width: 3em 3em 0 3em;
 border-color: #111 transparent transparent transparent;
 -webkit-transform:rotate(360deg)
 }
-
-
 .hint {
   position:absolute;
   top:0.6em;
@@ -117,13 +311,9 @@ border-color: #111 transparent transparent transparent;
   color:#fff;
   opacity:0;
 }
-
-
 .arrow-wrap:hover .hint {
   opacity:1;
 }
-
-
   @-webkit-keyframes arrows {
     0% { top:0; }
     10% { top:12%; }
@@ -137,34 +327,76 @@ border-color: #111 transparent transparent transparent;
     90% { top:12%; }
     100% { top:0; }
   }
-  
   .arrow-wrap .arrow {
     -webkit-animation: arrows 2.8s 0.4s;
     -webkit-animation-delay: 3s;
   }
+/* End of the important arrow styles */
 
+/*Button CSS*/
 
-/* End of the important styles */
+.button {
+   border-top: 1px solid #009ECE;
+   background: #009ECE;
+   background: -webkit-gradient(linear, left top, left bottom, from(#009ECE), to(#009ECE));
+   background: -webkit-linear-gradient(top, #009ECE, #009ECE);
+   background: -moz-linear-gradient(top, #009ECE, #009ECE);
+   background: -ms-linear-gradient(top, #009ECE, #009ECE);
+   background: -o-linear-gradient(top, #009ECE, #009ECE);
+   padding: 1em;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: 'Lato', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #fff;
+   background: #fff;
+   color: #000000;
+   }
+.button:active {
+   border-top-color: #fff;
+   background: #fff;
+   }
+/*End of Button CSS*/
 
+h1.about {
+    color: #FFFFCC;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
 
 section {
 	height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Screens Settings */
 #screen1 {	
-	background: #009ECE;
+	background: gray;
 }
-
-#screen1 p {
-	padding-top: 200px;
+#hscreen {
+	background:white;
 }
-
 #screen2 {
-	background: #FF9E00;
+	background: #E6E6E6;
 }
 #screen3 {
-	background: #F7D708;
+	background-image: url('tile3.jpg');
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: center;
 }
 #screen4 {
 	background: #CE0000;
