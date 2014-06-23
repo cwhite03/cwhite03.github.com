@@ -27,11 +27,8 @@
 <link rel="stylesheet" type="text/css" href="freshgrid.css" />
 <link rel="stylesheet" type="text/css" href="freshreset.css" />
 <link rel="stylesheet" type="text/css" href="freshmain.css" />
-<link rel="stylesheet" type="text/css" href="transitions.css" />
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="utils.js"></script>
-<script type="text/javascript" src="rotate-box.js"></script>
-<script type="text/javascript" src="custom_survey.js"></script>
+
 <!--End CSS & JavaScript Links-->
 </head>
 <!--The Website will be divided into 7 equal sections to simplify the design process-->
@@ -81,79 +78,34 @@
 			</article>
         </div>
     
-    <div id="theArt">
-    <div id="cube" class="show-front">
-      <form  id="theForm" method="post" action="thanks.htm">
-        <div class="front panel">
-          <div class="innerContainer">
-            <h2>Q 1/5</h2>
-            <p>What subject(s) are you most interested in? <br>
-              (Check as many as you like.)</p>
-            <p class="show-buttons">
-              <input type="button" class="show-back alignRight" value="Next" />
-            </p>
-          </div>
-        </div>
-        <div class="back cf panel">
-          <div class="innerContainer">
-            <h2>Q 2/5</h2>
-            <p>What area of study didn’t you see that you wish you did?</p>
-            <p>
-              <input id="desiredCourse" type="text" placeholder="Desired course" /></p>
-            <p class="show-buttons">
-              <input type="button" class="show-front alignLeft" value="Previous" />
-              <input type="button" class="show-right alignRight" value="Next" />
-            </p>
-          </div>
-        </div>
-        <div class="right cf panel">
-          <div class="innerContainer">
-            <h2>Q 3/5</h2>
-            <p>How long have you thought of yourself as an artist?</p>
-            <p class="show-buttons">
-              <input type="button" class="show-back alignLeft" value="Previous" />
-              <input type="button" class="show-left alignRight" value="Next" />
-            </p>
-          </div>
-        </div>
-        <div class="left cf panel">
-          <div class="innerContainer">
-            <h2>Q 4/5</h2>
-            <p>How many hours a day do you practice your art?</p>
-            <p>
-            <p class="show-buttons">
-              <input type="button" class="show-right alignLeft" value="Previous" />
-              <input type="button" class="show-top alignRight" value="Next" />
-            </p>
-          </div>
-        </div>
-        <div class="top cf panel">
-          <div class="innerContainer">
-            <h2>Q 5/5</h2>
-            <p>Who have you shared your work with?<br>
-              (Check all that apply.)</p>
-            <p class="show-buttons">
-              <input type="button" class="show-left alignLeft" value="Previous" />
-              <input id="review" type="button" class="show-bottom alignRight" value="Next" />
-            </p>
-          </div>
-        </div>
-        <div class="bottom cf panel">
-          <div class="innerContainer">
-            <h2>Review / Submit</h2>
-            <p class="show-buttons">
-              <input type="button" class="show-top alignLeft" value="Previous" />
-              <input type="submit" class="alignRight" value="Submit" />
-            </p>
-          </div>
-        </div>
-      </form>
+    <div id="css3dimageslider" class="transparency">
+	<ul>
+		<li> 
+            <h2>Slide 1</h2>
+            <p>Lorem ipsum...</p>
+        </li>
+		<li> 
+            <h2>Slide 2</h2>
+            <p>Lorem ipsum...</p>
+        </li>
+		<li> 
+            <h2>Slide 3</h2>
+            <p>Lorem ipsum...</p>
+        </li>
+		<li> 
+            <h2>Slide 4</h2>
+            <p>Lorem ipsum...</p>
+        </li>
+	</ul>
     </div>
-  </div>
-</article>
-        </section>
-        
-
+    
+    <ul id="css3dimagePager">
+	   <li class="active">What?</li>
+	   <li>For Whom?</li>
+	   <li>How?</li>
+	   <li>Why?</li>
+    </ul>
+</section>
         
 <section id="screen2">
         <div id="about">
@@ -354,6 +306,20 @@ $(document).ready(function() {
 
 });
 </script>
-<!--End of jQuery for Fixed Navigation Effect--> 
+<!--End of jQuery for Fixed Navigation Effect-->
+<script>
+$(document).ready(function() {
+ 	$("#css3dimagePager li").click(function(){
+		var rotateY = ($(this).index() * -90); 
+		$("#css3dimageslider ul").css({"-webkit-transform":"rotateY("+rotateY+"deg)", "-moz-transform":"rotateY("+rotateY+"deg)", "-ms-transform":"rotateY("+rotateY+"deg)", "transform":"rotateY("+rotateY+"deg)"});
+		$("#css3dimagePager li").removeClass("active");
+		$(this).addClass("active");
+	});
+ 	$("#css3dtransparency").click(function() {
+		$("#css3dimageslider").toggleClass("transparency");
+		$(this).toggleClass("active");
+	});
+ });
+</script>
     </body>
 </html>
