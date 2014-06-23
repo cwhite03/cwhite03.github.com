@@ -354,10 +354,6 @@ border-color: #111 transparent transparent transparent;
    background: #fff;
    color: #000000;
    }
-.button:active {
-   border-top-color: #fff;
-   background: #fff;
-   }
 /*End of Button CSS*/
 
 h1.about {
@@ -412,4 +408,25 @@ background-position: center;
 		font-size: 14px;
 	}
 
+}
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+.cr {
+	clear: right;
+}
+.cl {
+	clear: left;
+}
+.cb {
+	clear: both;
 }
