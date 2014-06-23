@@ -72,6 +72,7 @@ background-image: url('hometile.jpg');
 -moz-background-size: cover;
 -o-background-size: cover;
 background-position: center;
+box-shadow: 3px 3px 3px #888888;
 width:100%;
 font-size: 30px;
 font-family: 'Lato', sans-serif;
@@ -83,6 +84,8 @@ padding: 2.5em;
 
 article.homescreen h1{
 padding-left: 37em;
+padding-top: 0.5em;
+font-style: normal;
 }
 article.about{
 background-image: url('tile.jpg');
@@ -90,6 +93,7 @@ background-image: url('tile.jpg');
 -moz-background-size: cover;
 -o-background-size: cover;
 background-position: bottom;
+box-shadow: 3px 3px 3px #888888;
 color:#FF9E00;
 padding: 5em;
 }
@@ -226,7 +230,6 @@ color:#333;
 float:right;
 font-size: 2em;
 font-family: 'Lato', sans-serif;
-font-style: italic;
 text-transform: uppercase;
 padding: 0em 3em;
 }
@@ -361,7 +364,6 @@ h1.about {
     color: #FFFFCC;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
-    font-style: italic;
     text-transform: uppercase;
 }
 
