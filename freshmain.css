@@ -97,6 +97,9 @@ div.cname a:hover{
 }
 ul.menu{
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
     float: right;
 }
 ul.menu li a{
