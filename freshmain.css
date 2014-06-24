@@ -243,17 +243,41 @@ font-style: normal;
 
 .slider-buttons {
     position:absolute;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
+    border-radius: 60%;
 }
 
 .slider-buttons:hover { cursor:pointer; }
 
 #main-slider-next {
     background-color:#99CC66;
-    left:1200px;
-    top: 1100px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    left:1000px;
+    top: 1080px;
+    -webkit-animation: chasemenext 5s infinite; /* Chrome, Safari, Opera */
+    animation: chasemenext 5s infinite;
 }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes chasemenext {
+    0%   {background:red; left:1000px; top:1080px;}
+    25%  {background:yellow; left:1050px; top:1030px;}
+    50%  {background:blue; left:1100px; top:1080px;}
+    75%  {background:green; left:1050px; top:1130px;}
+    100% {background:red; left:1000px; top:1080px;}
+}
+
+/* Standard syntax */
+@keyframes chasemenext {
+    0%   {background:red; left:1000px; top:1080px;}
+    25%  {background:yellow; left:1050px; top:1030px;}
+    50%  {background:blue; left:1100px; top:1080px;}
+    75%  {background:green; left:1050px; top:1030px;}
+    100% {background:red; left:1000px; top:1080px;}
+}
+
 h1.slide1{
   font-size: 45px;
   text-align: center;

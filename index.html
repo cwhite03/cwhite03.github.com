@@ -103,9 +103,8 @@
         </div> <!-- end of slider-wrapper -->   
     </div><!-- end of main-slider-space -->
 
-    <div id="main-slider-next" class="slider-buttons"></div>
+    <div id="main-slider-next" class="slider-buttons"> > </div>
 </div>
-
 </section>
         
 <section id="screen2">
@@ -328,7 +327,21 @@ $(document).ready(function(){
   });
 });
 </script>
-<!--End of jQuery for Panel Slider--> 
-                
+<!--End of jQuery for Panel Slider-->
+<script language="javascript">
+    $(document).ready(function() {
+        $("#link1").click(function() {
+            animate(".box-a", 'flash');
+            return false;
+        });
+    });
+    
+    function animate(element_ID, animation) {
+        $(element_ID).addClass(animation);
+        var wait = window.setTimeout( function(){
+            $(element_ID).removeClass(animation)}, 1300
+        );
+    }
+</script>
     </body>
 </html>
