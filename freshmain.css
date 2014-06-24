@@ -9,7 +9,7 @@ color:#000;
 
 .subtitle{
 font-size: 20px;
-padding-left: 4.5em;
+padding-left: 1em;
 }
 
 nav{
@@ -131,7 +131,7 @@ label {
   display:inline-block;
   float:left;
   font: 15px/32em 'Lato', sans-serif;
-  height: 34em;
+  height: 34.25em;
   opacity: 0.8;
   position: relative;
   text-align: center;
