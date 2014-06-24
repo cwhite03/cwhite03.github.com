@@ -138,7 +138,10 @@ width:1px;
 border-style: solid;
 border-width: 3em 3em 3em 3em;
 border-color: #ffffff transparent transparent transparent;
--webkit-transform:rotate(360deg)
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+transform:rotate(360deg);
 }
 .arrow:after {
   content:"";
@@ -150,7 +153,10 @@ height: 20px;
 border-style: solid;
 border-width: 3em 3em 0 3em;
 border-color: #111 transparent transparent transparent;
--webkit-transform:rotate(360deg)
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+transform:rotate(360deg);
 }
 .hint {
   position:absolute;
