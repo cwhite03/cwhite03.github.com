@@ -79,6 +79,32 @@
 				<h1>Home</h1>
 			</article>
         </div>
+<div>    
+    <div id="main-slider-space">
+        <div class="slider-wrapper">
+        
+            <div id="slide1" class="main-slide">
+                <h1 class="slide1"> WDDS</h1>
+                    <p class="slide1">is a design studio dedicated to building 
+                        <br/>compelling and comprehensive
+                        <br/> digital media for the masses. 
+                    </p>
+            </div><!-- end of slide1 -->
+        
+            <div id="slide2" class="main-slide">
+            
+            </div><!-- end of slide2 -->
+        
+            <div id="slide3" class="main-slide">
+            
+            </div><!-- end of slide3 -->
+        
+        </div> <!-- end of slider-wrapper -->   
+    </div><!-- end of main-slider-space -->
+
+    <div id="main-slider-next" class="slider-buttons"></div>
+</div>
+
 </section>
         
 <section id="screen2">
@@ -281,19 +307,28 @@ $(document).ready(function() {
 });
 </script>
 <!--End of jQuery for Fixed Navigation Effect-->
+
+<!--jQuery for Panel Slider-->                
 <script>
-$(document).ready(function() {
- 	$("#css3dimagePager li").click(function(){
-		var rotateY = ($(this).index() * -90); 
-		$("#css3dimageslider ul").css({"-webkit-transform":"rotateY("+rotateY+"deg)", "-moz-transform":"rotateY("+rotateY+"deg)", "-ms-transform":"rotateY("+rotateY+"deg)", "transform":"rotateY("+rotateY+"deg)"});
-		$("#css3dimagePager li").removeClass("active");
-		$(this).addClass("active");
-	});
- 	$("#css3dtransparency").click(function() {
-		$("#css3dimageslider").toggleClass("transparency");
-		$(this).toggleClass("active");
-	});
- });
+$(document).ready(function(){
+  // find all slides
+  var slides = $('.main-slide');
+  // starting index
+  var i = 0;
+  // click listener
+  $('#main-slider-next').click(function(){
+    // find next index
+    // i + 1 or 0 if end of slides
+    i = ++i % slides.length;
+    // scroll to that index
+    $('.slider-wrapper').animate(
+      {'left' : -(slides.eq(i).position().left)},
+      600
+    );
+  });
+});
 </script>
+<!--End of jQuery for Panel Slider--> 
+                
     </body>
 </html>

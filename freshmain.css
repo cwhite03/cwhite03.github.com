@@ -1,9 +1,53 @@
-/* Fresh Custom Stylesheet */
+/* WDDS Custom Stylesheet */
+
+/* WDDS Site Outline */
+
+/* 
+------- Table of Contents ------
+
+I.       General CSS
+II.      Title Panel CSS
+            i.   Lead Image Panel
+            ii.  Navigation Bar Contents
+            iii. Animated Scroll Arrow
+III.     Home Panel CSS
+            i.   Image Title Bar
+            ii.  Panel Slider & Content
+IV.      About Panel CSS
+            i.   Image Title Bar
+            ii.  3 Column Information
+V.       Services Panel CSS
+            i.   Image Title Bar
+            ii.  Panel Background Image
+            iii. Accordion Slider & Content
+
+VI.      Porfolio Panel CSS
+VII.     Quote Panel CSS
+VIII.    Support Panel CSS
+IX.      Footer
+
+--------------------------------- 
+*/
+
+/* ------- General CSS ------- */
+section {
+	height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+/* ------- End of General CSS ------- */
+
+/* ------- TITLE Panel------- */
+
+/* Screen Settings */
+#screen1 {	
+	background: url(maintile.png) no-repeat center center;
+}
+/* End of Screen Settings */
 .title{
 text-decoration-line: overline;
 font-size: 6em;
-padding-top: 3.5em;
-padding-left: 4.6em;
+padding-top: 2.5em;
+padding-left: 4.5em;
 color:#000;
 }
 
@@ -66,6 +110,88 @@ ul.menu li a:hover{
     background-color: #d8d8d8;
     box-shadow: 1px 1px 1px #888888;
 }
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:30%;
+  top:-5em;
+  margin-left:-24em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 4em;
+  border-radius:60%;
+  font-size:0.5em;
+  display:inline-block;
+  box-shadow:1px 1px 1px 1px #333;
+}
+.arrow {
+display: flex;
+flex-direction: column;
+float:left;
+position:relative;
+top:2em;
+left: 1.7em;
+width:1px;
+border-style: solid;
+border-width: 3em 3em 3em 3em;
+border-color: #ffffff transparent transparent transparent;
+-webkit-transform:rotate(360deg)
+}
+.arrow:after {
+  content:"";
+  position:relative;
+     top:-3.8em;
+  left:-3em;
+  width: 1px;
+height: 20px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #111 transparent transparent transparent;
+-webkit-transform:rotate(360deg)
+}
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s infinite ;
+    -webkit-animation-delay: 1s ;
+  }
+
+/* ---- End of TITLE Panel ---- */
+
+/* ------- HOME Panel------- */
+
+/* Screen Settings */
+#hscreen {
+	background:white;
+}
+
 article.homescreen{
 background-image: url('hometile.jpg');
 -webkit-background-size: cover;
@@ -87,7 +213,66 @@ padding-left: 37em;
 padding-top: 0.5em;
 font-style: normal;
 }
+/*Panel Slider & Content*/
+#main-slider-space {
+	overflow:hidden;
+	width:600px;
+	height:300px;
+	background-color:#C36;
+	margin-left:100px;
+}
 
+.slider-wrapper {
+	position:relative;
+	left:0;
+	width:3000px;
+	height:100%;
+}
+
+.main-slide {
+	width:600px;
+	height:100%;
+	float:left;
+}
+
+#slide1 { background-color:#5FF; }
+#slide2 { background-color:#F5F; }
+#slide3 { background-color:#FF5; }
+
+.slider-buttons {
+    position:absolute;
+    width:30px;
+    height:30px;
+}
+
+.slider-buttons:hover { cursor:pointer; }
+
+#main-slider-next {
+    background-color:#99CC66;
+    left:700px;
+    top:150px;
+}
+h1.slide1{
+  font-style: italic;
+  padding-left: 250px;
+}
+/*End of Panel Slider & Content*/
+
+/* ---- End of HOME Panel ---- */
+
+/* ------- ABOUT Panel------- */
+
+/* Screen Settings */
+#screen2 {
+	background: #E6E6E6;
+}
+.about h1{
+color:#FFFFCC;
+float:left;
+font-size: 2em;
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+}
 article.about{
 background-image: url('tile.jpg');
 -webkit-background-size: cover;
@@ -97,6 +282,67 @@ background-position: bottom;
 box-shadow: 3px 3px 3px #888888;
 color:#FF9E00;
 padding: 5em;
+}
+div.about_content h2{
+background-color: #FFFFCC;
+box-shadow:0.2px 1px 0.5px 1px #333;
+color:#000;
+font-size: 1.5em;
+font-style: oblique;
+padding: 0.5em;
+width:17em;
+}
+div.about_content {
+    background-color: #8f6d3b;
+    opacity: 0.9;
+    padding:1em;
+}
+div.about_content p{
+    padding:1em;
+    justify-content: center;
+}
+
+/*Button CSS*/
+.button {
+   border-top: 1px solid #009ECE;
+   background: #009ECE;
+   background: -webkit-gradient(linear, left top, left bottom, from(#009ECE), to(#009ECE));
+   background: -webkit-linear-gradient(top, #009ECE, #009ECE);
+   background: -moz-linear-gradient(top, #009ECE, #009ECE);
+   background: -ms-linear-gradient(top, #009ECE, #009ECE);
+   background: -o-linear-gradient(top, #009ECE, #009ECE);
+   padding: 1em;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: 'Lato', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #fff;
+   background: #fff;
+   color: #000000;
+   }
+/*End of Button CSS*/
+
+/* ---- End of ABOUT Panel ---- */
+
+/* ------- SERVICES Panel------- */
+
+/* Screen Settings */
+#screen3 {
+	background-image: url('tile3.jpg');
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: center;
 }
 
 .services article {
@@ -108,8 +354,16 @@ background-position: center;
 color:#FF9E00;
 padding: 5em;
 }
+.services h1{
+color:#333;
+float:right;
+font-size: 2em;
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+padding: 0em 3em;
+}
 /* CSS for Vertical Services Accordion */
-    /* This resets the margin and padding on the form. */
+/* This resets the margin and padding on the form. */
 div form {
   margin: 0;
   padding: 0;
@@ -200,14 +454,12 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover, #rad
   color: #333;
   background: #fff;
   font: 12px/1.5 Helvetica, Verdana, sans-serif;
-   
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
-
 h2.accs {
   width: 420px;
   padding-left: 10px;
@@ -223,181 +475,53 @@ p.accs {
 input[type="radio"]:checked ~ .accslide {
   width: 450px;
 }
-
 /* End of CSS for Vertical Services Accordion */
 
-.services h1{
-color:#333;
-float:right;
-font-size: 2em;
-font-family: 'Lato', sans-serif;
-text-transform: uppercase;
-padding: 0em 3em;
-}
-div.about_content {
-    background-color: #8f6d3b;
-    opacity: 0.9;
-    padding:1em;
-}
-div.about_content p{
-    padding:1em;
-    justify-content: center;
-}
-div.about_content h2{
-background-color: #FFFFCC;
-box-shadow:0.2px 1px 0.5px 1px #333;
-color:#000;
-font-size: 1.5em;
-font-style: oblique;
-padding: 0.5em;
-width:17em;
-}
-/* the important styles */
-.arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:30%;
-  top:-5em;
-  margin-left:-24em;
-  background:#111;
-  width:10em;
-  height:10em;
-  padding:4em 4em;
-  border-radius:60%;
-  font-size:0.5em;
-  display:inline-block;
-  box-shadow:1px 1px 1px 1px #333;
-}
-.arrow {
-display: flex;
-flex-direction: column;
-float:left;
-position:relative;
-top:2em;
-left: 1.7em;
-width:1px;
-border-style: solid;
-border-width: 3em 3em 3em 3em;
-border-color: #ffffff transparent transparent transparent;
--webkit-transform:rotate(360deg)
-}
-.arrow:after {
-  content:"";
-  position:relative;
-     top:-3.8em;
-  left:-3em;
-  width: 1px;
-height: 20px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #111 transparent transparent transparent;
--webkit-transform:rotate(360deg)
-}
-.hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
-}
-.arrow-wrap:hover .hint {
-  opacity:1;
-}
-  @-webkit-keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
-  }
-  .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 3s;
-  }
-/* End of the important arrow styles */
 
-/*Button CSS*/
+/* ---- End of SERVICES Panel ---- */
 
-.button {
-   border-top: 1px solid #009ECE;
-   background: #009ECE;
-   background: -webkit-gradient(linear, left top, left bottom, from(#009ECE), to(#009ECE));
-   background: -webkit-linear-gradient(top, #009ECE, #009ECE);
-   background: -moz-linear-gradient(top, #009ECE, #009ECE);
-   background: -ms-linear-gradient(top, #009ECE, #009ECE);
-   background: -o-linear-gradient(top, #009ECE, #009ECE);
-   padding: 1em;
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 15px;
-   font-family: 'Lato', sans-serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button:hover {
-   border-top-color: #fff;
-   background: #fff;
-   color: #000000;
-   }
-/*End of Button CSS*/
+/* ------- PORTFOLIO Panel------- */
 
-h1.about {
-    color: #FFFFCC;
-    font-size: 2em;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-}
-
-section {
-	height: 100vh;
-    font-family: 'Lato', sans-serif;
-}
-
-/* Screens Settings */
-#screen1 {	
-	background: url(maintile.png) no-repeat center center;
-}
-#hscreen {
-	background:white;
-}
-#screen2 {
-	background: #E6E6E6;
-}
-#screen3 {
-	background-image: url('tile3.jpg');
-    -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-position: center;
-}
+/* Screen Settings */
 #screen4 {
 	background: #CE0000;
 }
+
+/* ---- End of PORTFOLIO Panel ---- */
+
+/* ------- QUOTE Panel------- */
+
+/* Screen Settings */
 #screen5 {
 	background: #9CCF31;
 }
+
+/* ---- End of QUOTE Panel ---- */
+
+/* ------- SUPPORT Panel------- */
+
+/* Screen Settings */
 #screen6 {
 	background: #E7E7E7;
 }
+
+/* ---- End of SUPPORT Panel ---- */
+
+/* ------- CONTACT Panel------- */
+
+/* Screen Settings */
 #screen7 {
 	background: #E0E9E9;
 }
+
+/* ---- End of CONTACT Panel ---- */
+
+/* ------- FOOTER Panel------- */
+
+/* Screen Settings */
+
+/* ---- End of FOOTER Panel ---- */
+
 
 @media only screen and (max-width: 520px) {
 
