@@ -96,7 +96,7 @@ div.cname a:hover{
     box-shadow: 1px 1px 1px #888888;
 }
 ul.menu{
-    display: inline-flex;
+    display: -webkit-flex;
     float: right;
 }
 ul.menu li a{
