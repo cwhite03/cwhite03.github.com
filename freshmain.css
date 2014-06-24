@@ -26,7 +26,7 @@ VII.     Quote Panel CSS
 VIII.    Support Panel CSS
 IX.      Footer
 
---------------------------------- 
+------------------------------------ 
 */
 
 /* ------- General CSS ------- */
@@ -213,13 +213,15 @@ padding-left: 37em;
 padding-top: 0.5em;
 font-style: normal;
 }
+
 /*Panel Slider & Content*/
 #main-slider-space {
 	overflow:hidden;
-	width:600px;
-	height:300px;
+	width:800px;
+	height:450px;
 	background-color:#C36;
-	margin-left:100px;
+	margin-left:300px;
+    margin-top: 15px;
 }
 
 .slider-wrapper {
@@ -230,14 +232,14 @@ font-style: normal;
 }
 
 .main-slide {
-	width:600px;
+	width:800px;
 	height:100%;
 	float:left;
 }
 
-#slide1 { background-color:#5FF; }
-#slide2 { background-color:#F5F; }
-#slide3 { background-color:#FF5; }
+#slide1 { background-color:#fff; }
+#slide2 { background-color:#fff; }
+#slide3 { background-color:#fff; }
 
 .slider-buttons {
     position:absolute;
@@ -249,13 +251,27 @@ font-style: normal;
 
 #main-slider-next {
     background-color:#99CC66;
-    left:700px;
-    top:150px;
+    left:1200px;
+    top: 1100px;
 }
 h1.slide1{
-  font-style: italic;
-  padding-left: 250px;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 100px;
 }
+h2.slide1{
+  font-size: 24px;
+  padding-top: 20px;
+  text-align: center;
+  text-decoration: overline;
+}
+p.slide1{
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
 /*End of Panel Slider & Content*/
 
 /* ---- End of HOME Panel ---- */
@@ -375,7 +391,7 @@ div form {
 ul.vacc{
 list-style: none;
 }
-    /* This hides the radio buttons from the screen. */
+/* This hides the radio buttons from the screen. */
 .vacc input {
   position: absolute;
   opacity:0;
