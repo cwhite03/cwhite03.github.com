@@ -66,7 +66,7 @@ position: absolute;
 	top: 0; 
 	height: 47px; 
 	z-index: 1;
-    box-shadow: 3px 3px 3px #888888;
+    box-shadow: 3px 3px 3px #000;
     opacity: 0.9;
     
 }
@@ -91,7 +91,7 @@ div.cname {
 }
 div.cname a:hover{
     background-color: #d8d8d8;
-    box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #000;
 }
 ul.menu{
     display: -webkit-flex;
@@ -112,7 +112,7 @@ ul.menu li a{
 ul.menu li a:hover{
     background-color: #d8d8d8;
     color: black;
-    box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #000;
 }
 
 .arrow-wrap {
@@ -128,7 +128,7 @@ ul.menu li a:hover{
   border-radius:60%;
   font-size:0.5em;
   display:inline-block;
-  box-shadow:1px 1px 1px 1px #333;
+  box-shadow:1px 1px 1px 1px #000;
 }
 .arrow {
 display: flex;
@@ -219,7 +219,7 @@ background-image: url('hometile.jpg');
 -moz-background-size: cover;
 -o-background-size: cover;
 background-position: center;
-box-shadow: 3px 3px 3px #888888;
+box-shadow: 3px 3px 3px #000;
 width:100%;
 font-size: 30px;
 font-family: 'Josefin Sans', sans-serif;
@@ -305,13 +305,13 @@ background-image: url('tile.jpg');
 -moz-background-size: cover;
 -o-background-size: cover;
 background-position: bottom;
-box-shadow: 3px 3px 3px #888888;
+box-shadow: 3px 3px 3px #000;
 color:#FF9E00;
 padding: 5em;
 }
 div.about_content h2{
 background-color: #FFFFCC;
-box-shadow:0.2px 1px 0.5px 1px #333;
+box-shadow:0.2px 1px 0.5px 1px #000;
 color:#000;
 font-size: 1.5em;
 padding: 0.5em;
@@ -319,7 +319,7 @@ width:17em;
 }
 div.about_content {
     background-color: #fff;
-    box-shadow:0.2px 1px 0.5px 1px #333;
+    box-shadow:0.2px 1px 0.5px 1px #000;
     opacity: 0.9;
     padding:1em;
 }
@@ -451,7 +451,7 @@ label {
 }
 label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   background: black;
-  box-shadow:4px 3px 9px 5px #333;
+  box-shadow:4px 3px 9px 5px #000;
   color: #fff;
   cursor: pointer;
 }
