@@ -6,13 +6,11 @@
 ------- Table of Contents ------
 
 I.       General CSS
-II.      Title Panel CSS
-            i.   Lead Image Panel
-            ii.  Navigation Bar Contents
-            iii. Animated Scroll Arrow
-III.     Home Panel CSS
-            i.   Image Title Bar
-            ii.  Panel Slider & Content
+II.     Home Panel CSS
+            i.  Panel Slider & Content
+III.      Title [Home] Panel CSS
+            i.  Navigation Bar Contents
+            ii. Animated Scroll Arrow
 IV.      About Panel CSS
             i.   Image Title Bar
             ii.  3 Column Information
@@ -32,7 +30,7 @@ IX.      Footer
 /* ------- General CSS ------- */
 section {
 	height: 100vh;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 /* ------- End of General CSS ------- */
 
@@ -40,7 +38,7 @@ section {
 
 /* Screen Settings */
 #screen1 {	
-	background: url(maintile.png) no-repeat center center;
+	background: ;
 }
 /* End of Screen Settings */
 .title{
@@ -60,20 +58,20 @@ nav{
 position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 50px;
-	background: #fff;
+	height: 47px;
 }
 /* This class is added on scroll */
 .fixed {
 	position: fixed; 
 	top: 0; 
-	height: 50px; 
+	height: 47px; 
 	z-index: 1;
     box-shadow: 3px 3px 3px #888888;
     opacity: 0.9;
+    
 }
 .hnav{
-    background-color: #fefbf7;
+    background-color: black;
     display:inline-block;
     height:3em;
     justify-content: center;
@@ -84,10 +82,10 @@ div.cname {
     float:left;
 }
 .cname a{
-    color: #757575;
-    font-family: 'Lato', sans-serif;
-    padding:1em 0em 0em 5em;
-    
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:1em 0em 0em 3em;
     line-height: 3em;
     text-decoration: none;
 }
@@ -103,15 +101,17 @@ ul.menu{
     float: right;
 }
 ul.menu li a{
-    color: #757575;
-    font-family: 'Lato', sans-serif;
-    font-style: light;
-    padding:1em 3em;
-    line-height: 3em;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 0.7em 2.3em;
+    line-height: 2.4em;
     text-decoration: none;
 }
 ul.menu li a:hover{
     background-color: #d8d8d8;
+    color: black;
     box-shadow: 1px 1px 1px #888888;
 }
 
@@ -119,7 +119,7 @@ ul.menu li a:hover{
   position:absolute;
   z-index:1;
   left:30%;
-  top:-5em;
+  top:-6.5em;
   margin-left:-24em;
   background:#111;
   width:10em;
@@ -189,10 +189,10 @@ transform:rotate(360deg) ;
     100% { top:0; }
   }
   .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s infinite ;
-    -moz-animation: arrows 2.8s infinite ;
-    -o-animation: arrows 2.8s infinite ;
-    animation: arrows 2.8s infinite ;
+    -webkit-animation: arrows 2.8s ;
+    -moz-animation: arrows 2.8s ;
+    -o-animation: arrows 2.8s ;
+    animation: arrows 2.8s ;
       
     -webkit-animation-delay: 1s ;
     -moz-animation-delay: 1s ;
@@ -206,10 +206,14 @@ transform:rotate(360deg) ;
 
 /* Screen Settings */
 #hscreen {
-	background:white;
+background-image: url('tile3.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-position: center;
 }
 
-article.homescreen{
+article.porfolio{
 background-image: url('hometile.jpg');
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -218,7 +222,7 @@ background-position: center;
 box-shadow: 3px 3px 3px #888888;
 width:100%;
 font-size: 30px;
-font-family: 'Lato', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 font-style: italic;
 text-transform: uppercase;
 color:#fff;
@@ -238,7 +242,7 @@ font-style: normal;
 	height:450px;
 	background-color:#C36;
 	margin-left:300px;
-    margin-top: 15px;
+    margin-top: 100px;
 }
 
 .slider-wrapper {
@@ -258,56 +262,21 @@ font-style: normal;
 #slide2 { background-color:#fff; }
 #slide3 { background-color:#fff; }
 
-.slider-buttons {
-    position:absolute;
-    width:40px;
-    height:40px;
-    border-radius: 60%;
-}
-
-.slider-buttons:hover { cursor:pointer; }
-
-#main-slider-next {
-    background-color:#99CC66;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    left:1000px;
-    top: 1080px;
-    -webkit-animation: chasemenext 5s infinite; /* Chrome, Safari, Opera */
-    animation: chasemenext 5s infinite;
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes chasemenext {
-    0%   {background:red; left:1000px; top:1080px;}
-    25%  {background:yellow; left:1050px; top:1030px;}
-    50%  {background:blue; left:1100px; top:1080px;}
-    75%  {background:green; left:1050px; top:1130px;}
-    100% {background:red; left:1000px; top:1080px;}
-}
-
-/* Standard syntax */
-@keyframes chasemenext {
-    0%   {background:red; left:1000px; top:1080px;}
-    25%  {background:yellow; left:1050px; top:1030px;}
-    50%  {background:blue; left:1100px; top:1080px;}
-    75%  {background:green; left:1050px; top:1030px;}
-    100% {background:red; left:1000px; top:1080px;}
-}
-
 h1.slide1{
-  font-size: 45px;
+  font-size: 150px;
+  font-weight: 300;
   text-align: center;
   padding-top: 100px;
+  border-bottom: solid;
 }
 h2.slide1{
-  font-size: 24px;
+  font-size: 34px;
   padding-top: 20px;
   text-align: center;
-  text-decoration: overline;
+ 
 }
 p.slide1{
-  font-size: 20px;
+  font-size: 24px;
   padding-top: 20px;
   text-align: center;
   line-height: 30px;
@@ -327,7 +296,7 @@ p.slide1{
 color:#FFFFCC;
 float:left;
 font-size: 2em;
-font-family: 'Lato', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 text-transform: uppercase;
 }
 article.about{
@@ -378,15 +347,15 @@ div.about_content p{
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 15px;
-   font-family: 'Lato', sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
    text-decoration: none;
    vertical-align: middle;
    }
 .button:hover {
-   border-top-color: #fff;
-   background: #fff;
-   color: #000000;
-   }
+border-top-color: #fff;
+background: #fff;
+color: #000000;
+}
 /*End of Button CSS*/
 
 /* ---- End of ABOUT Panel ---- */
@@ -395,14 +364,9 @@ div.about_content p{
 
 /* Screen Settings */
 #screen3 {
-	background-image: url('tile3.jpg');
-    -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-position: center;
 }
 
-.services article {
+/*{
 background-image: url('tile1.jpg');
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -410,14 +374,15 @@ background-image: url('tile1.jpg');
 background-position: center;
 color:#FF9E00;
 padding: 5em;
-}
+}*/
+
 .services h1{
-color:#333;
+color: white;
 float:right;
 font-size: 2em;
-font-family: 'Lato', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 text-transform: uppercase;
-padding: 0em 3em;
+padding: 3em 1em;
 }
 /* CSS for Vertical Services Accordion */
 /* This resets the margin and padding on the form. */
@@ -441,8 +406,8 @@ label {
   background: #663300;
   display:inline-block;
   float:left;
-  font: 15px/32em 'Lato', sans-serif;
-  height: 34.25em;
+  font: 20px/40em 'Josefin Sans', sans-serif;
+  height: 33.7em;
   opacity: 0.8;
   position: relative;
   text-align: center;
@@ -484,17 +449,8 @@ label {
       -ms-transition: width 1s ease, background 0.5s ease;
           transition: width 1s ease, background 0.5s ease;
 }
-#rad5 + label {
-  background: #A38566;
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
-}
- 
-label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover, #rad5 + label:hover {
-  background: #0033CC;
+label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
+  background: black;
   box-shadow:4px 3px 9px 5px #333;
   color: #fff;
   cursor: pointer;
@@ -503,26 +459,26 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover, #rad
 /*SLIDES*/
 .accslide {
   display: block;
-  height: 40.8em;
+  height: 35.3em;
   width: 0px;
-  padding: 10px 0;
+  padding: 55px 0;
   float: left;
   overflow: hidden;
   color: #333;
   background: #fff;
-  font: 12px/1.5 Helvetica, Verdana, sans-serif;
+
   -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 h2.accs {
-  width: 420px;
+  width: 340px;
   padding-left: 10px;
 }
 p.accs {
-  width: 420px;
+  width: 340px;
   padding-left: 10px;
 }
  
@@ -530,7 +486,7 @@ p.accs {
   margin-top: 10px;
 }
 input[type="radio"]:checked ~ .accslide {
-  width: 450px;
+  width: 351px;
 }
 /* End of CSS for Vertical Services Accordion */
 
@@ -543,32 +499,6 @@ input[type="radio"]:checked ~ .accslide {
 #screen4 {
 	background: #CE0000;
 }
-
-
-/* MOVIE POSTERS */
-#movieposters { list-style:none; margin:100px 0; height:550px; }
-#movieposters li { display:inline; float:left;
-	-webkit-perspective: 500; -webkit-transform-style: preserve-3d;
-	-webkit-transition-property: perspective; -webkit-transition-duration: 0.5s; }
-#movieposters li:hover { -webkit-perspective: 5000; }
-	
-#movieposters li img { border:10px solid #fcfafa; -webkit-transform: rotateY(30deg);
-	-moz-box-shadow:0 3px 10px #888; -webkit-box-shadow:0 3px 10px #888;
-	-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; }
-#movieposters li:hover img { -webkit-transform: rotateY(0deg); }
-
-.movieinfo { border:10px solid #fcfafa; padding:20px; width:200px; height:180px; background-color:#deddcd; margin:-195px 0 0 55px; position:absolute;
-	-moz-box-shadow:0 20px 40px #888; -webkit-box-shadow:0 20px 40px #888;
-	-webkit-transform: translateZ(30px) rotateY(30deg);
-	-webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s; }
-	
-#movieposters li:hover .movieinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:-175px 0 0 30px; }
-	
-.movieinfo h3 { color:#7a3f3a; font-variant: small-caps; font-family:Georgia,serif,Times; text-align:center; padding-bottom:15px; }
-.movieinfo p { padding-bottom:15px; }
-.movieinfo a { background-color:#7a3f3a; padding:5px 10px; color:#eee; text-decoration:none; display:block; width:80px; text-align:center; margin:0 auto;
-	-moz-border-radius:5px; -webkit-border-radius:5px; }
-.movieinfo a:hover, .movieinfo a:focus { background-color:#6a191f; color:#fff; }
 
 /* ---- End of PORTFOLIO Panel ---- */
 
