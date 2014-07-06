@@ -7,7 +7,7 @@
 
 I.       General CSS
 II.     Home Panel CSS
-            i.  Panel Slider & Content
+            i.  Panel Content
 III.      Title [Home] Panel CSS
             i.  Navigation Bar Contents
             ii. Animated Scroll Arrow
@@ -37,22 +37,10 @@ section {
 /* ------- TITLE Panel------- */
 
 /* Screen Settings */
-#screen1 {	
-	background: ;
+#homescreen {	
+	
 }
 /* End of Screen Settings */
-.title{
-text-decoration-line: overline;
-font-size: 6em;
-padding-top: 2.5em;
-padding-left: 4.5em;
-color:#000;
-}
-
-.subtitle{
-font-size: 20px;
-padding-left: 1em;
-}
 
 nav{
 position: absolute;
@@ -225,53 +213,22 @@ color:#fff;
 padding: 2.5em;
 }
 
-article.homescreen h1{
-padding-left: 37em;
-padding-top: 0.5em;
-font-style: normal;
-}
+/*Panel & Content*/
 
-/*Panel Slider & Content*/
-#main-slider-space {
-	overflow:hidden;
-	width:800px;
-	height:450px;
-	background-color:#C36;
-	margin-left:300px;
-    margin-top: 100px;
-}
-
-.slider-wrapper {
-	position:relative;
-	left:0;
-	width:3000px;
-	height:100%;
-}
-
-.main-slide {
-	width:800px;
-	height:100%;
-	float:left;
-}
-
-#slide1 { background-color:#fff; }
-#slide2 { background-color:#fff; }
-#slide3 { background-color:#fff; }
-
-h1.slide1{
+h1.wdds{
   font-size: 150px;
   font-weight: 300;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 1.3em;
   border-bottom: solid;
 }
-h2.slide1{
+
+h2.wdds{
   font-size: 34px;
-  padding-top: 20px;
   text-align: center;
  
 }
-p.slide1{
+p.wdds{
   font-size: 24px;
   padding-top: 20px;
   text-align: center;
@@ -402,12 +359,12 @@ label {
   background: #663300;
   display:inline-block;
   float:left;
-  font: 20px/33em 'Josefin Sans', sans-serif;
-  height: 33.7em;
+  font: 25px/27em 'Josefin Sans', sans-serif;
+  height: 26.9em;
   opacity: 0.8;
   position: relative;
   text-align: center;
-  width: 10em;
+  width: 6em;
  
   -webkit-transition: width 1s ease, background 0.5s ease;
      -moz-transition: width 1s ease, background 0.5s ease;
@@ -482,7 +439,7 @@ p.accs {
   margin-top: 10px;
 }
 input[type="radio"]:checked ~ .accslide {
-  width: 351px;
+  width: 541px;
 }
 /* End of CSS for Vertical Services Accordion */
 
