@@ -100,7 +100,6 @@ ul.menu li a{
 ul.menu li a:hover{
     background-color: #d8d8d8;
     color: black;
-    box-shadow: 1px 1px 1px #000;
 }
 
 .arrow-wrap {
@@ -298,10 +297,6 @@ div.about_content p{
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px;
    border-radius: 15px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 15px;
    font-family: 'Josefin Sans', sans-serif;
@@ -438,13 +433,10 @@ p.accs {
   padding-left: 10px;
 }
  
-.accslide img {
-  margin-top: 10px;
-}
+
 input[type="radio"]:checked ~ .accslide {
   height: 235px;
   width: 100%;
-  box-shadow: none;
 }
 /* End of CSS for Vertical Services Accordion */
 
