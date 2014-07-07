@@ -333,12 +333,13 @@ padding: 5em;
 }*/
 
 .services h1{
+display: none;
 color: white;
 float:right;
 font-size: 2em;
 font-family: 'Josefin Sans', sans-serif;
 text-transform: uppercase;
-padding: 3em 1em;
+padding: 1em 1em;
 }
 /* CSS for Vertical Services Accordion */
 /* This resets the margin and padding on the form. */
@@ -360,14 +361,12 @@ list-style: none;
 }
 label {
   background: #663300;
-  display:inline-block;
-  float:left;
-  font: 25px/27em 'Josefin Sans', sans-serif;
-  height: 26.9em;
+  font: 25px/4em 'Josefin Sans', sans-serif;
+  height: 4em;
   opacity: 0.8;
   position: relative;
   text-align: center;
-  width: 6em;
+  width: 20em;
  
   -webkit-transition: width 1s ease, background 0.5s ease;
      -moz-transition: width 1s ease, background 0.5s ease;
@@ -415,7 +414,7 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 /*SLIDES*/
 .accslide {
   display: block;
-  height: 35.3em;
+  height: 10em;
   width: 0px;
   padding: 55px 0;
   float: left;
@@ -442,7 +441,7 @@ p.accs {
   margin-top: 10px;
 }
 input[type="radio"]:checked ~ .accslide {
-  width: 541px;
+  width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
 
