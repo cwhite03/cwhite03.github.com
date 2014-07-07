@@ -368,7 +368,7 @@ label {
   opacity: 0.8;
   position: relative;
   text-align: center;
-  width: 16em;
+  width: 100%;
  
   -webkit-transition: width 0.5s ease, background 0.5s ease;
      -moz-transition: width 0.5s ease, background 0.5s ease;
@@ -417,7 +417,7 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 .accslide {
   display:inline;
   height: 0px;
-  width: 1em;
+  width: 0em;
   padding: 0px;
   float: left;
   overflow: hidden;
@@ -431,12 +431,12 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   transition: all 1s ease;
 }
 h2.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
   padding-top: 10px;
 }
 p.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
 }
  
