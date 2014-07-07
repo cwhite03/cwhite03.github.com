@@ -81,6 +81,7 @@ div.cname {
     text-decoration: none;
 }
 ul.menu{
+    display: none;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -88,6 +89,7 @@ ul.menu{
     float: right;
 }
 ul.menu li a{
+    display: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
@@ -366,13 +368,13 @@ label {
   opacity: 0.8;
   position: relative;
   text-align: center;
-  width: 20em;
+  width: 16em;
  
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
+  -webkit-transition: width 0.5s ease, background 0.5s ease;
+     -moz-transition: width 0.5s ease, background 0.5s ease;
+       -o-transition: width 0.5s ease, background 0.5s ease;
+      -ms-transition: width 0.5s ease, background 0.5s ease;
+          transition: width 0.5s ease, background 0.5s ease;
      
      -webkit-transform:rotate(0deg);  
      -moz-transform:rotate(0deg);  
@@ -382,27 +384,27 @@ label {
 
 #rad2 + label {
   background: #754719;
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
+  -webkit-transition: width 0.5s ease, background 0.5s ease;
+     -moz-transition: width 0.5s ease, background 0.5s ease;
+       -o-transition: width 0.5s ease, background 0.5s ease;
+      -ms-transition: width 0.5s ease, background 0.5s ease;
+          transition: width 0.5s ease, background 0.5s ease;
 }
 #rad3 + label {
   background: #855C33;
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
+  -webkit-transition: width 0.5s ease, background 0.5s ease;
+     -moz-transition: width 0.5s ease, background 0.5s ease;
+       -o-transition: width 0.5s ease, background 0.5s ease;
+      -ms-transition: width 0.5s ease, background 0.5s ease;
+          transition: width 0.5s ease, background 0.5s ease;
 }
 #rad4 + label {
   background: #94704D;
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
+  -webkit-transition: width 0.5s ease, background 0.5s ease;
+     -moz-transition: width 0.5s ease, background 0.5s ease;
+       -o-transition: width 0.5s ease, background 0.5s ease;
+      -ms-transition: width 0.5s ease, background 0.5s ease;
+          transition: width 0.5s ease, background 0.5s ease;
 }
 label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   background: black;
@@ -413,10 +415,10 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 
 /*SLIDES*/
 .accslide {
-  display: block;
-  height: 10em;
-  width: 0px;
-  padding: 55px 0;
+  display:inline;
+  height: 0px;
+  width: 1em;
+  padding: 0px;
   float: left;
   overflow: hidden;
   color: #333;
@@ -431,6 +433,7 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 h2.accs {
   width: 340px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 p.accs {
   width: 340px;
@@ -441,6 +444,7 @@ p.accs {
   margin-top: 10px;
 }
 input[type="radio"]:checked ~ .accslide {
+  height: 235px;
   width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
