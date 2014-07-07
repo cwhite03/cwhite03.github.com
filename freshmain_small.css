@@ -67,15 +67,19 @@ position: absolute;
     text-decoration: none;
     text-transform: uppercase;
     width:100%;
+    z-index: 1;
 }
 div.cname {
-    float:left;
+    background-image: url();
+    display:grid;
+    text-align: center;
+    padding-left: 7.5em;
 }
 .cname a{
+    display: none;
     color: white;
     font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
-    padding:0em 0em 0em 2em;
     line-height: 2em;
     text-decoration: none;
 }
@@ -85,7 +89,7 @@ ul.menu{
     display: -moz-flex;
     display: -ms-flex;
     display: flex;
-    float: right;
+    float: left;
 }
 ul.menu li a{
     display: none;
@@ -103,6 +107,7 @@ ul.menu li a:hover{
 }
 
 .arrow-wrap {
+  display: none;
   position:absolute;
   z-index:1;
   left: 2em;
@@ -118,7 +123,7 @@ ul.menu li a:hover{
   box-shadow:1px 1px 1px 1px #000;
 }
 .arrow {
-display: flex;
+display: none;
 flex-direction: column;
 float:left;
 position:relative;
@@ -220,16 +225,19 @@ padding: 2.5em;
 /*Panel & Content*/
 
 h1.wdds{
+  border-bottom: solid;
   font-size: 8em;
   font-weight: 300;
   text-align: center;
-  padding-top: 1.3em;
+  padding-top: 1.8em;
 }
 
 h2.wdds{
+  border-bottom: solid;
   font-size: 34px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
- 
 }
 p.wdds{
   font-size: 24px;
