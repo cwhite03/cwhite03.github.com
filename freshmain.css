@@ -431,11 +431,11 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   transition: all 1s ease;
 }
 h2.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
 }
 p.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
 }
  
@@ -443,7 +443,7 @@ p.accs {
   margin-top: 10px;
 }
 input[type="radio"]:checked ~ .accslide {
-  width: 541px;
+  width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
 
