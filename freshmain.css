@@ -32,6 +32,9 @@ section {
 	height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+body{ font-size: 14px; }
+
 /* ------- End of General CSS ------- */
 
 /* ------- TITLE Panel------- */
