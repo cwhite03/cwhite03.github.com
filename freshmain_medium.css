@@ -40,8 +40,33 @@ body{ font-size: 14px; }
 /* ------- TITLE Panel------- */
 
 /* Screen Settings */
-#homescreen {	
-	
+@-webkit-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@-ms-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@-moz-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+
+#homescreen {
+	background-image: url('homescreen.jpg');
+    background-position: 0px 0px;
+    background-size: cover;
+	background-repeat: repeat-x;
+    
+    -webkit-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+     animation: animatedBackground 40s linear infinite;
 }
 /* End of Screen Settings */
 
