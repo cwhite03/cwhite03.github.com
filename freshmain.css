@@ -64,10 +64,10 @@ to { background-position: 100% 0; }
     background-position: 0px 0px;
 	background-repeat: repeat-x;
     
-    -webkit-animation: animatedBackground 30s linear infinite;
-    -moz-animation: animatedBackground 30s linear infinite;
-    -ms-animation: animatedBackground 30s linear infinite;
-     animation: animatedBackground 30s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+     animation: animatedBackground 40s linear infinite;
 }
 
 /* End of Screen Settings */
