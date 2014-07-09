@@ -74,10 +74,10 @@ div.cname {
 }
 .cname a{
     color: white;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     padding:0em 0em 0em 2em;
-    line-height: 2em;
+    line-height: 3em;
     text-decoration: none;
 }
 ul.menu{
@@ -91,9 +91,9 @@ ul.menu li a{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 12px;
     padding: 0.7em 2.3em;
-    line-height: 2.4em;
+    line-height: 4em;
     text-decoration: none;
 }
 ul.menu li a:hover{
@@ -333,6 +333,7 @@ padding: 5em;
 }*/
 
 .services h1{
+display:none;
 color: white;
 float:right;
 font-size: 2em;
@@ -352,6 +353,7 @@ div form {
 }
 ul.vacc{
 list-style: none;
+padding-top: 50px;
 }
 /* This hides the radio buttons from the screen. */
 .vacc input {
@@ -360,27 +362,24 @@ list-style: none;
 }
 label {
   background: #663300;
-  display:inline-block;
-  float:left;
-  font: 25px/27em 'Josefin Sans', sans-serif;
-  height: 26.9em;
+  font: 25px/4em 'Josefin Sans', sans-serif;
+  height: 4em;
   opacity: 0.8;
   position: relative;
   text-align: center;
-  width: 541px;
+  width: 100%;
  
-  -webkit-transition: width 1s ease, background 0.5s ease;
-     -moz-transition: width 1s ease, background 0.5s ease;
-       -o-transition: width 1s ease, background 0.5s ease;
-      -ms-transition: width 1s ease, background 0.5s ease;
-          transition: width 1s ease, background 0.5s ease;
+  -webkit-transition: width 0.5s ease, background 0.5s ease;
+     -moz-transition: width 0.5s ease, background 0.5s ease;
+       -o-transition: width 0.5s ease, background 0.5s ease;
+      -ms-transition: width 0.5s ease, background 0.5s ease;
+          transition: width 0.5s ease, background 0.5s ease;
      
      -webkit-transform:rotate(0deg);  
      -moz-transform:rotate(0deg);  
      -o-transform: rotate(0deg);  
      transform: rotate(0deg);   
 }
-
 #rad2 + label {
   background: #754719;
   -webkit-transition: width 1s ease, background 0.5s ease;
@@ -414,9 +413,9 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 /*SLIDES*/
 .accslide {
   display: block;
-  height: 35.3em;
+  height: 0px;
   width: 0px;
-  padding: 55px 0;
+  padding: 0px;
   float: left;
   overflow: hidden;
   color: #333;
@@ -429,19 +428,17 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   transition: all 1s ease;
 }
 h2.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
 }
 p.accs {
-  width: 340px;
+  width: 100%;
   padding-left: 10px;
 }
- 
-.accslide img {
-  margin-top: 10px;
-}
+
 input[type="radio"]:checked ~ .accslide {
-  width: 541px;
+    height: 240px;
+    width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
 
