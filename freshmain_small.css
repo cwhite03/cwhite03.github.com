@@ -434,16 +434,16 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 h2.accs {
   width: 100%;
   padding-left: 0px;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 p.accs {
   width: 100%;
-  padding-left: 0px;
+  padding-left: 10px;
 }
  
 
 input[type="radio"]:checked ~ .accslide {
-  height: 260px;
+  height: 235px;
   width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
