@@ -43,7 +43,7 @@ body{ font-size: 14px; }
 
 /* Screen Settings */
 #homescreen {	
-	background-image: url(homescreen.jpg);
+	background-image: url('homescreen.jpg');
 }
 /* End of Screen Settings */
 
