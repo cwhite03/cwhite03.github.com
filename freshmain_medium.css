@@ -437,7 +437,7 @@ p.accs {
 }
 
 input[type="radio"]:checked ~ .accslide {
-    height: 240px;
+    height: 225px;
     width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
