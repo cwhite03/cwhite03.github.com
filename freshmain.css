@@ -75,16 +75,16 @@ to { background-position: 100% 0; }
 
 nav{
 position: absolute;
-    top: 93%;
+    top: 90%;
 	width: 100%;
-	height: 47px;
+	height: 70px;
     z-index: 200;
 }
 /* This class is added on scroll */
 .fixed {
 	position: fixed; 
 	top: 0; 
-	height: 47px; 
+	height: 70px; 
 	z-index: 200;
     box-shadow: 3px 3px 3px #000;
     opacity: 0.9;  
@@ -92,7 +92,7 @@ position: absolute;
 .hnav{
     background-color: black;
     display:inline-block;
-    height:3.4em;
+    height:70px;
     justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ div.cname {
     font-size: 1.9em;
     font-family: 'Josefin Sans', sans-serif;
     padding:0em 0em 0em 2em;
-    line-height: 2em;
+    line-height: 3em;
     text-decoration: none;
 }
 ul.menu{
@@ -122,8 +122,8 @@ ul.menu li a{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     font-size: 20px;
-    padding: 15px 20px 12px 20px;
-    line-height: 2.4em;
+    padding: 30px 20px 20px 20px;
+    line-height: 3.8em;
     text-decoration: none;
 }
 ul.menu li a:hover{

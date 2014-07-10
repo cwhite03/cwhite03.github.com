@@ -391,9 +391,9 @@ list-style: none;
 label {
   background: #663300;
   font: 25px/4em 'Josefin Sans', sans-serif;
-  height: 4em;
+  height: 91.7px;
   opacity: 0.8;
-  position: relative;
+  position:static;
   text-align: center;
   width: 100%;
  
@@ -445,7 +445,6 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
   height: 0px;
   width: 0em;
   padding: 0px;
-  float: left;
   overflow: hidden;
   color: #333;
   background: #fff;
@@ -468,7 +467,7 @@ p.accs {
  
 
 input[type="radio"]:checked ~ .accslide {
-  height: 235px;
+  height: 240px;
   width: 100%;
 }
 /* End of CSS for Vertical Services Accordion */
