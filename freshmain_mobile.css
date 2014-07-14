@@ -118,14 +118,20 @@ ul.menu li a:hover{
     top: 10px;
     right: 43%;
 }
+ul.mmenu li a{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
 
 /* Mobile Modal Menu */
 
 .mm_modalnav {
         display:list-item;
 		position: fixed;
-		font-family: 'Josefin Sans', sans-serif;
-		top: 70px;
+		top: 0px;
 		right: 0px;
 		bottom: 0px;
 		left: 0px;
@@ -138,23 +144,20 @@ ul.menu li a:hover{
 		pointer-events: none;
 	}
 .mm_modalnav ul {
-    
-    display: inline-block;
-    height: 200px;
+    font: 20px;
+    height: 100px;
     width: 300px;
     position: absolute;
-    top: 30%;
-    left:30%;
-    
+    top: 20%;
+    left:15%; 
 }
-.mm_modalnav ul a{
+.mm_modalnav ul li a{
 display: flex;
 color: white;
 justify-content: center;
 padding: 10px 10px 10px 10px;
 text-transform: uppercase;
 text-decoration: none;
-
 }
 
 	.mm_modalnav:target {
@@ -258,7 +261,7 @@ p.wdds{
 }
 
 .main_title{
-padding-top: 25%;
+padding-top: 20%;
 }
 
 /*End of Panel Slider & Content*/
