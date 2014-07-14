@@ -114,7 +114,7 @@ ul.mmenu li a{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -136,12 +136,11 @@ ul.mmenu li a{
 		pointer-events: none;
 	}
 .mm_modalnav ul {
-    font: 20px;
     height: 100px;
     width: 300px;
     position: absolute;
-    top: 100px;
-    left: 130px;
+    top: 10vh;
+    left: 20vw;
 }
 .mm_modalnav ul li a{
 display: flex;
