@@ -100,7 +100,7 @@ ul.menu li a{
     font-weight: 100;
     font-size: 13px;
     padding: 1em 1em;
-    line-height: 3.4em;
+    line-height: 1em;
     text-decoration: none;
 }
 ul.menu li a:hover{
@@ -108,11 +108,12 @@ ul.menu li a:hover{
     color: black;
 }
 .mobile_menu{
+    background-image: url('menu-burger.png');
     display: block;
-    margin-top: 7px;
-    width: 50px;
-    height: 63px;
-    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 4px;
+    height: 40px;
 }
 
 /* Mobile Modal Menu */
@@ -146,6 +147,7 @@ ul.menu li a:hover{
 .mm_modalnav ul a{
 display: flex;
 color: white;
+justify-content: center;
 padding: 10px 10px 10px 10px;
 text-transform: uppercase;
 text-decoration: none;
