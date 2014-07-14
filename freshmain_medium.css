@@ -97,17 +97,6 @@ position: absolute;
     width:100%;
     z-index: 200;
 }
-div.cname {
-    float:left;
-}
-.cname a{
-    color: white;
-    font-size: 1.2em;
-    font-family: 'Josefin Sans', sans-serif;
-    padding:0em 0em 0em 2em;
-    line-height: 4.5em;
-    text-decoration: none;
-}
 ul.menu{
     display: -webkit-flex;
     display: -moz-flex;
@@ -130,7 +119,17 @@ ul.menu li a:hover{
     color: black;
     font-weight: 400;
 }
-
+div.cname {
+    float:left;
+}
+.cname a{
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:0em 0em 0em 2em;
+    line-height: 4.5em;
+    text-decoration: none;
+}
 .arrow-wrap {
   position:absolute;
   z-index:1;
