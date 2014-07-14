@@ -233,29 +233,27 @@ padding: 2.5em;
 }
 
 /*Panel & Content*/
-
 h1.wdds{
   font-size: 8em;
   font-weight: 300;
+  padding-top: 150px;
   text-align: center;
-  top:150px;
 }
 
 h2.wdds{
   font-size: 34px;
+  padding-top: 10px;
   text-align: center;
-  top: 300px;
 }
 p.wdds{
   font-size: 24px;
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
   line-height: 30px;
-  top: 350px;
 }
 
 .main_title{
-padding-top: 25%;
+padding-top: 20%;
 }
 
 /*End of Panel Slider & Content*/
