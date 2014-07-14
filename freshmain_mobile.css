@@ -181,22 +181,27 @@ text-decoration: none;
 	.close {
 		background: #606061;
 		color: #FFFFFF;
-		line-height: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 2000;
+        font-size: 20px;
+        justify-content: center;
+        line-height: 30px;
 		position: absolute;
-		right: -12px;
 		text-align: center;
 		top: 20%;
         left: 90%;
-		width: 24px;
+		width: 30px;
 		text-decoration: none;
-		font-weight: bold;
-		-webkit-border-radius: 12px;
-		-moz-border-radius: 12px;
-		border-radius: 12px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
 		-moz-box-shadow: 1px 1px 3px #000;
 		-webkit-box-shadow: 1px 1px 3px #000;
 		box-shadow: 1px 1px 3px #000;
 	}
+a.close{
+padding: 6px 2px 2px 2px;
+}
 
 	.close:hover { background: #00d9ff; }
 
