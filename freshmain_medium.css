@@ -252,21 +252,25 @@ h1.wdds{
   font-size: 8em;
   font-weight: 300;
   text-align: center;
-  padding-top: 1.3em;
+  top:150px;
 }
 
 h2.wdds{
   font-size: 34px;
   text-align: center;
- 
+  top: 300px;
 }
 p.wdds{
   font-size: 24px;
   padding-top: 20px;
   text-align: center;
   line-height: 30px;
+  top: 350px;
 }
 
+.main_title{
+padding-top: 15%;
+}
 /*End of Panel Slider & Content*/
 
 /* ---- End of HOME Panel ---- */
