@@ -58,7 +58,7 @@ to { background-position: 100% 0; }
 }
 
 #homescreen {
-	background-image: url('homescreen.jpg');
+	background-image: url('homescreen_mobile.jpg');
     background-position: 0px 0px;
     background-size: cover;
 	background-repeat: repeat-x;
@@ -95,18 +95,9 @@ position: absolute;
     z-index: 1;
 }
 ul.menu li a{
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    display:inline-block;
-    padding: 10px;
-    text-decoration: none;
-    top: 10px;
-    
+    display: none;  
 }
 ul.menu li a:hover{
-    display: none;
     background-color: #d8d8d8;
     color: black;
 }

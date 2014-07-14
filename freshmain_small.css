@@ -58,7 +58,7 @@ to { background-position: 100% 0; }
 }
 
 #homescreen {
-	background-image: url('homescreen.jpg');
+	background-image: url('homescreen_small.jpg');
     background-position: 0px 0px;
     background-size: cover;
 	background-repeat: repeat-x;
