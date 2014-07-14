@@ -367,6 +367,7 @@ div form {
 }
 ul.vacc{
 list-style: none;
+padding-top: 72px;
 }
 /* This hides the radio buttons from the screen. */
 .vacc input {

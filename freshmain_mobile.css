@@ -80,7 +80,8 @@ position: absolute;
 .fixed {
 	position: fixed; 
 	top: 0; 
-	height: 50px; 
+	height: 50px;
+    width: 100%;
 	z-index: 10000;
     opacity: 0.9;  
 }
@@ -375,6 +376,7 @@ div form {
 }
 ul.vacc{
 list-style: none;
+padding-top: 52px;
 }
 /* This hides the radio buttons from the screen. */
 .vacc input {
