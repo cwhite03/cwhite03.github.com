@@ -102,11 +102,11 @@ ul.menu li a:hover{
     color: black;
 }
 .mobile_menu{
-    background-image: url('wddslogo.png');
+    background-image: url('menu-circle.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: block;
-    height: 50px;
+    height: 45px;
     position: absolute;
     top: 0px;
     right: 43%;
