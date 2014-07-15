@@ -121,13 +121,13 @@ ul.mmenu li a{
 /* Mobile Modal Menu */
 
 .mm_modalnav {
+    background: rgba(0,0,0,0.8);
         display:list-item;
 		position: fixed;
 		top: 0px;
 		right: 0px;
 		bottom: 0px;
 		left: 0px;
-		background: rgba(0,0,0,0.8);
 		z-index: 99999;
 		opacity:0;
 		-webkit-transition: opacity 400ms ease-in;
@@ -139,8 +139,7 @@ ul.mmenu li a{
     height: 100px;
     width: 300px;
     position: absolute;
-    top: 10vh;
-    left: 15vw;
+    
 }
 .mm_modalnav ul li a{
 display: flex;

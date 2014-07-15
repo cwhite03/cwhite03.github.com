@@ -99,9 +99,10 @@ ul.menu li a{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     font-size: 13px;
-    padding: 1em 1em;
+    padding: 1em 1.5em;
     line-height: 3.4em;
     text-decoration: none;
+    
 }
 ul.menu li a:hover{
     background-color: #d8d8d8;
@@ -253,7 +254,7 @@ p.wdds{
 }
 
 .main_title{
-padding-top: 20%;
+padding-top: 10%;
 }
 
 /*End of Panel Slider & Content*/
