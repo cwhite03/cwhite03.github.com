@@ -140,23 +140,22 @@ ul.mmenu li a:hover{
 		pointer-events: none;
 	}
 .mm_modalnav ul {
-    
-    display: inline-block;
-    height: 200px;
-    width: 300px;
     position: absolute;
-    top: 30%;
-    left:30%;
+    top: 20%;
+    left:25%;
     
 }
 .mm_modalnav ul a{
-display: flex;
 color: white;
+display:inline-block;
+float: left;
+width: 200px;
 justify-content: center;
 padding: 10px 10px 10px 10px;
+text-align: center;
 text-transform: uppercase;
 text-decoration: none;
-
+margin: 0;
 }
 
 	.mm_modalnav:target {
