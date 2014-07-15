@@ -386,7 +386,7 @@ div form {
 }
 ul.vacc{
 list-style: none;
-padding-top: 52px;
+padding-top: 50px;
 }
 /* This hides the radio buttons from the screen. */
 .vacc input {
@@ -398,6 +398,7 @@ label {
   font: 25px/4em 'Josefin Sans', sans-serif;
   height: 91.7px;
   opacity: 0.8;
+  padding:0px;
   position:static;
   text-align: center;
   width: 100%;
@@ -448,7 +449,7 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 .accslide {
   display:inline;
   height: 0px;
-  width: 0em;
+  width: 0px;
   padding: 0px;
   overflow: hidden;
   color: #333;
@@ -462,12 +463,10 @@ label:hover, #rad2 + label:hover, #rad3 + label:hover, #rad4 + label:hover {
 }
 h2.accs {
   width: 100%;
-  padding-left: 0px;
   padding-top: 10px;
 }
 p.accs {
   width: 100%;
-  padding-left: 10px;
 }
  
 
