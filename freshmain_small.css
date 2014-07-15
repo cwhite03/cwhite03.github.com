@@ -116,8 +116,8 @@ ul.mmenu li a{
     text-decoration: none;
 }
 ul.mmenu li a:hover{
-    background-color: #d8d8d8;
-    color: black;
+    color: #00d9ff;
+    font-weight: 800;
 }
 .mobile_menu{
     background-image: url('menu-circle.png');
