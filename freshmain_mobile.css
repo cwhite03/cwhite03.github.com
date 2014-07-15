@@ -102,12 +102,13 @@ ul.menu li a:hover{
     color: black;
 }
 .mobile_menu{
-    background-image: url('menu-burger.png');
+    background-image: url('wddslogo.png');
     background-repeat: no-repeat;
+    background-size: cover;
     display: block;
-    height: 35px;
+    height: 50px;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 43%;
 }
 ul.mmenu li a{
