@@ -139,7 +139,7 @@ ul.mmenu li a{
     height: 100px;
     width: 300px;
     position: absolute;
-    left: 13vw;
+    left: 22%;
     
 }
 .mm_modalnav ul li a{
@@ -167,6 +167,9 @@ text-decoration: none;
 		background: -webkit-linear-gradient(#fff, #999);
 		background: -o-linear-gradient(#fff, #999);
 	}
+.close{
+display: none;
+}
 /* End of Mobile Modal Menu */
 
 a.main_menu{
