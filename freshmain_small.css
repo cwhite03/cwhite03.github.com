@@ -108,6 +108,17 @@ ul.menu li a:hover{
     background-color: #d8d8d8;
     color: black;
 }
+ul.mmenu li a{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+ul.mmenu li a:hover{
+    background-color: #d8d8d8;
+    color: black;
+}
 .mobile_menu{
     background-image: url('menu-burger.png');
     background-repeat: no-repeat;
