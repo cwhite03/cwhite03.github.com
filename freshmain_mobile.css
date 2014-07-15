@@ -111,6 +111,16 @@ ul.menu li a:hover{
     top: 0px;
     right: 43%;
 }
+.mobile_menu:hover{
+    background-image: url('menu-circle_hover.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    right: 43%;
+}
 ul.mmenu li a{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -120,7 +130,6 @@ ul.mmenu li a{
 }
 ul.mmenu li a:hover{
     background-color: #d8d8d8;
-    color: black;
 }
 /* Mobile Modal Menu */
 

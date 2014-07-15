@@ -120,14 +120,22 @@ ul.mmenu li a:hover{
     color: black;
 }
 .mobile_menu{
-    background-image: url('menu-burger.png');
+    background-image: url('menu-circle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-top: 7px;
+    margin-left: 40px;
+    height: 50px;
+}
+.mobile_menu:hover {
+    background-image: url('menu-circle_hover.png');
     background-repeat: no-repeat;
     display: block;
-    margin-top: 17px;
-    margin-left: 30px;
-    height: 35px;
+    margin-top: 7px;
+    margin-left: 40px;
+    height: 50px;
 }
-
 /* Mobile Modal Menu */
 
 .mm_modalnav {

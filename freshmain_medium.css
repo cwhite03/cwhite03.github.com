@@ -101,12 +101,12 @@ ul.menu{
     display: -moz-flex;
     display: -ms-flex;
     display: flex;
-    float: left;
 }
 ul.menu li a{
     color: white;
     display:inline-block;
     font-family: 'Josefin Sans', sans-serif;
+    float: left;
     font-weight: 300;
     font-size: 15px;
     padding: 30px 20px 25px 20px;
