@@ -256,8 +256,11 @@ h1.wdds{
 }
 
 h2.wdds{
+  border-bottom: solid 2px;
+  border-top: solid 2px;
   font-size: 34px;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   text-align: center;
 }
 p.wdds{
