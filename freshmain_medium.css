@@ -40,41 +40,18 @@ body{ font-size: 14px; }
 /* ------- TITLE Panel------- */
 
 /* Screen Settings */
-@-webkit-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@-ms-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@-moz-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-
 #homescreen {
-	background-image: url('homescreen_medium.jpg');
+	background-image: url('tile1.jpg');
     background-position: 0px 0px;
     background-size: cover;
-	background-repeat: repeat-x;
-    
-    -webkit-animation: animatedBackground 40s linear infinite;
-    -moz-animation: animatedBackground 40s linear infinite;
-    -ms-animation: animatedBackground 40s linear infinite;
-     animation: animatedBackground 40s linear infinite;
 }
 /* End of Screen Settings */
 
 nav{
 position: absolute;
-	bottom: 0;
+    top: 625px;
 	width: 100%;
-	height: 70px;
+    
     z-index: 200;
 }
 /* This class is added on scroll */
@@ -88,7 +65,7 @@ position: absolute;
     z-index: 200;
 }
 .hnav{
-    background-color: black;
+    background-color: #121212;
     height:70px;
     justify-content: center;
     text-decoration: none;
@@ -114,10 +91,8 @@ ul.menu li a{
     text-decoration: none;
 }
 ul.menu li a:hover{
-    background-color: #d8d8d8;
-    box-shadow: 1px 1px 1px #000;
-    color: black;
-    font-weight: 400;
+    color: #00d9ff;
+    font-weight: 600;
 }
 div.cname {
     float:left;

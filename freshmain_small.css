@@ -40,33 +40,11 @@ body{ font-size: 14px; }
 /* ------- TITLE Panel------- */
 
 /* Screen Settings */
-@-webkit-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@-ms-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@-moz-keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-@keyframes animatedBackground {
-from { background-position: 0 0; }
-to { background-position: 100% 0; }
-}
-
 #homescreen {
-	background-image: url('homescreen_small.jpg');
+	background-image: url('tile1.jpg');
     background-position: 0px 0px;
     background-size: cover;
 	background-repeat: repeat-x;
-    
-    -webkit-animation: animatedBackground 40s linear infinite;
-    -moz-animation: animatedBackground 40s linear infinite;
-    -ms-animation: animatedBackground 40s linear infinite;
-     animation: animatedBackground 40s linear infinite;
 }
 /* End of Screen Settings */
 
@@ -94,19 +72,22 @@ position: absolute;
     width:100%;
     z-index: 1;
 }
+ul.menu{
+    float:right;
+}
 ul.menu li a{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 13px;
-    padding: 1em 1.5em;
     line-height: 3.4em;
+    padding: 1em 1em;
     text-decoration: none;
     
 }
 ul.menu li a:hover{
-    background-color: #d8d8d8;
-    color: black;
+    color: #00d9ff;
+    font-weight: 600;
 }
 ul.mmenu li a{
     color: white;
@@ -123,18 +104,20 @@ ul.mmenu li a:hover{
     background-image: url('menu-circle.png');
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
-    margin-top: 7px;
-    margin-left: 40px;
+    display: inline-block;
     height: 50px;
+    position: absolute;
+    top: 12px;
+    left: 30px;
 }
 .mobile_menu:hover {
     background-image: url('menu-circle_hover.png');
     background-repeat: no-repeat;
-    display: block;
-    margin-top: 7px;
-    margin-left: 40px;
+    display: inline-block;
     height: 50px;
+    position: absolute;
+    top: 12px;
+    left:30px;
 }
 /* Mobile Modal Menu */
 
