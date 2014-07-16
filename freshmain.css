@@ -93,13 +93,14 @@ ul.menu{
     display: -moz-flex;
     display: -ms-flex;
     display: flex;
-    justify-content:right;
+    float: right;
+    justify-content: flex-end;
 }
 ul.menu li a{
     color: #fff;
     display: inline-block;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     padding: 20px 20px 10px 20px;
     line-height: 1em;
@@ -107,7 +108,7 @@ ul.menu li a{
 }
 ul.menu li a:hover{
     color: #00d9ff;
-    font-weight: 600;
+    font-weight: 500;
 }
 div.cname {
     float:left;

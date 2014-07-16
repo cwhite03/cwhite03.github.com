@@ -74,7 +74,7 @@ position: absolute;
     opacity: 0.9;  
 }
 .hnav{
-    background-color: black;
+    background-color: #121212;
     display:inline-block;
     height:70px;
     justify-content: center;
@@ -519,7 +519,9 @@ input[type="radio"]:checked ~ .accslide {
 
 
 @media screen and (orientation: landscape) {
-  .page-container {
+  .page-container.section {
     -webkit-box-orient: horizontal;
     flex-direction: row;
-  }}
+  }
+    
+}
