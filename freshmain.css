@@ -82,7 +82,7 @@ ul.menu{
     display: -moz-flex;
     display: -ms-flex;
     display: flex;
-    justify-content:center;
+    justify-content:right;
 }
 ul.menu li a{
     color: #fff;
