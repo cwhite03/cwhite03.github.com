@@ -35,6 +35,17 @@ section {
 
 body{ font-size: 14px; }
 
+.page-container {
+    display: -webkit-box;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* ------- End of General CSS ------- */
 
 /* ------- TITLE Panel------- */
