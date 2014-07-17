@@ -63,7 +63,7 @@ nav{
     position: absolute;
 	top:0%;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 }
 /* This class is added on scroll */
 .fixed {
@@ -76,7 +76,7 @@ nav{
 .hnav{
     background-color: #121212;
     display:inline-block;
-    height:70px;
+    height:50px;
     justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ ul.menu li a{
     font-weight: 600;
     font-size: 13px;
     line-height: 3.4em;
-    padding: 1em 1em;
+    padding: 0.3em 1.5em;
     text-decoration: none;
     
 }
@@ -116,18 +116,18 @@ ul.mmenu li a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    height: 50px;
+    height: 20px;
     position: absolute;
-    top: 12px;
+    top: 4px;
     left: 30px;
 }
 .mobile_menu:hover {
     background-image: url('menu-circle_hover.png');
     background-repeat: no-repeat;
     display: inline-block;
-    height: 50px;
+    height: 20px;
     position: absolute;
-    top: 12px;
+    top: 4px;
     left:30px;
 }
 /* Mobile Modal Menu */
