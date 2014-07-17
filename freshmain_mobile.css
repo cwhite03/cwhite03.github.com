@@ -89,6 +89,9 @@ ul.menu li a:hover{
     color: #00d9ff;
     font-weight: 600;
 }
+
+div.main_menu {display: none;}
+
 .mobile_menu{
     background-image: url('menu-circle.png');
     background-repeat: no-repeat;
