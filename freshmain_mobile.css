@@ -272,7 +272,6 @@ padding-top: 0;
 /* ------- OUR PROCESS Panel------- */
 
 .tilePanel{
-margin-top: 50px;
 }
 .tileLine1{
     clear:left;
@@ -317,51 +316,47 @@ margin-top: 50px;
     width:200px;
     z-index: 1;
 }
-.tile1{
-    flex-shrink: 5;
-    height:370px; 
-    width:320px; 
-    margin:0px; 
-    padding:2px; 
-}
 .tile:hover{
   background: white;
     box-shadow: -5px -5px 70px #000;
     position: relative;
     z-index: 100000000;
-  
+}
+.tile1{
+    height:9.5vh; 
+    width:100vw; 
 }
 .tile2{
-    flex-shrink: 5;
-    height:234px;
-    width: 320px;
+   height:9.5vh; 
+    width:100vw;
 }
 .tile3{
-    flex-shrink: 0;
-    width:365px;
-    height: 200px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile4{
-    flex-shrink: 5;
-    width:665px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile5{
-    height: 120px;
-    width: 320px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile6{
-    height: 280px;
-    width: 320px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile7{
-    width: 710px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile8{
-    height: 200px;
-    width: 390px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tile9{
-    width: 320px;
+    height:9.5vh; 
+    width:100vw;
 }
 .tileLarge{  
 }
