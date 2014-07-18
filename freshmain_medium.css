@@ -179,80 +179,110 @@ padding-top: 15vh;
 
 /* ---- End of HOME Panel ---- */
 
-/* ------- ABOUT Panel------- */
 
-/* Screen Settings */
-#screen2 {
-	background: #fff;
+/* ------- OUR PROCESS Panel------- */
+
+.tilePanel{
+margin-top: 50px;
 }
-.about h1{
-color:#FFFFCC;
-float:left;
-font-size: 2em;
-font-family: 'Josefin Sans', sans-serif;
-text-transform: uppercase;
+.tileLine1{
+    clear:left;
+    flex-direction: column;
+    float: left;
 }
-article.about{
-background-image: url('tile.jpg');
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-position: bottom;
-box-shadow: 3px 3px 3px #000;
-color:#FF9E00;
-padding: 5em;
+.tileLine2{
+    clear:right;
+    flex-direction: column;
+    float: left;
 }
-div.about_content h2{
-background-color: #FFFFCC;
-box-shadow:0.2px 1px 0.5px 1px #000;
-color:#000;
-font-size: 1.5em;
-padding: 0.5em;
-width:17em;
+.tileLine3{
+    clear:right;
+    flex-direction: column;
+    float:right;
 }
-div.about_content {
-    background-color: #fff;
-    box-shadow:0.2px 1px 0.5px 1px #000;
-    opacity: 0.9;
-    padding:1em;
+.tileLine4{
+    clear: right;
+    flex-direction: column;
+    float:left;
 }
-div.about_content p{
-    padding:1em;
-    justify-content: center;
+.tileLine5{
+    clear: right;
+    flex-direction:column;
+    float:left;
+}
+.tileLine6{
+    clear: right;
+    flex-direction:column;
+    float: left;
+}
+.tileLine7{
+    clear: right;
+    flex-direction:column;
+    float: right;
+}
+.tile{
+    flex-shrink: 1;
+    margin:0px; 
+    padding:2px;
+    height: 200px;
+    width:200px;
+    z-index: 1;
+}
+.tile1{
+    flex-shrink: 5;
+    height:370px; 
+    width:320px; 
+    margin:0px; 
+    padding:2px; 
+}
+.tile:hover{
+  background: white;
+    box-shadow: -5px -5px 70px #000;
+    position: relative;
+    z-index: 100000000;
+  
+}
+.tile2{
+    flex-shrink: 5;
+    height:234px;
+    width: 320px;
+}
+.tile3{
+    flex-shrink: 0;
+    width:365px;
+    height: 200px;
+}
+.tile4{
+    flex-shrink: 5;
+    width:665px;
+}
+.tile5{
+    height: 120px;
+    width: 320px;
+}
+.tile6{
+    height: 280px;
+    width: 320px;
+}
+.tile7{
+    width: 710px;
+}
+.tile8{
+    height: 200px;
+    width: 390px;
+}
+.tile9{
+    width: 320px;
+}
+.tileLarge{  
 }
 
-/*Button CSS*/
-.button {
-   border-top: 1px solid #009ECE;
-   background: #009ECE;
-   background: -webkit-gradient(linear, left top, left bottom, from(#009ECE), to(#009ECE));
-   background: -webkit-linear-gradient(top, #009ECE, #009ECE);
-   background: -moz-linear-gradient(top, #009ECE, #009ECE);
-   background: -ms-linear-gradient(top, #009ECE, #009ECE);
-   background: -o-linear-gradient(top, #009ECE, #009ECE);
-   padding: 1em;
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 15px;
-   font-family: 'Josefin Sans', sans-serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button:hover {
-border-top-color: #fff;
-background: #fff;
-color: #000000;
-}
-/*End of Button CSS*/
+.excelsior{ background:#F7F7F7; } 
+.smile{ background:#DCDCDC; } 
+.freedom{ background:#F0F0F0; } 
+.nowhere{ background-color: #EDEDED; } 
 
-/* ---- End of ABOUT Panel ---- */
-
+/* ---- End of OUR PROCESS Panel ---- */
 /* ------- SERVICES Panel------- */
 
 /* Screen Settings */
