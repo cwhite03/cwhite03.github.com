@@ -571,6 +571,16 @@ position: relative;
  background-color: #00afe0;
  position: absolute;
 }
+.tile-freeconsulting .tile-secondary-content{
+ color: white;
+ height: 46vh;
+ width: 33.333vw;
+ background-color: #00afe0;
+ position: absolute;
+ transform: translate3d(-150%,0,0);
+ transition-duration: 350ms;
+ transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
 .tile-freeconsulting .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
@@ -579,11 +589,20 @@ position: relative;
     position: absolute;
   }
 .tile-freeconsulting .tile-primary-content p{
+    color: #fff;
     font-size: 2.8vw;
     font-weight:100;
     line-height: 1.1em;
     margin-top: 2em;
     padding: 0.2em;
+  }
+.tile-freeconsulting .tile-secondary-content p{
+    font-size: 2.8vw;
+    font-weight:100;
+    line-height: 1.1em;
+    margin-top: 1.5em;
+    padding: 0.2em;
+    position: absolute;
   }
 .tile-freeconsulting .tile-primary-content{
  color: #fff;
@@ -595,7 +614,87 @@ background-size: 50px 40px;
 background-position: 85% 90%; 
 position: absolute;
 }
+
+.tile-freeconsulting:hover .tile-primary-content p {
+transform: translate3d(150%,0,0);
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
+.tile-freeconsulting:hover .tile-secondary-content p {
+ transform: translate3d(172%,0,0);
+ transition-duration: 350ms;
+ transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
 /* ---- End of Free Consulting ---- */
+
+/* ---- Analytics ---- */
+.tile-freeconsulting{
+position: relative;
+}
+.tile-freeconsulting .tile-primary-content{
+ color: white;
+ height: 46vh;
+ width: 33.333vw;
+ background-color: #00afe0;
+ position: absolute;
+}
+.tile-freeconsulting .tile-secondary-content{
+ color: white;
+ height: 46vh;
+ width: 33.333vw;
+ background-color: #00afe0;
+ position: absolute;
+ transform: translate3d(-150%,0,0);
+ transition-duration: 350ms;
+ transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
+.tile-freeconsulting .tile-primary-content h2{
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 200;
+    margin: 1em;
+    position: absolute;
+  }
+.tile-freeconsulting .tile-primary-content p{
+    color: #fff;
+    font-size: 2.8vw;
+    font-weight:100;
+    line-height: 1.1em;
+    margin-top: 2em;
+    padding: 0.2em;
+  }
+.tile-freeconsulting .tile-secondary-content p{
+    font-size: 2.8vw;
+    font-weight:100;
+    line-height: 1.1em;
+    margin-top: 1.5em;
+    padding: 0.2em;
+    position: absolute;
+  }
+.tile-freeconsulting .tile-primary-content{
+ color: #fff;
+ height: 46vh;
+ width: 33.333vw;
+background-image: url('Twitter_logo_white.png');
+background-repeat: no-repeat;
+background-size: 50px 40px;
+background-position: 85% 90%; 
+position: absolute;
+}
+
+.tile-freeconsulting:hover .tile-primary-content p {
+transform: translate3d(150%,0,0);
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
+.tile-freeconsulting:hover .tile-secondary-content p {
+ transform: translate3d(172%,0,0);
+ transition-duration: 350ms;
+ transition-timing-function: cubic-bezier(0, 0, .40, 1);
+}
+
+/* ---- End of Analytics ---- */
+
 
 /* ---- End of OUR PROCESS Panel ---- */
 
