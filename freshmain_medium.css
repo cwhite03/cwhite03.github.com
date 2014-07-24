@@ -41,9 +41,10 @@ body{ font-size: 14px; }
 
 /* Screen Settings */
 #homescreen {
-	background-image: url('tile1.jpg');
+	background-image: url('home.jpg');
     background-position: 0px 0px;
-    background-size: cover;
+	background-repeat: no-repeat;
+    background-size: 1400px 800px;
 }
 /* End of Screen Settings */
 
