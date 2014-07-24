@@ -238,7 +238,7 @@ padding-top: 15vh;
 .masonry-list li{
     display: block;
     float: left;
-    height: 46vh;
+    height: 46.35vh;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
@@ -501,7 +501,7 @@ position: absolute;
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
- position: absolute;
+ position:fixed;
  top: 90.2%;
  left: 70%;
   -webkit-animation: learnMore 250ms;
@@ -526,7 +526,7 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
     line-height: 1.1em;
     margin: 0.5em 0 0;
     padding: 0.2em;
-    text-align: left;
+    text-align:center;
 }
 .tile-notemplates .tile-secondary-content h5{
     color: #fff;
