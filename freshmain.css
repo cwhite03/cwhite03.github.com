@@ -614,7 +614,6 @@ background-size: 50px 40px;
 background-position: 85% 90%; 
 position: absolute;
 }
-
 .tile-freeconsulting:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
 transition-duration: 350ms;
@@ -628,69 +627,90 @@ transition-timing-function: cubic-bezier(0, 0, .40, 1);
 /* ---- End of Free Consulting ---- */
 
 /* ---- Analytics ---- */
-.tile-freeconsulting{
+.tile-analytics{
 position: relative;
 }
-.tile-freeconsulting .tile-primary-content{
+.tile-analytics .tile-primary-content{
  color: white;
  height: 46vh;
  width: 33.333vw;
- background-color: #00afe0;
+ background-image: url('analytics.png');
+ background-repeat: no-repeat;
+ background-size: 50px 50px;
+ background-position: 50% 10%; 
+ background-color: #001742;
  position: absolute;
 }
-.tile-freeconsulting .tile-secondary-content{
+.tile-analytics .tile-secondary-content{
  color: white;
  height: 46vh;
  width: 33.333vw;
- background-color: #00afe0;
+ opacity: 0;
  position: absolute;
- transform: translate3d(-150%,0,0);
- transition-duration: 350ms;
- transition-timing-function: cubic-bezier(0, 0, .40, 1);
 }
-.tile-freeconsulting .tile-primary-content h2{
+.tile-analytics:hover .tile-secondary-content{
+opacity:1;
+}
+.tile-analytics .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
     font-weight: 200;
-    margin: 1em;
+    margin-top: 20.6em;
+    margin-left: 25.5em;
     position: absolute;
   }
-.tile-freeconsulting .tile-primary-content p{
+.tile-analytics .tile-primary-content p{
     color: #fff;
     font-size: 2.8vw;
     font-weight:100;
     line-height: 1.1em;
-    margin-top: 2em;
+    margin-top: 2.5em;
     padding: 0.2em;
+    text-align: center;
   }
-.tile-freeconsulting .tile-secondary-content p{
-    font-size: 2.8vw;
+.tile-analytics .tile-secondary-content p{
+    font-size: 2.5vw;
     font-weight:100;
     line-height: 1.1em;
-    margin-top: 1.5em;
+    margin-top: 2.3em;
+    padding: 0.2em;
+    text-align: center;
+  }
+.tile-analytics .tile-secondary-content h5{
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 0.1em;
+    margin-left: 25.3em;
     padding: 0.2em;
     position: absolute;
-  }
-.tile-freeconsulting .tile-primary-content{
- color: #fff;
- height: 46vh;
- width: 33.333vw;
-background-image: url('Twitter_logo_white.png');
-background-repeat: no-repeat;
-background-size: 50px 40px;
-background-position: 85% 90%; 
-position: absolute;
 }
-
-.tile-freeconsulting:hover .tile-primary-content p {
+.tile-analytics:hover .tile-secondary-content .arrow{
+ display: block;
+ background-image: url('arrow.png');
+ background-repeat: no-repeat;
+ height: 17px;
+ width: 21px;
+ position: absolute;
+ top: 90.2%;
+ left: 70%;
+  -webkit-animation: learnMoreana 250ms;
+  -moz-animation: learnMoreana 250ms;
+  -ms-animation: learnMoreana 250ms;
+  animation: learnMoreana 250ms;
+transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+}
+@-webkit-keyframes learnMoreana {
+    0%   {left: 60%; top: 90.2%;}
+    100%  {left:70%; top: 90.2%;}
+}
+.tile-analytics:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
 transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0, 0, .40, 1);
 }
-.tile-freeconsulting:hover .tile-secondary-content p {
- transform: translate3d(172%,0,0);
- transition-duration: 350ms;
- transition-timing-function: cubic-bezier(0, 0, .40, 1);
+.tile-analytics:hover .tile-primary-content h2{
+opacity: 0;
 }
 
 /* ---- End of Analytics ---- */
