@@ -54,7 +54,7 @@ body{ font-size: 14px; }
 
 /* Screen Settings */
 #homescreen {
-	background-image: url('tile1.jpg');
+	background-image: url('home.jpg');
     background-position: 0px 0px;
 	background-repeat: no-repeat;
     background-size: 1400px 800px;
@@ -162,22 +162,6 @@ display:none;
 background: white;
 }
 
-article.porfolio{
-background-image: url('hometile.jpg');
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-position: center;
-box-shadow: 3px 3px 3px #000;
-width:100%;
-font-size: 30px;
-font-family: 'Josefin Sans', sans-serif;
-font-style: italic;
-text-transform: uppercase;
-color:#fff;
-padding: 2.5em;
-}
-
 /*Panel & Content*/
 
 h1.wdds{
@@ -222,7 +206,7 @@ padding-top: 15vh;
 }
 .masonry-list {
   display:inline-block;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   height: 90vh;
   list-style: none;
   margin-top: 54px;
@@ -251,7 +235,7 @@ color: white;
 }
 .masonry-list h5 a:hover{
    color: #00d9ff;
-   font-weight: 100;
+   font-weight: 600;
 }
 .tile-case{
 position: relative;
@@ -259,14 +243,14 @@ position: relative;
 .tile-case .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     margin-top: 20.6em;
     margin-left: 25.5em;
     position: absolute;
   }
 .tile-case .tile-primary-content p{
     font-size: 2.8vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin: 0em 0 0;
     padding: 0.2em;
@@ -313,12 +297,12 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-case .tile-secondary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     padding: 1em;
 }
 .tile-case .tile-secondary-content p{
     font-size: 2.5vw;
-    font-weight: 200;
+    font-weight: 600;
     line-height: 1.1em;
     margin: 0.5em 0 0;
     padding: 0.2em;
@@ -327,8 +311,8 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-case .tile-secondary-content h5{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
-    margin-top: 1.3em;
+    font-weight: 600;
+    margin-top: 1.4em;
     margin-left: 25em;
     padding: 0.5em;
 }
@@ -360,7 +344,7 @@ position: relative;
 .tile-rd .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     margin: 1em;
     position: absolute;
   }
@@ -406,22 +390,22 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-rd .tile-secondary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     padding: 1em;
 }
 .tile-rd .tile-secondary-content p{
     font-size: 2.5vw;
-    font-weight: 200;
+    font-weight: 600;
     line-height: 1.1em;
-    margin: 0.5em 0 0;
+    margin: 0;
     padding: 0.2em;
     text-align: left;
 }
 .tile-rd .tile-secondary-content h5{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
-    margin-top: 1.3em;
+    font-weight: 600;
+    margin-top: 0;
     margin-left: 25em;
     padding: 0.5em;
 }
@@ -454,14 +438,14 @@ position: relative;
 .tile-notemplates .tile-primary-content h6{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     padding: 1em;
     text-shadow: 3px 1px 3px hsla(0,0%,0%,.7);
   }
 .tile-notemplates .tile-primary-content h2{
     color: #fff;
     font-size: 3vw;
-    font-weight: 100;
+    font-weight: 600;
     margin-top: 1.3em;
     padding: 0.5em;
     text-align: center;
@@ -469,7 +453,7 @@ position: relative;
   }
 .tile-notemplates .tile-primary-content p{
     font-size: 4vw;
-    font-weight:100;
+    font-weight:600;
     margin: 0em;
     padding: 0em;
     text-align: center;
@@ -516,22 +500,22 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-notemplates .tile-secondary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     padding: 1em;
 }
 .tile-notemplates .tile-secondary-content p{
     font-size: 2.5vw;
-    font-weight: 200;
+    font-weight: 600;
     line-height: 1.1em;
-    margin: 0.5em 0 0;
+    margin: 0;
     padding: 0.2em;
     text-align:center;
 }
 .tile-notemplates .tile-secondary-content h5{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
-    margin-top: 1.3em;
+    font-weight: 600;
+    margin-top: 0;
     margin-left: 25em;
     padding: 0.5em;
 }
@@ -584,21 +568,21 @@ position: relative;
 .tile-freeconsulting .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     margin: 1em;
     position: absolute;
   }
 .tile-freeconsulting .tile-primary-content p{
     color: #fff;
     font-size: 2.8vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 2em;
     padding: 0.2em;
   }
 .tile-freeconsulting .tile-secondary-content p{
     font-size: 2.8vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 1.5em;
     padding: 0.2em;
@@ -620,7 +604,7 @@ transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0, 0, .40, 1);
 }
 .tile-freeconsulting:hover .tile-secondary-content p {
- transform: translate3d(172%,0,0);
+ transform: translate3d(165%,0,0);
  transition-duration: 350ms;
  transition-timing-function: cubic-bezier(0, 0, .40, 1);
 }
@@ -654,15 +638,15 @@ opacity:1;
 .tile-analytics .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
-    margin-top: 20.6em;
+    font-weight: 600;
+    margin-top: 20.8em;
     margin-left: 25.5em;
     position: absolute;
   }
 .tile-analytics .tile-primary-content p{
     color: #fff;
     font-size: 2.8vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 2.5em;
     padding: 0.2em;
@@ -670,7 +654,7 @@ opacity:1;
   }
 .tile-analytics .tile-secondary-content p{
     font-size: 2.5vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 2.3em;
     padding: 0.2em;
@@ -679,8 +663,8 @@ opacity:1;
 .tile-analytics .tile-secondary-content h5{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
-    margin-top: 0.1em;
+    font-weight: 600;
+    margin-top: 0.2em;
     margin-left: 25.3em;
     padding: 0.2em;
     position: absolute;
@@ -739,14 +723,14 @@ opacity:1;
 .tile-pricing .tile-primary-content h2{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     margin: 1em;
     position: absolute;
   }
 .tile-pricing .tile-primary-content p{
     color: #fff;
     font-size: 2.8vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 2.5em;
     padding: 0.2em;
@@ -754,7 +738,7 @@ opacity:1;
   }
 .tile-pricing .tile-secondary-content p{
     font-size: 2vw;
-    font-weight:100;
+    font-weight:600;
     line-height: 1.1em;
     margin-top: 2.5em;
     padding: 0.2em;
@@ -763,7 +747,7 @@ opacity:1;
 .tile-pricing .tile-secondary-content h5{
     color: #fff;
     font-size: 1vw;
-    font-weight: 200;
+    font-weight: 600;
     margin-top: 4.1em;
     margin-left: 25.3em;
     padding: 0.2em;
