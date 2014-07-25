@@ -55,7 +55,7 @@ body{ font-size: 14px; }
 /* Screen Settings */
 #homescreen {
     background-attachment: fixed;
-	background-image: url('home.jpg');
+	background-image: url('../images/home.jpg');
     background-position: 0px 0px;
 	background-repeat: no-repeat;
     background-size: 1400px 800px;
@@ -114,7 +114,7 @@ ul.menu li a:hover{
 
 div.main_menu {
     float:left;
-    background-image: url(home-icon.png);
+    background-image: url(../images/home-icon.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ div.main_menu {
 }
 div.main_menu:hover {
     float:left;
-    background-image: url(home-icon-hover.png);
+    background-image: url(../images/home-icon-hover.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@ position: relative;
  color: white;
  height: 46vh;
  width: 33.333vw;
- background: url('tile3.jpg');
+ background: url('../images/tile3.jpg');
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -278,7 +278,7 @@ position: absolute;
 }
 .tile-case:hover .tile-secondary-content .arrow{
  display: block;
- background-image: url('arrow.png');
+ background-image: url('../images/arrow.png');
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
@@ -353,7 +353,7 @@ position: relative;
  color: white;
  height: 46vh;
  width: 33.333vw;
- background: url('responsive-design.jpg');
+ background: url('../images/responsive-design.jpg');
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -371,7 +371,7 @@ position: absolute;
 }
 .tile-rd:hover .tile-secondary-content .arrow{
  display: block;
- background-image: url('arrow.png');
+ background-image: url('../images/arrow.png');
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
@@ -464,7 +464,7 @@ position: relative;
  color: #fff;
  height: 46vh;
  width: 33.333vw;
- background: url('web-design-sketchbook.jpg');
+ background: url('../images/web-design-sketchbook.jpg');
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -481,7 +481,7 @@ position: absolute;
  position: absolute;
 }
 .tile-notemplates:hover .tile-secondary-content .arrow{
- background-image: url('arrow1.png');
+ background-image: url('../images/arrow1.png');
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
@@ -593,7 +593,7 @@ position: relative;
  color: #fff;
  height: 46vh;
  width: 33.333vw;
-background-image: url('Twitter_logo_white.png');
+background-image: url('../images/Twitter_logo_white.png');
 background-repeat: no-repeat;
 background-size: 50px 40px;
 background-position: 85% 90%; 
@@ -619,7 +619,7 @@ position: relative;
  color: white;
  height: 46vh;
  width: 33.333vw;
- background-image: url('analytics.png');
+ background-image: url('../images/analytics.png');
  background-repeat: no-repeat;
  background-size: 50px 50px;
  background-position: 50% 10%; 
@@ -672,7 +672,7 @@ opacity:1;
 }
 .tile-analytics:hover .tile-secondary-content .arrow{
  display: block;
- background-image: url('arrow.png');
+ background-image: url('../images/arrow.png');
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
@@ -756,7 +756,7 @@ opacity:1;
 }
 .tile-pricing:hover .tile-secondary-content .arrow{
  display: block;
- background-image: url('arrow.png');
+ background-image: url('../images/arrow.png');
  background-repeat: no-repeat;
  height: 17px;
  width: 21px;
@@ -786,7 +786,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 /* ------- SERVICES Panel------- */
 /* Screen Settings */
 #services {
-    background: url('environment.jpg');
+    background: url('../images/environment.jpg');
     background-attachment: fixed;
 	background-repeat: no-repeat;
     -webkit-background-size: cover;
