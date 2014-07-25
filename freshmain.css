@@ -54,6 +54,7 @@ body{ font-size: 14px; }
 
 /* Screen Settings */
 #homescreen {
+    background-attachment: fixed;
 	background-image: url('home.jpg');
     background-position: 0px 0px;
 	background-repeat: no-repeat;
@@ -783,10 +784,101 @@ transition-timing-function: cubic-bezier(0, 0, .40, 1);
 /* ---- End of OUR PROCESS Panel ---- */
 
 /* ------- SERVICES Panel------- */
-
 /* Screen Settings */
-#screen3 {
+#services {
+    background: url('environment.jpg');
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
 }
+/* End of Screen Settings */
+.box-list li{
+    display: block;
+    float: left;
+}
+.box-list.second{
+   margin-left: 10px;
+}
+.box { 
+    width: 56vw;
+    height: 50vh;
+}
+.one {
+    position: absolute;  /* remove from flow so sunset is placed on top */
+    background: #754719;
+    opacity: 0.6;
+    transform: skewX(-20deg);
+    top:230vh;
+    left:-4.93%;
+}
+.two {
+    /* skew back by negative of parent’s skew so contents is upright */
+    transform: skewX(0deg);
+    margin-left: 76px; /* give margin to push content away from left slanted edge */
+    opacity: 0.6;
+   background: #663300;
+   pointer-events: auto;    /* allow pointer events for the box */
+}
+.three {
+    position: absolute;  /* remove from flow so sunset is placed on top */
+    background: #94704D;
+    transform: skewX(-20deg);
+    opacity: 0.6;
+    top:230vh;
+    left:51%;
+}
+.four {
+    /* skew back by negative of parent’s skew so contents is upright */
+    transform: skewX(0deg);
+    margin-left: 150px; /* give margin to push content away from left slanted edge */
+    opacity: 0.6;
+   background: #855C33;
+   pointer-events: auto;    /* allow pointer events for the box */
+}
+.sklider {
+    /* set initial width */
+    width: 35vw;
+           
+    /* hide the content that overflows (to allow second box to show through) */
+   overflow: hidden;
+   display: inline-flex;
+           
+    /* skew container so that it has angled edge, and set up transition */
+   transform: skewX(-20deg);
+   transition: width 1.2s ease-in-out;
+    
+    /* give negative margin to remove gap caused by left hand skew */
+    position: absolute;
+   /* hide pointer events for unseen content */
+   pointer-events: none;
+}
+.sklider.ii{
+top:230vh;
+left:0%;
+margin-left:-10vw;  
+}
+.sklider.iv{
+top:230vh;
+left:50%;
+margin-left:-10vw;  
+}
+.sklider:hover {
+    width: 50vw;
+    opacity:2;
+}
+.one:hover + .sklider { 
+    width: 250px;
+    opacity: 1;
+}
+.three:hover + .sklider { 
+    width: 250px;
+    opacity: 1;
+}
+/* ---- End of SERVICES Panel ---- */
+
 
 /*{
 background-image: url('tile1.jpg');
@@ -906,9 +998,6 @@ input[type="radio"]:checked ~ .accslide {
   width: 30%;
 }
 /* End of CSS for Vertical Services Accordion */
-
-
-/* ---- End of SERVICES Panel ---- */
 
 /* ------- PORTFOLIO Panel------- */
 
