@@ -289,7 +289,7 @@ position: absolute;
   -moz-animation: learnMore 250ms;
   -ms-animation: learnMore 250ms;
   animation: learnMore 250ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 @-webkit-keyframes learnMore {
     0%   {left: 60%; top: 90.2%;}
@@ -329,7 +329,7 @@ transform: scale(1.2, 1.2);
 -ms-transform: scale(1.2, 1.2);
 -webkit-transform: scale(1.2, 1.2);
 transition-duration: 15000ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 .tile-case:hover .tile-primary-content h2{
 opacity: 0;
@@ -382,7 +382,7 @@ position: absolute;
   -moz-animation: learnMore 250ms;
   -ms-animation: learnMore 250ms;
   animation: learnMore 250ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 @-webkit-keyframes learnMore {
     0%   {left: 60%; top: 90.2%;}
@@ -422,7 +422,7 @@ transform: scale(1.2, 1.2);
 -ms-transform: scale(1.2, 1.2);
 -webkit-transform: scale(1.2, 1.2);
 transition-duration: 15000ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 .tile-rd:hover .tile-primary-content h2{
 opacity: 0;
@@ -492,7 +492,7 @@ position: absolute;
   -moz-animation: learnMore 250ms;
   -ms-animation: learnMore 250ms;
   animation: learnMore 250ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 @-webkit-keyframes learnMore {
     0%   {left: 60%; top: 90.2%;}
@@ -532,7 +532,7 @@ transform: scale(1.2, 1.2);
 -ms-transform: scale(1.2, 1.2);
 -webkit-transform: scale(1.2, 1.2);
 transition-duration: 15000ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 .tile-notemplates:hover .tile-primary-content h6{
 opacity: 0;
@@ -564,7 +564,7 @@ position: relative;
  position: absolute;
  transform: translate3d(-150%,0,0);
  transition-duration: 350ms;
- transition-timing-function: cubic-bezier(0, 0, .40, 1);
+ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .tile-freeconsulting .tile-primary-content h2{
     color: #fff;
@@ -602,12 +602,12 @@ position: absolute;
 .tile-freeconsulting:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
 transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0, 0, .40, 1);
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .tile-freeconsulting:hover .tile-secondary-content p {
  transform: translate3d(165%,0,0);
  transition-duration: 350ms;
- transition-timing-function: cubic-bezier(0, 0, .40, 1);
+ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 /* ---- End of Free Consulting ---- */
 
@@ -683,7 +683,7 @@ opacity:1;
   -moz-animation: learnMoreana 250ms;
   -ms-animation: learnMoreana 250ms;
   animation: learnMoreana 250ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 @-webkit-keyframes learnMoreana {
     0%   {left: 60%; top: 90.2%;}
@@ -692,7 +692,7 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-analytics:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
 transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0, 0, .40, 1);
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .tile-analytics:hover .tile-primary-content h2{
 opacity: 0;
@@ -767,7 +767,7 @@ opacity:1;
   -moz-animation: learnMoreana 250ms;
   -ms-animation: learnMoreana 250ms;
   animation: learnMoreana 250ms;
-transition-timing-function: cubic-bezier(0, 0, .80, .90); 
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
 }
 @-webkit-keyframes learnMoreana {
     0%   {left: 60%; top: 90.2%;}
@@ -776,7 +776,7 @@ transition-timing-function: cubic-bezier(0, 0, .80, .90);
 .tile-pricing:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
 transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0, 0, .40, 1);
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 
 /* ---- End of Pricing ---- */
@@ -809,24 +809,95 @@ transition-timing-function: cubic-bezier(0, 0, .40, 1);
 .one {
     position: absolute;  /* remove from flow so sunset is placed on top */
     background: #754719;
-    opacity: 0.6;
+    opacity: 0.7;
     transform: skewX(-20deg);
     top:230vh;
     left:-4.93%;
 }
+.one:hover + .two h2 {
+    color: #663300 !important;
+}
 .two {
     /* skew back by negative of parent’s skew so contents is upright */
-    transform: skewX(0deg);
     margin-left: 76px; /* give margin to push content away from left slanted edge */
-    opacity: 0.6;
    background: #663300;
+   opacity: 0.7;
    pointer-events: auto;    /* allow pointer events for the box */
+}
+.two:hover h2{
+text-decoration: none;
+top:2vh;
+margin: 0.5em;
+width:50vw;
+    transform: skewX(20deg) !important;
+    -webkit-transform: skewX(20deg) !important;
+    -moz-transform: skewX(20deg) !important;
+    -ms-transform: skewX(20deg) !important;
+    -o-transform: skewX(20deg) !important;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+
+}
+.two:hover .text-rotate{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover p{
+opacity: 1;
+margin-left: 8vw;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two h2{
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 200;
+    margin: 1em;
+    position: absolute;
+    text-transform: uppercase;
+    top:15vh;
+    left:8vw;
+    width: 40vh;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+  }
+.two p{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 200;
+    line-height: 1.1em;
+    margin-left: 60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 30vh;
+    width: 20vw;
+    top: 9vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+.two .text-rotate {
+                transform: rotate(-90deg);
+                -webkit- transform: rotate(-90deg);
+                -moz- transform: rotate(-90deg);
+                -ms- transform: rotate(-90deg);
 }
 .three {
     position: absolute;  /* remove from flow so sunset is placed on top */
     background: #94704D;
+    opacity: 0.7;
     transform: skewX(-20deg);
-    opacity: 0.6;
     top:230vh;
     left:51%;
 }
@@ -834,7 +905,7 @@ transition-timing-function: cubic-bezier(0, 0, .40, 1);
     /* skew back by negative of parent’s skew so contents is upright */
     transform: skewX(0deg);
     margin-left: 150px; /* give margin to push content away from left slanted edge */
-    opacity: 0.6;
+    opacity: 0.7;
    background: #855C33;
    pointer-events: auto;    /* allow pointer events for the box */
 }
@@ -866,16 +937,20 @@ left:50%;
 margin-left:-10vw;  
 }
 .sklider:hover {
-    width: 50vw;
+    width: 61vw;
     opacity:2;
+   transition-duration: 350ms;
+   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .one:hover + .sklider { 
     width: 250px;
-    opacity: 1;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .three:hover + .sklider { 
     width: 250px;
-    opacity: 1;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 /* ---- End of SERVICES Panel ---- */
 
