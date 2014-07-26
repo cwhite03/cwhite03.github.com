@@ -825,7 +825,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
    pointer-events: auto;    /* allow pointer events for the box */
 }
 .two:hover h2{
-text-decoration: none;
+text-decoration:underline;
 top:2vh;
 margin: 0.4em;
 width:50vw;
@@ -846,9 +846,15 @@ width:50vw;
     transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
-.two:hover p{
+.two:hover p.lead{
 opacity: 1;
-margin-left: 8vw;
+margin-left: 7vw;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover p.secondary{
+opacity: 1;
+margin-left: 31vw;
 transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
@@ -868,7 +874,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     -ms-transform: skewX(20deg);
     -o-transform: skewX(20deg);
   }
-.two p{
+.two p.lead {
     color: #fff;
     font-size: 1.5vw;
     font-weight: 200;
@@ -878,7 +884,26 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     position: absolute;
     height: 30vh;
     width: 20vw;
-    top: 9vw;
+    top: 5.8vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+.two p.secondary {
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 200;
+    line-height: 1.1em;
+    margin-left: 60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 30vh;
+    width: 20vw;
+    top: 5.8vw;
     text-align: left;
     text-transform: uppercase;
     transform: skewX(20deg);
