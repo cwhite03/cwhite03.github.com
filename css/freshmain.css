@@ -827,7 +827,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 .two:hover h2{
 text-decoration: none;
 top:2vh;
-margin: 0.5em;
+margin: 0.4em;
 width:50vw;
     transform: skewX(20deg) !important;
     -webkit-transform: skewX(20deg) !important;
@@ -943,12 +943,12 @@ margin-left:-10vw;
    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .one:hover + .sklider { 
-    width: 250px;
+    width: 5vw;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .three:hover + .sklider { 
-    width: 250px;
+    width: 5vw;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
