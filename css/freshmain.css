@@ -214,8 +214,8 @@ padding-top: 15vh;
   font-family: 'Josefin Sans', sans-serif;
   height: 93vh;
   list-style: none;
-  margin-top: 7vh;
-  margin-left: 0vh;
+  margin-top: 8vh;
+  margin-left: 1.2vw;
   padding: 0px;
   position: absolute;
   width: 100vw;
@@ -226,10 +226,11 @@ padding-top: 15vh;
   -o-font-smoothing: antialiased;
 }
 .masonry-list li{
+    box-shadow: 1px 2px 3px #000;
     display: block;
     float: left;
     height: 44.8vh;
-    margin: 1vh;
+    margin: 0.5vh;
     overflow: hidden;
     width: 32vw;
 }
@@ -262,7 +263,7 @@ position: relative;
   }
 .tile-case .tile-primary-content{
  color: white;
- height: 43vh;
+ height: 44.8vh;
  width: 32vw;
  background: url('../images/tile3.jpg');
 -webkit-background-size: cover;
@@ -274,7 +275,7 @@ position: absolute;
 }
 .tile-case .tile-secondary-content{
  color: white;
- height: 43vh;
+ height: 44.8vh;
  width: 32vw;
  background-color: hsla(0,0%,0%,.7);
  opacity: 0;
