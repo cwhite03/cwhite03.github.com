@@ -37,6 +37,10 @@ section {
 
 body{ font-size: 14px; }
 
+a {text-decoration: none;}
+a{color: #fff;}
+a:hover{color: #00d9ff;}
+
 .page-container {
     display: -webkit-box;
     display: flex;
@@ -691,7 +695,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .tile-analytics:hover .tile-primary-content p {
 transform: translate3d(150%,0,0);
-transition-duration: 350ms;
+transition-duration: 0.5ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .tile-analytics:hover .tile-primary-content h2{
@@ -813,32 +817,103 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     transform: skewX(-20deg);
     top:230vh;
     left:-4.93%;
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-ms-font-smoothing: antialiased;
+-o-font-smoothing: antialiased;
 }
-.one:hover + .two h2 {
-    color: #663300 !important;
+.one h2{
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 1em;
+    position: absolute;
+    text-transform: uppercase;
+    top:15vh;
+    left:30vw;
+    width: 40vh;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+  }
+.one p.lead {
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-left: -60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 30vh;
+    width: 20vw;
+    top: 5.8vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
 }
-.two {
-    /* skew back by negative of parent’s skew so contents is upright */
-    margin-left: 76px; /* give margin to push content away from left slanted edge */
-   background: #663300;
-   opacity: 0.7;
-   pointer-events: auto;    /* allow pointer events for the box */
+.one p.secondary {
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-left: -60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 30vh;
+    width: 20vw;
+    top: 5.8vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
 }
-.two:hover h2{
-text-decoration:underline;
-top:2vh;
-margin: 0.4em;
+.one h5 {
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-left: -60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 2vh;
+    width: 12vw;
+    top: 22.1vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+.one:hover h2{
+top:1vh;
+margin-left: -20vw;
 width:50vw;
-    transform: skewX(20deg) !important;
-    -webkit-transform: skewX(20deg) !important;
-    -moz-transform: skewX(20deg) !important;
-    -ms-transform: skewX(20deg) !important;
-    -o-transform: skewX(20deg) !important;
-    transition-duration: 350ms;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-
+transform: skewX(20deg) !important;
+-webkit-transform: skewX(20deg) !important;
+-moz-transform: skewX(20deg) !important;
+-ms-transform: skewX(20deg) !important;
+-o-transform: skewX(20deg) !important;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
-.two:hover .text-rotate{
+.one .text-rotate {
+transform: rotate(-90deg);
+-webkit- transform: rotate(-90deg);
+-moz- transform: rotate(-90deg);
+-ms- transform: rotate(-90deg);
+}
+.one:hover .text-rotate{
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -846,22 +921,59 @@ width:50vw;
     transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
-.two:hover p.lead{
-opacity: 1;
-margin-left: 7vw;
+.one:hover p.lead{
+margin-left: 9vw;
 transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
-.two:hover p.secondary{
-opacity: 1;
-margin-left: 31vw;
+.one:hover p.secondary{
+margin-left: 33vw;
 transition-duration: 350ms;
 transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.one:hover h5{
+color: #fff;
+margin-left: 36.6vw;
+text-decoration: none;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.one:hover .arrow{
+ display: block;
+ background-image: url('../images/arrow.png');
+ background-repeat: no-repeat;
+ height: 17px;
+ width: 21px;
+ position: absolute;
+ top: 90.4%;
+ transform: skewX(20deg);
+ left: 62.5%;
+  -webkit-animation: learnMore 700ms;
+  -moz-animation: learnMore 700ms;
+  -ms-animation: learnMore 700ms;
+  animation: learnMore 700ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
+}
+@-webkit-keyframes learnMore {
+    0%   {left: 0%; top: 90.4%;}
+    100%  {left:62.5%; top: 90.4%;}
+}
+
+.two {
+/* skew back by negative of parent’s skew so contents is upright */
+margin-left: 76px; /* give margin to push content away from left slanted edge */
+background: #663300;
+opacity: 0.7;
+pointer-events: auto;    /* allow pointer events for the box */
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-ms-font-smoothing: antialiased;
+-o-font-smoothing: antialiased;
 }
 .two h2{
     color: #fff;
     font-size: 2vw;
-    font-weight: 200;
+    font-weight: 600;
     margin: 1em;
     position: absolute;
     text-transform: uppercase;
@@ -877,8 +989,8 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 .two p.lead {
     color: #fff;
     font-size: 1.5vw;
-    font-weight: 200;
-    line-height: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
     margin-left: 60vw;
     padding: 0.2em;
     position: absolute;
@@ -896,7 +1008,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 .two p.secondary {
     color: #fff;
     font-size: 1.5vw;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.1em;
     margin-left: 60vw;
     padding: 0.2em;
@@ -912,12 +1024,91 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     -ms-transform: skewX(20deg);
     -o-transform: skewX(20deg);
 }
+.two h5 {
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1em;
+    margin-left: -60vw;
+    padding: 0.2em;
+    position: absolute;
+    height: 2vh;
+    width: 12vw;
+    top: 22.1vw;
+    text-align: left;
+    text-transform: uppercase;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
 .two .text-rotate {
                 transform: rotate(-90deg);
                 -webkit- transform: rotate(-90deg);
                 -moz- transform: rotate(-90deg);
                 -ms- transform: rotate(-90deg);
 }
+.two:hover h2{
+top:2vh;
+margin: 0.4em;
+width:50vw;
+transform: skewX(20deg) !important;
+-webkit-transform: skewX(20deg) !important;
+-moz-transform: skewX(20deg) !important;
+-ms-transform: skewX(20deg) !important;
+-o-transform: skewX(20deg) !important;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover .text-rotate{
+transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover p.lead{
+margin-left: 7vw;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover p.secondary{
+margin-left: 31vw;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.two:hover h5{
+color: #fff;
+margin-left: 35vw;
+text-decoration: none;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.sklider:hover .arrow{
+ display: block;
+ background-image: url('../images/arrow.png');
+ background-repeat: no-repeat;
+ height: 17px;
+ width: 21px;
+ position:absolute;
+ z-index: 1;
+ top: 45.1vh;
+ transform: skewX(20deg);
+ left: 39vw;
+  -webkit-animation: learnMore2 700ms;
+  -moz-animation: learnMore2 700ms;
+  -ms-animation: learnMore2 700ms;
+  animation: learnMore2 700ms;
+transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0); 
+}
+@-webkit-keyframes learnMore2 {
+    0%   {left: 0vw; top: 45.1vh;}
+    100%  {left:39vw; top: 45.1vh;}
+}
+
+
 .three {
     position: absolute;  /* remove from flow so sunset is placed on top */
     background: #94704D;
@@ -962,8 +1153,8 @@ left:50%;
 margin-left:-10vw;  
 }
 .sklider:hover {
-    width: 61vw;
-    opacity:2;
+   width: 61vw;
+   opacity:1 !important;
    transition-duration: 350ms;
    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
@@ -972,10 +1163,34 @@ margin-left:-10vw;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 }
-.three:hover + .sklider { 
+.three:hover + .sklider {
     width: 5vw;
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+.one:hover{
+background-color: #001742;
+opacity: 0.98;
+}
+.two:hover{
+background-color: #001742;
+opacity: 0.98;
+}
+#parent:hover #child{
+   color: #FF4500;
+   font-weight: 600;
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-ms-font-smoothing: antialiased;
+-o-font-smoothing: antialiased;
+}
+.three:hover{
+background-color: #001742;
+opacity: 0.98;
+}
+.four:hover{
+background-color: #001742;
+opacity: 0.98;
 }
 /* ---- End of SERVICES Panel ---- */
 
