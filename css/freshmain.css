@@ -1120,7 +1120,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 .four {
     /* skew back by negative of parent’s skew so contents is upright */
     transform: skewX(0deg);
-    margin-left: 150px; /* give margin to push content away from left slanted edge */
+    margin-left: 11vw; /* give margin to push content away from left slanted edge */
     opacity: 0.7;
    background: #855C33;
    pointer-events: auto;    /* allow pointer events for the box */
