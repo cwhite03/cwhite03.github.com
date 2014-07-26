@@ -799,6 +799,23 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     background-position: center;
 }
 /* End of Screen Settings */
+.servicebanner{
+    background: url('../images/servicebanner.png');
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: bottom;
+    height: 75vh;
+}
+.servicebanner h2{
+   color: #fff;
+    font-size: 2.5vw;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 1px 2px 2px #000;
+    padding-top: 14vh;
+  }
 .box-list li{
     display: block;
     float: left;
@@ -815,7 +832,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     background: #754719;
     opacity: 0.7;
     transform: skewX(-20deg);
-    top:230vh;
+    top:245vh;
     left:-4.93%;
 -webkit-font-smoothing: antialiased;
 -moz-font-smoothing: antialiased;
@@ -1114,7 +1131,7 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
     background: #94704D;
     opacity: 0.7;
     transform: skewX(-20deg);
-    top:230vh;
+    top:245vh;
     left:51%;
 }
 .four {
@@ -1143,12 +1160,12 @@ transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
    pointer-events: none;
 }
 .sklider.ii{
-top:230vh;
+top:245vh;
 left:0%;
 margin-left:-10vw;  
 }
 .sklider.iv{
-top:230vh;
+top:245vh;
 left:50%;
 margin-left:-10vw;  
 }
