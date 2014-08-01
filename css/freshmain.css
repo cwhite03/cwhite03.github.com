@@ -57,7 +57,7 @@ a {text-decoration: none;}
 /* Screen Settings */
 .homescreen {
     background-attachment: fixed;
-	background-image: url('../images/spiral-galaxy-m_sygll_0.jpg');
+	background-image: url('../images/home.jpg');
     background-position:top center;
     background-size: cover;
     position: relative;
@@ -111,7 +111,7 @@ font-size: 1.5vw;
 width: 18vw;
 padding: 1.1vw;
 margin-top: 0vh;
-margin-left: 5vw;
+margin-left: 0vw;
 position: absolute;
 top: 1vh;
 }
@@ -185,38 +185,43 @@ display:none;
 }
 
 .skew-title {
-  background-color: rgba(0,0,0,.85);
   color: #eee;
   opacity: 0;
   pointer-events: none;
   font-size: .75rem;
-  padding: 3rem;
-  position: absolute;
-  top: 0;
-  left: -4vw;
-  bottom: 0;
-  width: 15rem;
+  height: 100vh;
+  width: 25vw;
   z-index: 10;
-  transform: skew(-15deg,0);
+  -webkit-filter: grayscale(1) contrast(1.1);
+  -moz-filter: grayscale(1) contrast(1.1);
+  -ms-filter: grayscale(1) contrast(1.1);
+  -o-filter: grayscale(1) contrast(1.1);
+   filter: grayscale(1) contrast(1.1);
   transition: all .125s ease-in-out;
-}
-.skew-title h2{
-text-transform: skew(15deg,0);
-font-size: 1vw;
-
 }
 
 #parents:hover #children{
     opacity: 1;
     pointer-events: auto;
   }  
-
-.skewone {
+.skewtitle {
     background-attachment: fixed;
-	background-image: url('../images/spiral-galaxy-m_sygll_0.jpg');
+	background-image: url('../images/home.jpg');
     background-position:top center;
     background-size: cover;
-    transform: skew(-15deg,0);
+    transform: skew(-20deg,0);
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 65vw;
+    margin-left: -10vw;
+}
+.skewone {
+    background-attachment: fixed;
+	background-image: url('../images/home.jpg');
+    background-position:top center;
+    background-size: cover;
+    transform: skew(20deg,0);
      top: 0vh;
     margin-left: -10vw;
      height: 100vh;
@@ -224,67 +229,125 @@ font-size: 1vw;
 }
 .skewtwo {
     background-attachment: fixed;
-	background-image: url('../images/spiral-galaxy-m_sygll_0.jpg');
+	background-image: url('../images/home.jpg');
     background-position:top center;
     background-size: cover;
-    transform: skew(15deg,0);
+    transform: skew(-20deg,0);
     top: 0vh;
     margin-left: -10vw;
     height: 100vh;
     width: 45vw;
 }
+.skewtitleend {
+    background-attachment: fixed;
+	background-image: url('../images/home.jpg');
+    background-position:top center;
+    background-size: cover;
+    transform: skew(20deg,0);
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 65vw;
+    margin-left: -10vw;
+}
+.imagetitle{
+    pointer-events: auto;
+    position: absolute;
+    top: 0vh;
+    left: 3vw;
+    content: '';
+    height: 100vh;
+    width: 25vw;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+     transform: skewX(20deg);
+    -webkit-filter: grayscale(1) contrast(1.5);
+    -moz-filter: grayscale(1) contrast(1.5);
+    -ms-filter: grayscale(1) contrast(1.5);
+    -o-filter: grayscale(1) contrast(1.5);
+    filter: grayscale(1) contrast(1.5);
+    opacity: 0.9;
+}
 .imageuno {
     pointer-events: auto;
     position: absolute;
     top: 0vh;
-    left: 12vw;
+    left: 4vw;
     content: '';
     height: 100vh;
     width: 25vw;
     margin-left: 21vw;
-    -webkit-animation: moveThattile 10000ms infinite;
-   -moz-animation: moveThattile 10000ms infinite;
-   -ms-animation: moveThattile 1000ms infinite;
-   animation: moveThattile 10000ms infinite;
+    -webkit-animation: moveThattile 10000ms 2s;
+   -moz-animation: moveThattile 10000ms 2s;
+   -ms-animation: moveThattile 1000ms 2s;
+   animation: moveThattile 10000ms 2s;
    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-   transform: skewX(15deg);
-   -webkit-transform: skewX(15deg);
-   -webkit-filter: blur(2px);
-  filter: blur(2px);
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+     transform: skewX(-20deg);
+    -webkit-filter: grayscale(1) contrast(1.5);
+    -moz-filter: grayscale(1) contrast(1.5);
+    -ms-filter: grayscale(1) contrast(1.5);
+    -o-filter: grayscale(1) contrast(1.5);
+    filter: grayscale(1) contrast(1.5);
     opacity: 0.9;
 }
 @-webkit-keyframes moveThattile {
-    0%   {left: 0vw; top: 0vh;}
-    50%  {left:50vw; top: 0vh;}
-    100%  {left:12vw; top: 0vh;}
+    0%   {left: 4vw; top: 0vh;}
+    50%  {left:51vw; top: 0vh;}
+    100%  {left:4vw; top: 0vh;}
 }
 .imagedos{
     pointer-events: auto;
     position: absolute;
     top: 0vh;
-    left: 12vw;
+    left: -10vw;
     content: '';
     height: 100vh;
     width: 25vw;
-    margin-left: 58vw;
-    -webkit-animation: moveThattiletwo 10000ms infinite;
-   -moz-animation: moveThattiletwo 10000ms infinite;
-   -ms-animation: moveThattiletwo 1000ms infinite;
-   animation: moveThattiletwo 10000ms infinite;
+    margin-left: 59vw;
+    -webkit-animation: moveThattiletwo 10000ms 2s;
+   -moz-animation: moveThattiletwo 10000ms 2s;
+   -ms-animation: moveThattiletwo 1000ms 2s;
+   animation: moveThattiletwo 10000ms 2s;
    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-   transform: skew(-15deg);
-    -webkit-transform: skew(-15deg);
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    -webkit-filter: grayscale(1) contrast(1.5);
+    -moz-filter: grayscale(1) contrast(1.5);
+    -ms-filter: grayscale(1) contrast(1.5);
+    -o-filter: grayscale(1) contrast(1.5);
+    filter: grayscale(1) contrast(1.5);
     opacity: 0.9;
 }
 @-webkit-keyframes moveThattiletwo {
-    0%   {left: 0vw; top: 0vh;}
-    50%  {left:-50vw; top: 0vh;}
-    100%  {left: 12vw; top: 0vh;}
+    0%   {left: -10vw; top: 0vh;}
+    50%  {left:-57vw; top: 0vh;}
+    100%  {left: -10vw; top: 0vh;}
+}
+.imagetitleend{
+    pointer-events: auto;
+    position: absolute;
+    top: 0vh;
+    left: 72vw;
+    content: '';
+    height: 100vh;
+    width: 25vw;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+     transform: skewX(-20deg);
+    -webkit-filter: grayscale(1) contrast(1.5);
+    -moz-filter: grayscale(1) contrast(1.5);
+    -ms-filter: grayscale(1) contrast(1.5);
+    -o-filter: grayscale(1) contrast(1.5);
+    filter: grayscale(1) contrast(1.5);
+    opacity: 0.9;
 }
 /* ---- End of TITLE Panel ---- */
 
