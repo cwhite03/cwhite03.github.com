@@ -145,17 +145,24 @@ ul.menu li a{
 }
 .buttoncontain{
 transform: skewX(-20deg);
+height: 2vh;
 }
 a.navbutton{
-background-color: blue;
+background-color: hsla(0,0%,0%,.7);
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
 color: #fff;
-margin-top: 2.1vh;
+margin-top: 1.5vh;
 opacity: 0.75;
+line-height: 3vh;
 position: absolute;
-font-size: 1.5vw;
+font-size: 1.1vw;
+transform: skewX(20deg);
 padding: 10px 20px 10px 20px;
-left:85vw;
+left:87vw;
 }
+a.navbutton:hover{background-color: #000;}
 ul.menu li a:hover{
     color: #00d9ff;
     font-weight: 500;
@@ -418,7 +425,7 @@ padding-top: 15vh;
 .masonry-list li{
     display: block;
     float: left;
-    height: 44vh;
+    height: 46vh;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
