@@ -38,6 +38,7 @@ section {
 body{ font-size: 14px; }
 
 a {text-decoration: none;}
+a:hover{color: #00d9ff;}
 
 .page-container {
     display: -webkit-box;
