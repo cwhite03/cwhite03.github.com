@@ -216,42 +216,6 @@ $(document).ready(function() {
 </script>
 <!--End of jQuery for Fixed Navigation Effect-->
 
-<!--jQuery for Panel Slider-->                
-<script>
-$(document).ready(function(){
-  // find all slides
-  var slides = $('.main-slide');
-  // starting index
-  var i = 0;
-  // click listener
-  $('#main-slider-next').click(function(){
-    // find next index
-    // i + 1 or 0 if end of slides
-    i = ++i % slides.length;
-    // scroll to that index
-    $('.slider-wrapper').animate(
-      {'left' : -(slides.eq(i).position().left)},
-      600
-    );
-  });
-});
-</script>
-<!--End of jQuery for Panel Slider-->
-<script language="javascript">
-    $(document).ready(function() {
-        $("#link1").click(function() {
-            animate(".box-a", 'flash');
-            return false;
-        });
-    });
-    
-    function animate(element_ID, animation) {
-        $(element_ID).addClass(animation);
-        var wait = window.setTimeout( function(){
-            $(element_ID).removeClass(animation)}, 1300
-        );
-    }
-</script>
     
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
