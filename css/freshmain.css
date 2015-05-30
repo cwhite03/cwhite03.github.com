@@ -169,7 +169,7 @@ ul.menu{
     display: flex;
     position: absolute;
     margin-top: 2.6vh;
-    left:28vw;
+    left:35vw;
     width: 70vw;
 }
 ul.menu li a{
