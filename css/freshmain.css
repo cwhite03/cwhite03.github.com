@@ -168,9 +168,9 @@ ul.menu{
     display: flex;
     display: flex;
     position: absolute;
-    margin-top: 2.5vh;
+    margin-top: 2.6vh;
     left:28vw;
-    width: 62vw;
+    width: 70vw;
 }
 ul.menu li a{
     color: #fff;
