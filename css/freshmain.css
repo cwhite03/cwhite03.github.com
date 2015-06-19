@@ -40,7 +40,7 @@ section {
 /* ------- TITLE Panel------- */
 
 /* Screen Settings */
-.homescreen {
+.lander {
     background-attachment: fixed;
 	background-image: url('../images/home.jpg');
     background-position:top center;
@@ -90,65 +90,74 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 h1{
 font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight: 100;
 }
 h2{
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 span {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #f5d76e;
-  font-size: 40px;
-}
-
-.lander {
-	background: #2c3e50 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/144467/banner.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+color: whitesmoke;
+font-weight: 500;
+font-size: 40px;
 }
 
 .landercenter{
 position:absolute;
- top:220px;
+top:320px;
 margin:0;
+height:35vh;
+width:100vw;
 left:0;
- right:0;
+margin: 0 auto;
+right:0;
 }
+
 .title{
-  position: fixed;
-  top: 2vh;
-  left: 4vw;
-	width: 150px;
-	height: 32px;
-  z-index: 400;
+align-content: center;
+position: fixed;
+top: 1vh;
+left: 4vw;
+width: 100px;
+height: 50px;
+z-index: 400;
 }
+
+.landercenter h3{
+color: whitesmoke;
+font-size: 2.5em;
+font-weight: 500;
+opacity: 1 !important;
+}
+
 .title h4{
-  color: #f5d76e;
- font-size: 2em;
+color: white;
+font-size: 2em;
+text-decoration: none;
 }
+
 .menu {
-	cursor: pointer;
-	display: block;
-	margin: auto;
-	width: 35px;
-	height: 40px;
-  left: 90vw;
-  margin: 0px;
-  opacity: 1 !important;
-	position: fixed;
-  top: 3vh;
-  transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  z-index: 400;
+cursor: pointer;
+display: block;
+margin: auto;
+width: 35px;
+height: 30px;
+left: 90vw;
+margin: 0px;
+opacity: 1 !important;
+position: fixed;
+top: 3vh;
+transition: all 0.5s;
+-moz-transition: all 0.5s;
+-webkit-transition: all 0.5s;
+z-index: 400;
 }
 
 .menu span {
-	border-top: 2px solid #f5d76e;
-	width: 100%;
-	position: absolute;
+border-top: 2px solid white;
+width: 100%;
+position: absolute;
 }
 .menu .menu-top, .menu .menu-middle, .menu .menu-bottom {	
   -moz-transition: all 0.5s;
