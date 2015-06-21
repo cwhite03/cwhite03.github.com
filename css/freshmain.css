@@ -566,3 +566,45 @@ animation: cd-bounce-2-inverse 1s;
 
 }
 /*------End of Services CSS------*/
+
+
+/*------Beginning of ABOUT CSS------*/
+
+#abouttitle{
+padding-top: 80px;
+padding-bottom:40px;
+}
+
+.atitle{
+padding-top: 30px;
+position: relative;
+width: 100%;
+text-align: center;
+}
+.atitle span{
+font-size: 5vw;
+}
+
+#aboutarticles{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#aboutarticles article{
+font-family:;
+padding: 0px 20px;
+width:300px;
+}
+
+#welcomearticle{
+text-align: right;
+font-size: 24px;
+}
+
+#sidearticle{
+text-align: left;
+font-size: 14px;
+}
+/*------End of ABOUT CSS------*/
