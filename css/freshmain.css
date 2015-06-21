@@ -46,8 +46,8 @@ section {
     background-position:top center;
     background-size: cover;
     position: relative;
-    width: 100%;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
     -webkit-animation: fadein ease-in-out 2s; /* Safari and Chrome */
        -moz-animation: fadein ease-in-out 2s; /* Firefox */
@@ -87,6 +87,11 @@ section {
 /* End of Screen Settings */
 body{
 font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 h1{
 font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -132,17 +137,27 @@ right:0;
 .title{
 align-content: center;
 position: fixed;
-top: 1vh;
-left: 4vw;
+top: 0;
+left: 8vw;
 width: 100px;
 height: 50px;
+vertical-align: middle;
 z-index: 400;
 }
 
+.title h4{
+color: white;
+font-size: 1.8em;
+padding: 10px;
+text-decoration: none;
+}
+
 .landercenter h1{
+font-size: 4vw;
 color: whitesmoke;
 position: relative;
 top:18vh;
+text-align: center;
 }
 
 .quotebtn{
@@ -152,17 +167,12 @@ top: 18vh;
 
 .landercenter h3{
 color: whitesmoke;
-font-size: 2.5em;
+font-size: 3vw;
 font-weight: 500;
 opacity: 1 !important;
 position: relative;
+text-align: center;
 top:18vh;
-}
-
-.title h4{
-color: white;
-font-size: 2em;
-text-decoration: none;
 }
 
 .menu {
@@ -171,11 +181,11 @@ display: block;
 margin: auto;
 width: 35px;
 height: 30px;
-left: 90vw;
+left: 85vw;
 margin: 0px;
 opacity: 1 !important;
 position: fixed;
-top: 3vh;
+top: 23px;
 transition: all 0.5s;
 -moz-transition: all 0.5s;
 -webkit-transition: all 0.5s;
@@ -201,8 +211,8 @@ transition: all 0.5s;
  	backface-visibility: hidden;
 }
 
-.menu .menu-bottom {
-	top: 0;
+.menu .menu-top {
+	top: 0px;
 }
 
 .menu .menu-middle {
@@ -239,6 +249,7 @@ transition: all 0.5s;
     top: 20px;
    border-color: #f5d76e;
 }
+
 .compbanner{
   background:  #30363d;
   color: white;
@@ -260,13 +271,13 @@ color: white;
 display:none;
 flex-wrap: wrap;
 justify-content: center;
-width: 100%;
 padding-bottom: 10px;
 padding-top: 20px;
 position: fixed;
 top:75px;
 transition: 0.5s;
 left: 0;
+width:100%;
 z-index:600;
 }
 
