@@ -335,6 +335,49 @@ transition: 0.5s;
   opacity: 1 !important;
 }
 
+/*------Beginning of ABOUT CSS------*/
+
+#abouttitle{
+padding-top: 150px;
+padding-bottom:40px;
+}
+
+.atitle{
+padding-top: 30px;
+position: relative;
+width: 100%;
+text-align: center;
+}
+.atitle span{
+font-size: 5vw;
+}
+
+#aboutarticles{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+padding-bottom: 100px;
+}
+
+#aboutarticles article{
+font-family:;
+padding: 0px 20px;
+width:300px;
+}
+
+#welcomearticle{
+text-align: right;
+font-size: 24px;
+}
+
+#sidearticle{
+text-align: left;
+font-size: 14px;
+}
+/*------End of ABOUT CSS------*/
+
+
 /*------Services CSS---------*/
 .parallax-one {
 text-align: center;
@@ -344,7 +387,7 @@ overflow: hidden;
 position: relative; 
 width: 100%; 
 background-image: url(
-"../images/tile1.jpg");
+"../images/homescreen_medium.jpg");
 background-attachment: fixed; 
 background-size: cover; 
 -moz-background-size: cover; 
@@ -365,7 +408,13 @@ padding-bottom:40px;
     display: inline-block;
 }
 
+.process span{
+font-size: 5vw;
+}
 
+.process h1{
+
+}
 
 /*****************************************************************************************************************/
 
@@ -593,47 +642,12 @@ animation: cd-bounce-2-inverse 1s;
 /*------End of Services CSS------*/
 
 
-/*------Beginning of ABOUT CSS------*/
 
-#abouttitle{
-padding-top: 150px;
-padding-bottom:40px;
-}
+/*------Beginning of PORTFOLIO CSS------*/
 
-.atitle{
-padding-top: 30px;
-position: relative;
-width: 100%;
-text-align: center;
-}
-.atitle span{
-font-size: 5vw;
-}
 
-#aboutarticles{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-padding-bottom: 100px;
-}
 
-#aboutarticles article{
-font-family:;
-padding: 0px 20px;
-width:300px;
-}
-
-#welcomearticle{
-text-align: right;
-font-size: 24px;
-}
-
-#sidearticle{
-text-align: left;
-font-size: 14px;
-}
-/*------End of ABOUT CSS------*/
+/*------End PORTFOLIO CSS------*/
 
 #portfoliotitle{
 padding-top: 150px;
