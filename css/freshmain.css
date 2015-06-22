@@ -42,7 +42,7 @@ section {
 /* Screen Settings */
 .lander {
     background-attachment: fixed;
-	background-image: url('../images/home.jpg');
+    background-image: url(../images/maintile.png);
     background-position:top center;
     background-size: cover;
     position: relative;
@@ -168,11 +168,16 @@ top: 18vh;
 .landercenter h3{
 color: whitesmoke;
 font-size: 3vw;
-font-weight: 500;
+font-weight: 300;
 opacity: 1 !important;
+padding-top: 50px;
 position: relative;
 text-align: center;
 top:18vh;
+}
+
+.thumbsup{
+font-size: 5vw;
 }
 
 .menu {
@@ -331,13 +336,27 @@ transition: 0.5s;
 }
 
 /*------Services CSS---------*/
+.parallax-one {
+text-align: center;
+padding-top: 100px; 
+padding-bottom: 100px; 
+overflow: hidden; 
+position: relative; 
+width: 100%; 
+background-image: url(
+"../images/tile1.jpg");
+background-attachment: fixed; 
+background-size: cover; 
+-moz-background-size: cover; 
+-webkit-background-size: cover; 
+background-repeat: no-repeat; 
+background-position: bottom center;
+}
+
 #services {
-padding-top: 80px;
+padding-top: 50px;
 padding-bottom:40px;
 }
-}
-
-
 
 .set_size_section1 {
     margin-left: auto;
@@ -596,6 +615,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+padding-bottom: 100px;
 }
 
 #aboutarticles article{
