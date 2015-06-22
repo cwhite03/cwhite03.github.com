@@ -154,7 +154,7 @@ text-decoration: none;
 
 .landercenter h1{
 font-size: 4vw;
-color: whitesmoke;
+color: black;
 position: relative;
 top:18vh;
 text-align: center;
@@ -166,7 +166,7 @@ top: 18vh;
 }
 
 .landercenter h3{
-color: whitesmoke;
+color: black;
 font-size: 3vw;
 font-weight: 300;
 opacity: 1 !important;
@@ -412,8 +412,11 @@ padding-bottom:40px;
 font-size: 5vw;
 }
 
-.process h1{
-
+#process h1{
+font-size: 4vw;
+color: black;
+position: relative;
+text-align: center;
 }
 
 /*****************************************************************************************************************/
