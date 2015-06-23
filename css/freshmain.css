@@ -45,6 +45,9 @@ section {
     background-image: url(../images/maintile.png);
     background-position:top center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -108,7 +111,6 @@ left: 0;
 right: 0;
 margin: auto;
 font-weight: 200;
-font-size: 40px;
 }
 
 .fk{
@@ -153,31 +155,32 @@ text-decoration: none;
 }
 
 .landercenter h1{
-font-size: 4vw;
+font-size: 6vh;
 color: black;
 position: relative;
-top:18vh;
+top:20vh;
 text-align: center;
 }
 
 .quotebtn{
 position: relative;
-top: 18vh;
+top: 20vh;
 }
 
 .landercenter h3{
 color: black;
-font-size: 3vw;
-font-weight: 300;
+font-size: 4vh;
+font-weight: 100;
 opacity: 1 !important;
 padding-top: 50px;
 position: relative;
 text-align: center;
-top:18vh;
+top:16vh;
 }
 
 .thumbsup{
 font-size: 5vw;
+font-weight: 400;
 }
 
 .menu {
@@ -349,7 +352,7 @@ width: 100%;
 text-align: center;
 }
 .atitle span{
-font-size: 5vw;
+font-size: 4vw;
 }
 
 #aboutarticles{
@@ -357,23 +360,23 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
-padding-bottom: 100px;
+padding-bottom: 170px;
 }
 
 #aboutarticles article{
 font-family:;
-padding: 0px 20px;
+padding: 0px 20px 7px;
 width:300px;
 }
 
 #welcomearticle{
 text-align: right;
-font-size: 24px;
+font-size: 25px;
 }
 
 #sidearticle{
 text-align: left;
-font-size: 14px;
+font-size: 18px;
 }
 /*------End of ABOUT CSS------*/
 
@@ -390,8 +393,9 @@ background-image: url(
 "../images/homescreen_medium.jpg");
 background-attachment: fixed; 
 background-size: cover; 
+-webkit-background-size: cover;
 -moz-background-size: cover; 
--webkit-background-size: cover; 
+-o-background-size: cover;
 background-repeat: no-repeat; 
 background-position: bottom center;
 }
@@ -409,7 +413,7 @@ padding-bottom:40px;
 }
 
 .process span{
-font-size: 5vw;
+font-size: 6vh;
 }
 
 #process h1{
@@ -655,4 +659,24 @@ animation: cd-bounce-2-inverse 1s;
 #portfoliotitle{
 padding-top: 150px;
 padding-bottom:40px;
+}
+
+
+/*------MEDIA QUERY CSS------*/
+
+
+@media screen and (max-width: 400px){
+
+.atitle span{
+font-size: 3.5vh;
+}
+
+#welcomearticle{
+text-align:left;
+}
+
+#sidearticle{
+text-align: justify;    
+}
+
 }
