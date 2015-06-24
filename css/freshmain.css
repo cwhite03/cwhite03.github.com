@@ -125,7 +125,7 @@ color: wheat;
 left: 0;
 right: 0;
 margin: auto;
-font-weight: 200;
+font-weight: 100;
 }
 
 .fk{
@@ -195,7 +195,6 @@ top:16vh;
 
 .thumbsup{
 font-size: 5vw;
-font-weight: 400;
 }
 
 .menu {
@@ -702,7 +701,11 @@ top:10vh;
 .quotebtn{
 top: 12vh;
 }
-    
+
+.thumbsup{
+font-size: 8vw;
+
+}
 /*------End of Lander Panel CSS------*/
     
 /*------About Panel CSS------*/
