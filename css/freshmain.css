@@ -33,7 +33,14 @@ IX.      Footer
 section {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:left}
+.block {background: white; padding: 60px;width: 80%; margin:0 auto; text-align:left}
+
+.paneltitle{
+font-size: 8vw;
+text-align: center;
+padding: 0;
+margin: 0 auto;
+}
 
 /* ------- End of General CSS ------- */
 
@@ -104,6 +111,14 @@ h2{
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+.kbtag{
+font-size: 16px;
+font-weight: 200;
+padding-top: 10px;
+position: relative;
+text-align: center;
+}
+
 span {
 font-family: Sans-serif;
 color: wheat;
@@ -155,7 +170,7 @@ text-decoration: none;
 }
 
 .landercenter h1{
-font-size: 6vh;
+font-size: 6vw;
 color: black;
 position: relative;
 top:20vh;
@@ -344,11 +359,20 @@ transition: 0.5s;
 padding-top: 150px;
 padding-bottom:40px;
 }
+.about{
+font-size: 6vw;
+text-align: center;
+padding: 0;
+margin: 0 auto;
+}
 
 .atitle{
+left: -20%;
+right: 0;
+margin: 0;
 padding-top: 30px;
 position: relative;
-width: 100%;
+width: 100vw;
 text-align: center;
 }
 .atitle span{
@@ -384,8 +408,8 @@ font-size: 18px;
 /*------Services CSS---------*/
 .parallax-one {
 text-align: center;
-padding-top: 100px; 
-padding-bottom: 100px; 
+padding-top: 120px; 
+padding-bottom: 40px; 
 overflow: hidden; 
 position: relative; 
 width: 100%; 
@@ -413,14 +437,7 @@ padding-bottom:40px;
 }
 
 .process span{
-font-size: 6vh;
-}
-
-#process h1{
-font-size: 4vw;
-color: black;
-position: relative;
-text-align: center;
+font-size: 5vw;
 }
 
 /*****************************************************************************************************************/
@@ -517,10 +534,6 @@ text-align: center;
     text-align: center;
 }
 
-.services_p {
-font-size: 15px;
-}
-
 .section1_article {
     text-align: center;
 }
@@ -541,8 +554,7 @@ font-size: 25px;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 word-spacing: 1px;
 text-align: left;
-  /* font-family: 'Roboto Slab', sans-serif; */
-  font-size: 16px;
+font-size: 16px;
   }
 
 .article_center2 {
@@ -671,13 +683,36 @@ padding-bottom:40px;
 /*------iPhone 4, 5, 6, 6-Plus, S3, S4, S5, S6, Note I, Note II, Note III, and Nexus Series------*/
 
 /*------Lander Panel CSS------*/
+
+.title{
+left: 2vw;
+}
     
+.landercenter h1{
+font-size: 41px;
+top:10vh;
+}
+
+.landercenter h3{
+font-size: 4vh;
+padding: 0;
+top:10vh;
+}
+    
+.quotebtn{
+top: 12vh;
+}
     
 /*------End of Lander Panel CSS------*/
     
 /*------About Panel CSS------*/
-.atitle span{
-font-size: 3.5vh;
+.block{
+width: 100%;
+padding: 0;
+}
+    
+.atitle{
+left: 0;
 }
 
 #welcomearticle{
