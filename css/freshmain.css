@@ -167,7 +167,7 @@ left: 8vw;
 width: 100px;
 height: 50px;
 vertical-align: middle;
-z-index: 400;
+z-index: 600;
 }
 
 .title h4{
@@ -219,7 +219,7 @@ top: 23px;
 transition: all 0.5s;
 -moz-transition: all 0.5s;
 -webkit-transition: all 0.5s;
-z-index: 400;
+z-index: 600;
 }
 
 .menu span {
@@ -291,7 +291,7 @@ transition: all 0.5s;
   height:75px;
   text-align: left;
   vertical-align: middle;
-  z-index: 2;
+  z-index: 500;
 }
 
 .navmenu {
@@ -393,12 +393,12 @@ width:300px;
 
 #welcomearticle{
 text-align: right;
-font-size: 25px;
+font-size: 24px;
 }
 
 #sidearticle{
 text-align: left;
-font-size: 18px;
+font-size: 16px;
 }
 /*------End of ABOUT CSS------*/
 
@@ -661,23 +661,70 @@ padding-top: 150px;
 padding-bottom:40px;
 }
 
+#flexportfolio{
+padding-top: 150px;
+position: relative;
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+}
+
 #diamond{
-margin: 40px auto 0;
-width: 30%;
-height: 450px;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+margin: -200px auto 0px;
+width:420px;
 padding: 3em;
 transition: all 1s ease;
+}
+
+#diamond article{
+visibility: hidden;
+}
+
+.d1{
+background-image: url(../images/sbpalgebra-cs.png);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
 -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+z-index: 100;
+
 }
-#diamond:hover{
+
+.d1:hover{
 -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
 clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
 }
-.d1{
-height: 50vh;
-width: 32vw;
-background-color: aqua;
+
+#diamond:hover article{
+position:relative;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+visibility: visible;
+background-color: white;
+opacity: 0.95;
+padding: 20px;
+margin: 0;
+}
+
+.d2{
+background-image: url(../images/environment.jpg);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.d2:hover{
+-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+z-index: 150;
 }
 
 /*------MEDIA QUERY CSS------*/
@@ -741,7 +788,10 @@ text-align: justify;
 
     
 /*------Portfolio Panel CSS------*/
-
+    #diamond{
+    height: 100%;
+    width:100%;
+    }
 /*------End of Portfolio Panel CSS------*/
 
     
