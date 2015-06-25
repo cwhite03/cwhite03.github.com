@@ -42,6 +42,14 @@ padding: 0;
 margin: 0 auto;
 }
 
+.kirbybwaii{
+font-size: 3vw;
+padding-top: 30px;
+position: relative;
+width: 100%;
+text-align: center;
+}
+
 /* ------- End of General CSS ------- */
 
 /* ------- TITLE Panel------- */
@@ -112,7 +120,7 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .kbtag{
-font-size: 16px;
+font-size: 20px;
 font-weight: 200;
 padding-top: 10px;
 position: relative;
@@ -365,15 +373,6 @@ padding: 0;
 margin: 0 auto;
 }
 
-.atitle{
-left: -20%;
-right: 0;
-margin: 0;
-padding-top: 30px;
-position: relative;
-width: 100vw;
-text-align: center;
-}
 .atitle span{
 font-size: 4vw;
 }
@@ -428,16 +427,6 @@ padding-top: 50px;
 padding-bottom:40px;
 }
 
-.set_size_section1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    display: inline-block;
-}
-
-.process span{
-font-size: 5vw;
-}
 
 /*****************************************************************************************************************/
 
@@ -672,6 +661,24 @@ padding-top: 150px;
 padding-bottom:40px;
 }
 
+#diamond{
+margin: 40px auto 0;
+width: 30%;
+height: 450px;
+padding: 3em;
+transition: all 1s ease;
+-webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+#diamond:hover{
+-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.d1{
+height: 50vh;
+width: 32vw;
+background-color: aqua;
+}
 
 /*------MEDIA QUERY CSS------*/
 
