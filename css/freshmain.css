@@ -363,9 +363,9 @@ transition: 0.5s;
 /*------Beginning of ABOUT CSS------*/
 
 #abouttitle{
-padding-top: 150px;
-padding-bottom:40px;
+padding: 20px 0px;
 }
+
 .about{
 font-size: 6vw;
 text-align: center;
@@ -501,8 +501,7 @@ font-size: 16px;
 /*------End PORTFOLIO CSS------*/
 
 #portfoliotitle{
-padding-top: 150px;
-padding-bottom:40px;
+padding-top: 100px;
 }
 
 #flexportfolio{
@@ -560,7 +559,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #casestudy1{
-padding:20px;
+padding:0px 20px;
 width:360px;
 }
 
@@ -590,8 +589,10 @@ background-position: bottom center;
 
 .contact h4{
 color:white;
+margin: 0 auto;
 width: 100%;
 text-align: center;
+padding-bottom: 50px;
 }
 
 .contact a{
@@ -610,11 +611,12 @@ display: flex;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
+height: 250px;
 }
 
 .contactinfo div{
 height:150px;
-padding-top: 25px;
+padding-top: 80px;
 width: 300px;
 text-align: center;
 }
