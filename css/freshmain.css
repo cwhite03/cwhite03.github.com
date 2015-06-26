@@ -603,6 +603,30 @@ text-decoration: none;
 
 
 
+/*------Beginning of Footer Panel CSS------*/
+
+.contactinfo{
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.contactinfo div{
+height:150px;
+padding-top: 25px;
+width: 300px;
+text-align: center;
+}
+
+.footertag{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+padding-bottom: 20px;
+text-align: center;
+width: 100%;
+}
+
+/*------End of Footer Panel CSS------*/
 
 
 
