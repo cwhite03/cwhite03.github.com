@@ -574,6 +574,38 @@ z-index: 150;
 padding:20px;
 width:50%;
 }
+
+/*------Beginning of Contact Panel CSS------*/
+
+.contact{
+text-align: center;
+padding-top: 60px; 
+padding-bottom: 60px; 
+overflow: hidden; 
+position: relative; 
+width: 100%; 
+background-image: url(../images/process.jpg);
+background-attachment: fixed; 
+background-size: cover; 
+-webkit-background-size: cover;
+-moz-background-size: cover; 
+-o-background-size: cover;
+background-repeat: no-repeat; 
+background-position: bottom center;
+}
+
+.contact h4{
+width: 100%;
+text-align: center;
+}
+
+/*------End of Contact Panel CSS------*/
+
+
+
+
+
+
 /*------MEDIA QUERY CSS------*/
 
 
@@ -666,7 +698,6 @@ width:100%;
     width: 100%;
     left:0;
     right:0;
-    
     text-align: center;
     align-self: center;
     }
