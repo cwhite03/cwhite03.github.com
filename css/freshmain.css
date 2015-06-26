@@ -510,81 +510,75 @@ position: relative;
 display: flex;
 flex-direction:row;
 flex-wrap: wrap;
+justify-content: center;
 }
 
 #diamond{
-margin: 0px 20px;
-padding: 3em;
 transition: all 1s ease;
-}
-
-#diamond article{
-visibility: hidden;
 }
 
 .d1{
 height: 360px;
 width:360px;
+background: wheat;
+-webkit-clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 60% 15%, 59% 14%, 74% 15%, 88% 20%, 91% 21%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 3% 20%, 9% 19%, 5% 15%, 0% 13%);
+clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 56% 17%, 59% 14%, 74% 15%, 88% 19%, 91% 20%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 6% 22%, 9% 19%, 5% 15%, 0% 13%);
+}
+
+.d1:hover{
 background-image: url(../images/sbpalgebra-cs.png);
 background-position: top center;
 background-repeat: no-repeat;
 background-size: cover;
--webkit-clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 60% 15%, 59% 14%, 74% 15%, 88% 20%, 91% 21%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 3% 20%, 9% 19%, 5% 15%, 0% 13%);
-clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 56% 17%, 59% 14%, 74% 15%, 88% 19%, 91% 20%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 6% 22%, 9% 19%, 5% 15%, 0% 13%);
+-webkit-clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);\
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.d1:hover{
--webkit-clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
-clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
-}
-
-#diamond:hover article{
-position:relative;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-visibility: visible;
-background-color: white;
-opacity: 0.95;
-padding: 20px;
-margin: 0;
-}
-
 .d2{
-background-image: url(../images/environment.jpg);
-background-position: top center;
-background-repeat: no-repeat;
-background-size: cover;
+background: wheat;
+height: 360px;
+width:360px;
 -webkit-clip-path: polygon(9% 14%, 17% 18%, 29% 24%, 37% 24%, 44% 31%, 50% 36%, 57% 23%, 62% 24%, 66% 20%, 89% 18%, 84% 23%, 82% 24%, 79% 30%, 76% 31%, 74% 38%, 71% 41%, 66% 54%, 61% 55%, 64% 68%, 70% 82%, 66% 86%, 60% 84%, 56% 81%, 57% 70%, 43% 60%, 38% 49%, 36% 41%, 31% 36%, 30% 30%);
 clip-path: polygon(9% 14%, 17% 18%, 29% 24%, 37% 24%, 44% 31%, 50% 36%, 57% 23%, 62% 24%, 66% 20%, 89% 18%, 84% 23%, 82% 24%, 79% 30%, 76% 31%, 74% 38%, 71% 41%, 66% 54%, 61% 55%, 64% 68%, 70% 82%, 66% 86%, 60% 84%, 56% 81%, 57% 70%, 43% 60%, 38% 49%, 36% 41%, 31% 36%, 30% 30%);
 z-index: 100;
 }
 
 .d2:hover{
--webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+background-image: url(../images/menuscreenshot.png);
+background-position: top left;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-clip-path: polygon(100% 0%, 90% 0%, 80% 0%, 60% 0%, 40% 0%, 20% 0%, 0% 0%, 0% 24%, 0% 40%, 0% 58%, 0% 63%, 0% 74%, 0% 90%, 0% 100%, 14% 100%, 27% 100%, 46% 100%, 61% 100%, 84% 100%, 100% 100%, 100% 86%, 100% 74%, 100% 64%, 100% 50%, 100% 40%, 100% 29%, 100% 15%, 100% 8%, 100% 0%);
+clip-path: polygon(100% 0%, 90% 0%, 80% 0%, 60% 0%, 40% 0%, 20% 0%, 0% 0%, 0% 24%, 0% 40%, 0% 58%, 0% 63%, 0% 74%, 0% 90%, 0% 100%, 14% 100%, 27% 100%, 46% 100%, 61% 100%, 84% 100%, 100% 100%, 100% 86%, 100% 74%, 100% 64%, 100% 50%, 100% 40%, 100% 29%, 100% 15%, 100% 8%, 100% 0%);
 z-index: 150;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #casestudy1{
 padding:20px;
-width:50%;
+width:360px;
+}
+
+#casestudy1 h3, h4{
+text-align: center;
 }
 
 /*------Beginning of Contact Panel CSS------*/
 
 .contact{
 text-align: center;
-padding-top: 60px; 
+margin-top: 50px;
+padding-top: 80px; 
 padding-bottom: 60px; 
 overflow: hidden; 
 position: relative; 
 width: 100%; 
-background-image: url(../images/process.jpg);
+background-image: url(../images/tile3.jpg);
 background-attachment: fixed; 
 background-size: cover; 
 -webkit-background-size: cover;
@@ -595,8 +589,14 @@ background-position: bottom center;
 }
 
 .contact h4{
+color:white;
 width: 100%;
 text-align: center;
+}
+
+.contact a{
+color: white;
+text-decoration: none;
 }
 
 /*------End of Contact Panel CSS------*/
@@ -667,14 +667,20 @@ text-align: justify;
 
     
 /*------Portfolio Panel CSS------*/
+#flexportfolio{
+position: relative;
+display: flex;
+flex-direction:column;
+}
+
     #diamond{
-    height: 100%;
-    width:25%;
+    height: 280px;
+    width: 360px;
     }
-   
+
  #diamond:hover{
-    height: 400%;
-    width:200%;
+height: 280px;
+    width: 360px;
     }
     
 #casestudy1{
