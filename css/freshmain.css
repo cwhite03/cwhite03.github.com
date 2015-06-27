@@ -163,7 +163,7 @@ padding: 7px;
 position: fixed;
 text-align: center;
 text-transform: uppercase;
-top: 3.5vh;
+top:25px;
 left: 10px;
 z-index: 1000;
 }
@@ -236,7 +236,7 @@ color: dimgrey;
 .kbtag{
 font-size: 20px;
 font-weight: 200;
-padding-top: 10px;
+padding: 10px;
 position: relative;
 text-align: center;
 }
@@ -285,13 +285,12 @@ z-index: 100;
 font-size: 6vw;
 color: white;
 position: relative;
-top:10vh;
 text-align: center;
 }
 
 .quotebtn{
 position: relative;
-top: 10vh;
+top: 3vh;
 }
 
 .landercenter h3{
@@ -299,10 +298,10 @@ color: white;
 font-size: 4vh;
 font-weight: 100;
 opacity: 1 !important;
-padding-top: 20px;
+padding-top: 0px;
 position: relative;
 text-align: center;
-top:10vh;
+top:1vh;
 }
 
 .thumbsup{
@@ -313,7 +312,8 @@ font-size: 5vw;
 /*------Beginning of ABOUT CSS------*/
 
 #abouttitle{
-padding: 20px 0px;
+padding: 0;
+margin: 0;
 }
 
 #aboutarticles{
@@ -321,7 +321,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
-padding-bottom: 170px;
+padding-bottom: 100px;
 }
 
 #aboutarticles article{
@@ -337,7 +337,10 @@ font-size: 24px;
 
 #sidearticle{
 text-align: left;
-font-size: 16px;
+font-size: 18px;
+}
+.wholep{
+text-indent: 25px;
 }
 /*------End of ABOUT CSS------*/
 
@@ -372,7 +375,6 @@ position: relative;
 display: flex;
 flex-direction:row;
 flex-wrap: wrap;
-
 left: 0;
 right: 0;
 margin: auto 80px;
@@ -380,21 +382,16 @@ margin: auto 80px;
 /*****************************************************************************************************************/
 
 .process_article {
+align-content: center;
+align-items: center;
 width: 386px;
 padding: 10px;
 margin: 0 auto;
 }
 
-.process_article h3{
-text-align: center;
-}
-
-.process_article img {
-margin: 0px 136px;
-}
-
 .process_article h3 {
 font-family: 'Yanone Kaffeesatz', sans-serif;
+text-align: center;
 text-transform: uppercase;
 color: black;
 margin-bottom: 3%;
@@ -402,13 +399,16 @@ font-size: 25px;
 }
 
 .process_article img {
-margin-bottom: 0px;
+position: relative;
+margin:0 135px;
+padding: 0;
 }
 
 .process_article p {
 font-family: 'Yanone Kaffeesatz', sans-serif;
 word-spacing: 1px;
-text-align: left;
+text-align: justify;
+text-indent: 25px;
 font-size: 18px;
 }
 
@@ -487,6 +487,12 @@ width:360px;
 text-align: center;
 }
 
+#casestudy1 p{
+font-size: 18px;
+text-indent: 25px;
+text-align: justify;
+}
+
 /*------End PORTFOLIO CSS------*/
 
 
@@ -494,8 +500,7 @@ text-align: center;
 
 .contact{
 text-align: center;
-margin-top: 50px;
-padding-top: 80px; 
+padding-top: 60px; 
 padding-bottom: 60px; 
 overflow: hidden; 
 position: relative; 
@@ -512,10 +517,10 @@ background-position: bottom center;
 
 .contact h4{
 color:white;
+top: 40px;
 margin: 0 auto;
 width: 100%;
 text-align: center;
-padding-bottom: 50px;
 }
 
 .contact a{
@@ -571,6 +576,10 @@ width: 100%;
     
 /*------iPhone 4, 5, 6, 6-Plus, S3, S4, S5, S6, Note I, Note II, Note III, and Nexus Series------*/
 
+.kirbybwaii{
+font-size: 4vw;
+}
+    
 /*------Lander Panel CSS------*/
 
 .title{
@@ -579,21 +588,21 @@ left: 2vw;
     
 .landercenter h1{
 font-size: 35px;
-top:10vh;
+top:1vh;
 }
 
 .landercenter h3{
 font-size: 20px;
 padding: 0;
-top:10vh;
+top:0vh;
 }
     
 .quotebtn{
-top: 12vh;
+top: 3vh;
 }
 
 .thumbsup{
-font-size: 8vw;
+font-size: 6vw;
 
 }
 /*------End of Lander Panel CSS------*/
@@ -619,7 +628,9 @@ text-align: justify;
 
     
 /*------Process Panel CSS------*/
-
+#flexprocess{
+margin: auto 10px;
+}
 /*------End of Process Panel CSS------*/
 
     
