@@ -28,6 +28,8 @@ IX.      Footer
 */
 
 /* ------- General CSS ------- */
+/*Fontawesome Iconfont*/
+
 @charset "UTF-8";
 
 section {
@@ -43,7 +45,8 @@ margin: 0 auto;
 }
 
 .kirbybwaii{
-font-size: 4vw;
+font-size: 3vw;
+margin: auto;
 padding-top: 10px;
 position: relative;
 width: 100%;
@@ -115,9 +118,120 @@ h1{
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-weight: 100;
 }
+
 h2{
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
+/*-----Beginning of Navigation CSS-----*/
+
+#navmenu {
+background: rgb(50,60,60);
+border: 2px solid white;
+border-radius: 2px;
+top: 2vh;
+left: 0;
+position: fixed;
+height: 300px;
+width:150px;
+-webkit-transform: translateX(-150px);
+-moz-transform: translateX(-150px);
+-ms-transform: translateX(-150px);
+-o-transform: translateX(-150px);
+transform: translateX(-150px);
+transition: all 0.4s ease;
+z-index: 1000;
+}
+
+#side{
+position: absolute;
+display:none;
+left: 0;
+}
+
+/*------ Menu Label -------*/
+
+label{
+background: rgb(50,60,60);
+border: 2px solid white;
+border-radius: 3px;
+color: white;
+cursor: pointer;
+font: bold 14px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+padding: 7px;
+position: fixed;
+text-align: center;
+text-transform: uppercase;
+top: 3.5vh;
+left: 10px;
+z-index: 1000;
+}
+
+.sidenav{
+height: 160px;
+width: 150px;
+padding:0;
+bottom: 0;
+left: 0;
+position: fixed;
+top:0;
+margin: auto;
+}
+
+.sidenav li{
+height: 30px;
+margin-top: 5px;
+list-style-type: none;
+}
+
+.sidenav a{
+color: white;
+display: block;
+text-decoration: none;
+}
+
+.sidenav a:hover{
+color: wheat;
+text-decoration: none;
+}
+
+#navlink{
+font: bold 12px;
+display: block;
+opacity: 1;
+}
+
+.sidenav i{
+margin-top: -2px;
+color: white;
+display: block; 
+float: left;
+width: 50px;
+height: 20px;
+text-align: center;
+}
+.navmenu{
+position: relative;
+display: block;
+top: 2px;
+left: -45px;
+width: 40px;
+height: 40px;
+}
+
+.navmenu:hover label{
+background: wheat;
+color: dimgrey;
+}
+
+#side:checked ~ #navmenu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);}
+
 
 .kbtag{
 font-size: 20px;
@@ -136,10 +250,17 @@ margin: auto;
 font-weight: 100;
 }
 
-.fk{
-position: relative;
-width: 100%;
-text-align: center;
+.bad{
+color: indianred;
+}
+.client{
+color: blue;
+}
+.furniture{
+color:black;
+}
+.ground{
+color: darkslategrey;
 }
 
 .stitle{
@@ -157,24 +278,7 @@ width:100vw;
 left:0;
 margin: 0 auto;
 right:0;
-}
-
-.title{
-align-content: center;
-position: fixed;
-top: 0;
-left: 8vw;
-width: 100px;
-height: 50px;
-vertical-align: middle;
-z-index: 600;
-}
-
-.title h4{
-color: white;
-font-size: 1.8em;
-padding: 10px;
-text-decoration: none;
+z-index: 100;
 }
 
 .landercenter h1{
@@ -205,176 +309,11 @@ top:10vh;
 font-size: 5vw;
 }
 
-.menu {
-cursor: pointer;
-display: block;
-margin: auto;
-width: 35px;
-height: 30px;
-left: 85vw;
-margin: 0px;
-opacity: 1 !important;
-position: fixed;
-top: 23px;
-transition: all 0.5s;
--moz-transition: all 0.5s;
--webkit-transition: all 0.5s;
-z-index: 600;
-}
-
-.menu span {
-border-top: 2px solid white;
-width: 100%;
-position: absolute;
-}
-
-.menu .menu-top, .menu .menu-middle, .menu .menu-bottom {	
--moz-transition: all 0.5s;
--webkit-transition: all 0.5s;
-transition: all 0.5s;
- }
-
- .menu .menu-top-click, .menu .menu-middle-click, .menu .menu-bottom-click {
-  	-moz-transition: all 0.5s;
-  	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
- 	backface-visibility: hidden;
-}
-
-.menu .menu-top {
-	top: 0px;
-}
-
-.menu .menu-middle {
-	top: 10px;
-}
-
-.menu .menu-bottom {
-	top: 20px;
-}
-
-.menu:hover .menu-middle  {
-	top: 12px;
-}
-
-.menu:hover .menu-bottom {
-	top: 24px;
-}
-
-.menu .menu-top-click {
-	-webkit-transform: rotate(50deg);
-    transform: rotate(50deg) translate3d(5px,10px,0);
-    top: 0px;
-   border-color: #F5D76E;
-}
-
-.menu .menu-middle-click {
-	opacity: 0;
-   border-color: #F5D76E;
-}
-
-.menu .menu-bottom-click, .menu:hover .menu-bottom-click  {
-	-webkit-transform: rotate(-410deg); 
-    transform: rotate(-410deg) translate3d(5px,-10px,0);
-    top: 20px;
-   border-color: #f5d76e;
-}
-
-.compbanner{
-  background:  #30363d;
-  color: white;
-  opacity: 0.85;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:75px;
-  text-align: left;
-  vertical-align: middle;
-  z-index: 500;
-}
-
-.navmenu {
-background: #30363d;
-opacity: 0.85;
-color: white;
-display:none;
-flex-wrap: wrap;
-padding-bottom: 10px;
-padding-top: 20px;
-position: fixed;
-top:75px;
-transition: 0.5s;
-left: 0;
-width:100%;
-z-index:600;
-}
-
-.navmenu nav{
-text-align: center;
-}
-
-.navmenu nav ul li {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-list-style: none;
-display: inline-block;
-text-align: center;
-width: 150px;
-opacity: 1;
-padding: 20px;
-text-align: center;
-border: 2px solid #f5d76e;
-margin: 0px 10px 10px 10px ;
-transition: 0.5s;
-}
-
-
-.navmenu nav ul li a {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size:22px;
-text-decoration:none;
-color: white;
-transition: 0.5s;
-opacity: 1 !important;
-}
-
-navmenu:hover{
-display:inline-flex;
-}
-
-
-.navmenu nav ul li:hover { 
-background: #f5d76e;
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-color: black;
-opacity: 1 !important;
-transition: 0.5s;
-}
-
-
-.navmenu nav ul li a:hover { 
- color: black;
- transition: 0.5s;
-  opacity: 1 !important;
-}
 
 /*------Beginning of ABOUT CSS------*/
 
 #abouttitle{
 padding: 20px 0px;
-}
-
-.about{
-font-size: 6vw;
-text-align: center;
-padding: 0;
-margin: 0 auto;
-}
-
-.atitle span{
-font-size: 4vw;
 }
 
 #aboutarticles{
@@ -406,8 +345,7 @@ font-size: 16px;
 /*------Services CSS---------*/
 .parallax-one {
 text-align: center;
-padding-top: 120px; 
-padding-bottom: 40px; 
+padding: 50px 0px; 
 overflow: hidden; 
 position: relative; 
 width: 100%; 
@@ -434,27 +372,12 @@ position: relative;
 display: flex;
 flex-direction:row;
 flex-wrap: wrap;
+
+left: 0;
+right: 0;
+margin: auto 80px;
 }
 /*****************************************************************************************************************/
-
-
-#services .article_center2 article {
-    text-align: center;
-    flex: 0 0 25%;
-    cursor: pointer;
-    box-sizing: border-box;
-    text-transform: none;
-    margin: 25px;
-    z-index: 1;
-}
-
-.services_h2 {
-  color: black;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  font-size: 40px;
-    text-align: center;
-}
 
 .process_article {
 width: 386px;
@@ -470,7 +393,7 @@ text-align: center;
 margin: 0px 136px;
 }
 
-.section1_article h3 {
+.process_article h3 {
 font-family: 'Yanone Kaffeesatz', sans-serif;
 text-transform: uppercase;
 color: black;
@@ -478,16 +401,16 @@ margin-bottom: 3%;
 font-size: 25px;
 }
 
-.section1_article img {
-    margin-bottom: 0px;
+.process_article img {
+margin-bottom: 0px;
 }
 
-.section1_article p {
+.process_article p {
 font-family: 'Yanone Kaffeesatz', sans-serif;
 word-spacing: 1px;
 text-align: left;
-font-size: 16px;
-  }
+font-size: 18px;
+}
 
 
 /*------End of Services CSS------*/
@@ -497,11 +420,8 @@ font-size: 16px;
 /*------Beginning of PORTFOLIO CSS------*/
 
 
-
-/*------End PORTFOLIO CSS------*/
-
 #portfoliotitle{
-padding-top: 100px;
+padding-top: 20px;
 }
 
 #flexportfolio{
@@ -567,6 +487,9 @@ width:360px;
 text-align: center;
 }
 
+/*------End PORTFOLIO CSS------*/
+
+
 /*------Beginning of Contact Panel CSS------*/
 
 .contact{
@@ -611,20 +534,28 @@ display: flex;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
-height: 250px;
 }
 
 .contactinfo div{
 height:150px;
-padding-top: 80px;
+padding-top: 30px;
 width: 300px;
 text-align: center;
 }
 
 .footertag{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-padding-bottom: 20px;
+display: inline-block;
+font-size:14px;
+font-weight:200;
+font-family: Sans-serif;
+letter-spacing:4px;
+left: 0;
+right: 0;
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
 text-align: center;
+text-transform: uppercase;
 width: 100%;
 }
 
@@ -635,7 +566,7 @@ width: 100%;
 /*------MEDIA QUERY CSS------*/
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
 /*------CELLPHONE CSS------*/
     
 /*------iPhone 4, 5, 6, 6-Plus, S3, S4, S5, S6, Note I, Note II, Note III, and Nexus Series------*/

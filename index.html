@@ -73,9 +73,6 @@ Clients and Publications:
 		
 <section class="lander homescreen" id="home">
 <header>
-<div class="title">
-  <a href="#homescreen"><h4>{ WDDS }</h4></a>
-</div>
 <div class="container">
    <div class="menu">
      <span class="menu-top"></span>
@@ -84,15 +81,21 @@ Clients and Publications:
   </div>
 <div class="compbanner"><h2 class="landercplogo"></h2></div>
 <div class="navmenu">
-    <nav>
-	    <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#portfolio">Case Studies</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <!-- Checkbox to make the menu visible -->
+    <input type="checkbox" id="side"/>
+    <nav id="navmenu">
+	    <ul class="sidenav">
+            <li><a href="#home"><i><img src="images/homesnav.png" width="15" height="15"></i><b id="navlink">Home</b></a></li>
+            <li><a href="#about"><i><img src="images/aboutsnav.png" width="15" height="15"></i><b id="navlink">About</b></a></li>
+            <li><a href="#process"><i><img src="images/processnav.png" width="15" height="15"></i><b id="navlink">Process</b></a></li>
+            <li><a href="#portfolio"><i><img src="images/casestudysnav.png" width="15" height="15"></i><b id="navlink">Case Studies</b></a></li>
+            <li><a href="#contact"><i><img src="images/contactusnav.png" width="15" height="15"></i><b id="navlink">Contact Us</b></a></li>
         </ul>
     </nav>
+    <section>
+        <!-- Label for #side checkbox -->
+        <label for="side">Menu</label>
+    </section>
 </div><!--End of navmenu -->
 </div><!-- /.container-fluid -->
 </header>
@@ -115,8 +118,8 @@ Clients and Publications:
 <div class="set_size_section1">
     <div id="abouttitle">
     <h2 class="paneltitle">ABOUT</h2>
-    <div class="kirbybwaii"><span>____(o_o)____ (╯°□°）╯︵ ┻━┻____ </span></div>
-    <p class="kbtag"><i>Don't get frustrated... There's a better way</i>.</p>
+        <div class="kirbybwaii"><span><span class="ground">____</span>(o_o)<span class="ground">____</span><span class="client">(╯°□°）╯</span><span class="furniture">︵ ┻━┻</span><span class="ground">____</span><span class="bad">(ノ⌒∇)ノ</span></span></div>
+    <p class="kbtag"><i>Don't get angry... There's a better way</i>.</p>
     </div>
     <div class="aboutarticles" id="aboutarticles">
     <article id="welcomearticle">
@@ -149,8 +152,8 @@ Clients and Publications:
 <section id="services">
 <div class="containerContent">
 <div>
-    <div class="kirbybwaii"><span>Q('.'O)</span></div>
-    <p class="kbtag">Fighting for you every step of the way.</p>
+    <div class="kirbybwaii"> <span class="client">(o'.')o</span><span class="bad">╭(×̯×)╮</span><span>Q('.'O)</span></div>
+    <p class="kbtag">We can find the problem and fix it.</p>
     
     
 <div id="flexprocess">
@@ -227,39 +230,35 @@ Clients and Publications:
 </div>
 </section>
 
-<section>
+<section id="contact">
     <div class="contact">
-        <h4 class="paneltitle">Like what you see? <a href="#">Contact Us</a></h4>
+        <h4 class="paneltitle">Like what you see? <a>Contact Us</a></h4>
     </div>
 </section>
 
-<footer>
-		<div class="contactinfo">
+<nav class="contactinfo">
+    <div>
+        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Maps-icon.png" width="48" height="47">
+        <h6>Location</h6>
+        <p>Newark, New Jersey 07102</p>
+    </div>
 
-					<div>
-				        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Maps-icon.png" width="48" height="47">
-				        <h6>Location</h6>
-				        <p>Newark, New Jersey 07102</p>
-					</div>
-					
-                    <div>
-				        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Gmail-icon.png" width="48" height="47">
-				        <h6>Email</h6>
-				        <p>contactwdds@gmail.com</p>
-					</div>
+    <div>
+        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Gmail-icon.png" width="48" height="47">
+        <h6>Email</h6>
+        <p>contactwdds@gmail.com</p>
+    </div>
             
-                    <div>
-				        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Phone-icon.png" width="48" height="47">
-				        <h6>Phone</h6>
-				        <p>973.951.5786</p>
-					</div>
-		</div>
-		<!-- end contact-info-->
+    <div>
+        <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Phone-icon.png" width="48" height="47">
+        <h6>Phone</h6>
+        <p>973.951.5786</p>    
+    </div>
+</nav>
 		
-			<div class="footertag">
-				<small>&copy; 2015 | White Digital Design Studio. All Rights Reserved</small>
-			</div>
-		</footer>
+<div class="footertag">
+    <small>White Digital Design Studio&copy; | 2015 | All Rights Reserved</small>
+</div>
 		<!-- end footer-->
 
 
