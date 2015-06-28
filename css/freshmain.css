@@ -60,7 +60,6 @@ text-align: center;
 /* Screen Settings */
 .lander {
     background-attachment: fixed;
-    background-image: url(../images/mybackground.jpg);
     background-position:top center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -232,11 +231,11 @@ color: dimgrey;
     -o-transform: translateX(0);
     transform: translateX(0);}
 
-
 .kbtag{
 font-size: 20px;
 font-weight: 200;
-padding: 10px;
+padding-top: 20px;
+padding-bottom: 5px;
 position: relative;
 text-align: center;
 }
@@ -283,7 +282,7 @@ z-index: 100;
 
 .landercenter h1{
 font-size: 6vw;
-color: white;
+color: #222;
 position: relative;
 text-align: center;
 }
@@ -294,7 +293,7 @@ top: 3vh;
 }
 
 .landercenter h3{
-color: white;
+color: #222;
 font-size: 4vh;
 font-weight: 100;
 opacity: 1 !important;
@@ -310,9 +309,28 @@ font-size: 5vw;
 
 
 /*------Beginning of ABOUT CSS------*/
+.parallax-two{
+text-align: center;
+padding: 50px 0px; 
+overflow: hidden; 
+position: relative; 
+width: 100%; 
+background-image: url(http://farm1.static.flickr.com/124/320919737_c7579c2c1e_b.jpg);
+background-attachment: fixed; 
+background-size:cover; 
+-webkit-background-size: cover;
+-moz-background-size: cover; 
+-o-background-size: cover;
+background-repeat: no-repeat; 
+background-position: top left;
+}
+
+.parallax-two h2{
+color: white;
+}
 
 #abouttitle{
-padding: 0;
+padding-top: 20px;
 margin: 0;
 }
 
@@ -356,18 +374,18 @@ padding: 50px 0px;
 overflow: hidden; 
 position: relative; 
 width: 100%; 
-background-image: url(../images/process.jpg);
+background-image: url(http://progotisoft.com/images/process.gif);
 background-attachment: fixed; 
-background-size: cover; 
--webkit-background-size: cover;
--moz-background-size: cover; 
+background-size:contain; 
+-webkit-background-size: contain;
+-moz-background-size: contain; 
 -o-background-size: cover;
 background-repeat: no-repeat; 
-background-position: bottom center;
+background-position: top center;
 }
 
 .parallax-one h1{
-color: white;}
+color: #222;}
 
 #services {
 padding-top: 50px;
@@ -444,55 +462,82 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-#diamond{
-transition: all 1s ease;
+.casestudy1_slideshow{
+width: 100%;
+height: 420px;
+left: 0;
+right: 0;
+margin: 0 auto;
+overflow: hidden;
+position: absolute;
+background-image: url(http://pre13.deviantart.net/647c/th/pre/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
 }
 
-.d1{
-height: 360px;
-width:360px;
-background: wheat;
--webkit-clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 60% 15%, 59% 14%, 74% 15%, 88% 20%, 91% 21%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 3% 20%, 9% 19%, 5% 15%, 0% 13%);
-clip-path: polygon(0% 13%, 7% 9%, 23% 4%, 29% 5%, 51% 15%, 56% 17%, 59% 14%, 74% 15%, 88% 19%, 91% 20%, 100% 24%, 89% 23%, 82% 23%, 63% 32%, 56% 38%, 56% 40%, 38% 55%, 39% 58%, 37% 61%, 34% 83%, 30% 85%, 27% 88%, 24% 93%, 28% 73%, 25% 74%, 31% 59%, 32% 53%, 31% 49%, 36% 41%, 31% 35%, 23% 30%, 16% 25%, 6% 22%, 9% 19%, 5% 15%, 0% 13%);
+.slide_1, .slide_2, .slide_3{
+position: absolute;
+width: 90%;
+height: 400px;
+background-size: contain;
+}
+.slide_1{background-image:url(../images/sbpalgebra-cs.png); background-repeat: no-repeat; background-position:center;  left: 30px;}
+.slide_2{background-image:url(../images/menuscreenshot.png); background-repeat: no-repeat; background-position: center; left:1720px;}
+.slide_3{background-image:url(../images/lessonscreenshot.png); background-repeat: no-repeat; background-position: center; left: 3300px;}
+
+.cs1_slide{
+width: 618px;
+height: 410px;
+left: 2vw;
+right: 0px;
+margin: 0 auto;
+position: absolute;
+-webkit-animation-duration: 10s;
+-webkit-animation-iteration-count: 5;
+-webkit-animation-name: casestudy_slide;
+-moz_animation-duration: 10s;
+-moz-animation-iteration-count: 5;
+-moz-animation-name: casestudy_slide;
+-ms-animation-duration: 10s;
+-ms-animation-iteration-count: 5;
+-ms-animation-name: casestudy_slide;
 }
 
-.d1:hover{
-background-image: url(../images/sbpalgebra-cs.png);
-background-position: top center;
-background-repeat: no-repeat;
-background-size: cover;
--webkit-clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
-clip-path: polygon(100% 100%, 100% 85%, 100% 0%, 0% 0%, 0% 15%, 0% 25%, 0% 40%, 0% 55%, 0% 60%, 0% 80%, 0% 90%, 0% 100%, 20% 100%, 30% 100%, 40% 100%, 50% 100%, 60% 100%, 65% 100%, 70% 100%, 75% 100%, 80% 100%, 85% 100%, 90% 100%, 95% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);\
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+@-webkit-keyframes casestudy_slide{
+    0%{left: 30px;}
+    22%{left:30px;}
+    33%{left:-3440px;}
+    45%{left:-3440px;}
+    66%{left: -6620px;}
+    90%{left: -6620px;}   
 }
-
-.d2{
-background: wheat;
-height: 360px;
-width:360px;
--webkit-clip-path: polygon(9% 14%, 17% 18%, 29% 24%, 37% 24%, 44% 31%, 50% 36%, 57% 23%, 62% 24%, 66% 20%, 89% 18%, 84% 23%, 82% 24%, 79% 30%, 76% 31%, 74% 38%, 71% 41%, 66% 54%, 61% 55%, 64% 68%, 70% 82%, 66% 86%, 60% 84%, 56% 81%, 57% 70%, 43% 60%, 38% 49%, 36% 41%, 31% 36%, 30% 30%);
-clip-path: polygon(9% 14%, 17% 18%, 29% 24%, 37% 24%, 44% 31%, 50% 36%, 57% 23%, 62% 24%, 66% 20%, 89% 18%, 84% 23%, 82% 24%, 79% 30%, 76% 31%, 74% 38%, 71% 41%, 66% 54%, 61% 55%, 64% 68%, 70% 82%, 66% 86%, 60% 84%, 56% 81%, 57% 70%, 43% 60%, 38% 49%, 36% 41%, 31% 36%, 30% 30%);
-z-index: 100;
+@-moz-keyframes casestudy_slide{
+    0%{left: 30px;}
+    22%{left:30px;}
+    33%{left:-3440px;}
+    45%{left:-3440px;}
+    66%{left: -6620px;}
+    90%{left: -6620px;}  
 }
-
-.d2:hover{
-background-image: url(../images/menuscreenshot.png);
-background-position: top left;
-background-repeat: no-repeat;
-background-size: cover;
--webkit-clip-path: polygon(100% 0%, 90% 0%, 80% 0%, 60% 0%, 40% 0%, 20% 0%, 0% 0%, 0% 24%, 0% 40%, 0% 58%, 0% 63%, 0% 74%, 0% 90%, 0% 100%, 14% 100%, 27% 100%, 46% 100%, 61% 100%, 84% 100%, 100% 100%, 100% 86%, 100% 74%, 100% 64%, 100% 50%, 100% 40%, 100% 29%, 100% 15%, 100% 8%, 100% 0%);
-clip-path: polygon(100% 0%, 90% 0%, 80% 0%, 60% 0%, 40% 0%, 20% 0%, 0% 0%, 0% 24%, 0% 40%, 0% 58%, 0% 63%, 0% 74%, 0% 90%, 0% 100%, 14% 100%, 27% 100%, 46% 100%, 61% 100%, 84% 100%, 100% 100%, 100% 86%, 100% 74%, 100% 64%, 100% 50%, 100% 40%, 100% 29%, 100% 15%, 100% 8%, 100% 0%);
-z-index: 150;
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+@-ms-keyframes casestudy_slide{
+    0%{left: 30px;}
+    22%{left:30px;}
+    33%{left:-3440px;}
+    45%{left:-3440px;}
+    66%{left: -6620px;}
+    90%{left: -6620px;} 
+}
+@keyframes casestudy_slide{
+    0%{left: 30px;}
+    22%{left:30px;}
+    33%{left:-3350px;}
+    45%{left:-3350px;}
+    66%{left: -6520px;}
+    90%{left: -6520px;} 
 }
 
 #casestudy1{
-padding:0px 20px;
-width:360px;
+padding-top: 440px;
+padding-bottom: 50px;
+width:900px;
 }
 
 #casestudy1 h3, h4{
@@ -661,19 +706,37 @@ display: flex;
 flex-direction:column;
 }
 
-    #diamond{
-    height: 280px;
-    width: 360px;
-    }
+.casestudy1_slideshow{
+height: 300px;
+}
 
- #diamond:hover{
-height: 280px;
-    width: 360px;
-    }
+.cs1_slide{
+height: 300px;
+}
     
 #casestudy1{
-padding:20px;
+padding-top: 340px;
+padding-left: 10px;
+padding-right: 10px;
 width:100%;
+}
+    
+.slide_1, .slide_2, .slide_3{
+margin: 20px;
+height: 260px;
+width: 320px;   
+}
+    
+.slide_1{
+left:-20px;
+}
+
+.slide_2{
+left: 1810px;
+}
+    
+.slide_3{
+left:3390px;
 }
 /*------End of Portfolio Panel CSS------*/
 
