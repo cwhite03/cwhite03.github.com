@@ -129,14 +129,15 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 .topnav:hover { color: #fff; text-decoration: none; }
 
 .tnav {
-height: 155px; 
+height: 180px; 
 background-color: #383838;
-  list-style: none;
-  padding: 0;
-  position: fixed;
-  top: -155px;
-  transition: .5s all;
-  width: 180px;
+border-radius: 3px;
+list-style: none;
+padding: 0;
+position: fixed;
+top: -155px;
+transition: .5s all;
+width: 180px;
 z-index: 2000;
 }
 .tnav:hover {
@@ -167,8 +168,8 @@ width: 140px;
   height: 15px;
   display: block;
   margin: 0 0 0 78px;
-  border-top: 3px solid #222;
-  border-bottom: 9px double #222;
+  border-top: 3px solid #3399ff;
+  border-bottom: 9px double #3399ff;
   opacity: .5;
   transition: .2s all;
   cursor: pointer;
