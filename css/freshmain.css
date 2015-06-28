@@ -148,6 +148,160 @@ display:none;
 left: 0;
 }
 
+.company {
+font-size: 5em;
+position: relative;
+display: block;
+overflow: hidden; 
+width: 0em;
+height: 1.5em;
+margin: 1em auto;
+border-right: .125em solid #39F;
+box-sizing: content-box;
+-webkit-animation-name: blink-start, typing, blink-end;
+-moz-animation-name: blink-start, typing, blink-end;
+-ms-animation-name: blink-start, typing, blink-end;
+-o-animation-name: blink-start, typing, blink-end;
+animation-name: blink-start, typing, blink-end;
+-webkit-animation-duration: 3s, 1s, 1s;
+-moz-animation-duration: 3s, 1s, 1s;
+-ms-animation-duration: 3s, 1s, 1s;
+-o-animation-duration: 3s, 1s, 1s;
+animation-duration: 3s, 1s, 1s;
+-webkit-animation-timing-function: linear, steps(32, end), linear;
+-moz-animation-timing-function: linear, steps(32, end), linear;
+-ms-animation-timing-function: linear, steps(32, end), linear;
+-o-animation-timing-function: linear, steps(32, end), linear;
+animation-timing-function: linear, steps(32, end), linear;
+-webkit-animation-delay: 0s, 3s, 4s;
+-moz-animation-delay: 0s, 3s, 4s;
+-ms-animation-delay: 0s, 3s, 4s;
+-o-animation-delay: 0s, 3s, 4s;
+animation-delay: 0s, 3s, 4s;
+-webkit-animation-iteration-count: 1, 1, infinite;
+-moz-animation-iteration-count: 1, 1, infinite;
+-ms-animation-iteration-count: 1, 1, infinite;
+-o-animation-iteration-count: 1, 1, infinite;
+animation-iteration-count: 1, 1, infinite;
+-webkit-animation-direction: normal;
+-moz-animation-direction: normal;
+-ms-animation-direction: normal;
+-o-animation-direction: normal;
+animation-direction: normal;
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+-ms-animation-fill-mode: forwards;
+-o-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+
+.slogan span {
+text-align: center;
+width: 10em;
+color: #222;
+position: relative;
+display: block;
+}
+.slogan p{
+color: black;
+}
+@keyframes typing {
+  from { width: 0em; }
+  to   { width: 10em; }
+}
+
+@keyframes blink-start {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+.slideup{
+width: 100%;
+height: 150px;
+}
+
+.slideup h3{
+-webkit-animation-name: slide-up;
+-moz-animation-name: slide-up;
+-ms-animation-name: slide-up;
+-o-animation-name: slide-up;
+animation-name: slide-up;
+-webkit-animation-duration: 5s;
+-moz-animation-duration: 5s;
+-ms-animation-duration: 5s;
+-o-animation-duration: 5s;
+animation-duration: 5s;
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-ms-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+-webkit-animation-direction: normal;
+-moz-animation-direction: normal;
+-ms-animation-direction: normal;
+-o-animation-direction: normal;
+animation-direction: normal;
+}
+
+.slideup span{
+-webkit-animation-name: slide-up;
+-moz-animation-name: slide-up;
+-ms-animation-name: slide-up;
+-o-animation-name: slide-up;
+animation-name: slide-up;
+-webkit-animation-duration: 5.5s;
+-moz-animation-duration: 5.5s;
+-ms-animation-duration: 5.5s;
+-o-animation-duration: 5.5s;
+animation-duration: 5.5s;
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-ms-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+-webkit-animation-direction: normal;
+-moz-animation-direction: normal;
+-ms-animation-direction: normal;
+-o-animation-direction: normal;
+animation-direction: normal;
+}
+
+@keyframes slide-up{
+    from{
+    margin-top: 200%;
+    height: 400%;
+    }
+    to{
+    margin-top: 0%;
+    height: inherit;
+    }
+}
+
 /*------ Menu Label -------*/
 
 label{
@@ -240,15 +394,6 @@ position: relative;
 text-align: center;
 }
 
-span {
-font-family: Sans-serif;
-color: wheat;
-left: 0;
-right: 0;
-margin: auto;
-font-weight: 100;
-}
-
 .bad{
 color: indianred;
 }
@@ -269,10 +414,8 @@ text-align: center;
 }
 
 .landercenter{
-position:absolute;
-top:76px;
 margin:0;
-height:91.2vh;
+height:86vh;
 width:100vw;
 left:0;
 margin: 0 auto;
@@ -280,23 +423,10 @@ right:0;
 z-index: 100;
 }
 
-.landercenter h1{
-font-size: 6vw;
-color: #222;
-position: relative;
-text-align: center;
-}
-
-.quotebtn{
-position: relative;
-top: 3vh;
-}
-
 .landercenter h3{
 color: #222;
 font-size: 4vh;
 font-weight: 100;
-opacity: 1 !important;
 padding-top: 0px;
 position: relative;
 text-align: center;
@@ -304,7 +434,13 @@ top:1vh;
 }
 
 .thumbsup{
+position: absolute;
 font-size: 5vw;
+text-align: center;
+width: 100%;
+left:0;
+top: -50px;
+z-index: 300;
 }
 
 
@@ -315,7 +451,7 @@ padding: 50px 0px;
 overflow: hidden; 
 position: relative; 
 width: 100%; 
-background-image: url(http://farm1.static.flickr.com/124/320919737_c7579c2c1e_b.jpg);
+background-image: url(../images/aboutparallax.jpg);
 background-attachment: fixed; 
 background-size:cover; 
 -webkit-background-size: cover;
@@ -374,7 +510,7 @@ padding: 50px 0px;
 overflow: hidden; 
 position: relative; 
 width: 100%; 
-background-image: url(http://progotisoft.com/images/process.gif);
+background-image: url(../images/processparallax.png);
 background-attachment: fixed; 
 background-size:contain; 
 -webkit-background-size: contain;
@@ -470,7 +606,7 @@ right: 0;
 margin: 0 auto;
 overflow: hidden;
 position: absolute;
-background-image: url(http://pre13.deviantart.net/647c/th/pre/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
+background-image: url(../images/cs1slideshowback.jpg);
 }
 
 .slide_1, .slide_2, .slide_3{
@@ -562,7 +698,6 @@ padding-bottom: 60px;
 overflow: hidden; 
 position: relative; 
 width: 100%; 
-background-image: url(../images/tile3.jpg);
 background-attachment: fixed; 
 background-size: cover; 
 -webkit-background-size: cover;
@@ -573,22 +708,31 @@ background-position: bottom center;
 }
 
 .contact h4{
-color:white;
+color:#222;
 top: 40px;
 margin: 0 auto;
 width: 100%;
 text-align: center;
 }
 
-.contact a{
-color: white;
-text-decoration: none;
-}
 
 /*------End of Contact Panel CSS------*/
 
-
-
+.quotebtn{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+position: relative;
+margin: 0 auto;
+left:0;
+right:0;
+text-align: center;
+text-transform: uppercase;
+}
+.oneononeform{
+width: 100%;
+text-align: center;
+height: 45px;
+padding: 50px;
+}
 /*------Beginning of Footer Panel CSS------*/
 
 .contactinfo{
@@ -600,11 +744,12 @@ display: flex;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
+height: 400px;
 }
 
 .contactinfo div{
 height:150px;
-padding-top: 30px;
+padding-top: 100px;
 width: 300px;
 text-align: center;
 }
@@ -643,28 +788,23 @@ font-size: 4vw;
     
 /*------Lander Panel CSS------*/
 
-.title{
-left: 2vw;
-}
-    
-.landercenter h1{
-font-size: 35px;
-top:1vh;
+.company{
+font-size:2em;    
 }
 
 .landercenter h3{
 font-size: 20px;
 padding: 0;
-top:0vh;
+top:-5vh;
 }
     
 .quotebtn{
-top: 3vh;
+top: 55vh;
 }
 
 .thumbsup{
 font-size: 6vw;
-
+top: -10vh;
 }
 /*------End of Lander Panel CSS------*/
     
