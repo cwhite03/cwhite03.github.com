@@ -53,6 +53,7 @@ Clients and Publications:
         <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:900px)"   href=""/>
         <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href=""/>
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200' rel='stylesheet' type='text/css'>
+    
 <!--End CSS & JavaScript Links-->
 </head>
     
@@ -62,43 +63,27 @@ Clients and Publications:
 <header>
 <html lang="en">
 <head>
-	<title>{White Digital Design Studio}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
- <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200' rel='stylesheet' type='text/css'>
-		<link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/144467/bootstrap.min.css" rel="stylesheet">
+    <title>{White Digital Design Studio}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200' rel='stylesheet' type='text/css'>
+            <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/144467/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-		
 <section class="lander homescreen" id="home">
 <header>
-<div class="container">
-   <div class="menu">
-     <span class="menu-top"></span>
-     <span class="menu-middle"></span>
-     <span class="menu-bottom"></span>
-  </div>
-<div class="compbanner"><h2 class="landercplogo"></h2></div>
-<div class="navmenu">
-    <!-- Checkbox to make the menu visible -->
-    <input type="checkbox" id="side"/>
     <nav id="navmenu">
-	    <ul class="sidenav">
-            <li><a href="#home"><i><img src="images/homesnav.png" width="15" height="15"></i><b id="navlink">Home</b></a></li>
-            <li><a href="#about"><i><img src="images/aboutsnav.png" width="15" height="15"></i><b id="navlink">About</b></a></li>
-            <li><a href="#process"><i><img src="images/processnav.png" width="15" height="15"></i><b id="navlink">Process</b></a></li>
-            <li><a href="#portfolio"><i><img src="images/casestudysnav.png" width="15" height="15"></i><b id="navlink">Case Studies</b></a></li>
-            <li><a href="#contact"><i><img src="images/contactusnav.png" width="15" height="15"></i><b id="navlink">Contact Us</b></a></li>
+	    <ul class="tnav">
+            <li><a class="topnav" href="#home"><i><img src="images/homesnav.png" width="15" height="15"></i><b id="navlink">Home</b></a></li>
+            <li><a class="topnav" href="#about"><i><img src="images/aboutsnav.png" width="15" height="15"></i><b id="navlink">About</b></a></li>
+            <li><a class="topnav" href="#process"><i><img src="images/processnav.png" width="15" height="15"></i><b id="navlink">Process</b></a></li>
+            <li><a class="topnav" href="#portfolio"><i><img src="images/casestudysnav.png" width="15" height="15"></i><b id="navlink">Case Studies</b></a></li>
+            <li><a class="topnav" href="#contact"><i><img src="images/contactusnav.png" width="15" height="15"></i><b id="navlink">Contact Us</b></a></li>
         </ul>
     </nav>
-    <section>
-        <!-- Label for #side checkbox -->
-        <label for="side">Menu</label>
-    </section>
-</div><!--End of navmenu -->
-</div><!-- /.container-fluid -->
+
 </header>
+
 <div class="landercenter">
     <p class="company"><span>{ White Digital Design Studio }</span></p>
     </br>
@@ -278,17 +263,31 @@ Clients and Publications:
 		<!-- end footer-->
 
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/144467/bootstrap.min.js"></script>
 <script>
-<!---navigation Script------>
-$(".menu").click(function() {
-	$('.menu .menu-top').toggleClass('menu-top-click');
-	$('.menu .menu-middle').toggleClass('menu-middle-click');
-	$('.menu .menu-bottom').toggleClass('menu-bottom-click');
-  $('.navmenu').toggle(50);
-	});
-</script>
-
+        $(document).ready(function(){
+  $(".cmbutton_click").click(function()
+  {
+        $( ".cmbutton_click_on" ).removeClass( "cmbutton_click_on" ).addClass( "cmbutton_click_off" );
+        $( ".circle_about" ).removeClass( "circle_about" ).addClass( "circle_about_after" );
+        $( ".circle_process" ).removeClass( "circle_process" ).addClass( "circle_process_after" );
+        $( ".circle_casestudy" ).removeClass( "circle_casestudy" ).addClass( "circle_casestudy_after" );
+        $( ".circle_contactus" ).removeClass( "circle_contactus" ).addClass( "circle_contactus_after" );
+        $( ".button_center" ).removeClass( "button_center" ).addClass( "button_center_after" );
+    
+  });
+  $(".circle").click(function()
+  {
+        $( ".cmbutton_click_off" ).removeClass( "cmbutton_click_off" ).addClass( "cmbutton_click_on" );
+        $( ".circle_about_after" ).removeClass( "circle_about_after" ).addClass( "circle_about" );
+        $( ".circle_process_after" ).removeClass( "circle_process_after" ).addClass( "circle_process" );
+        $( ".circle_casestudy_after" ).removeClass( "circle_casestudy_after" ).addClass( "circle_casestudy" );
+        $( ".circle_contactus_after" ).removeClass( "circle_contactus_after" ).addClass( "circle_contactus" );
+        $( ".button_center_after" ).removeClass( "button_center_after" ).addClass( "button_center" );
+    
+   
+  });
+});
+        </script>
+        
 </body>
 </html>
