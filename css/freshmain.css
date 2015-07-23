@@ -32,822 +32,783 @@ IX.      Footer
 
 @charset "UTF-8";
 
+/*==Typography=*/
+body {
+  font: 16px "Source sans pro", sans-serif;
+}
+
+.sec-main h1,
+.sec-main p,
+.sec-everywhere h1,
+.sec-everywhere p,
+.sec-features h1,
+.sec-features p,
+footer h1,
+footer p {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .sec-main h1,
+  .sec-main p,
+  .sec-everywhere h1,
+  .sec-everywhere p,
+  .sec-features h1,
+  .sec-features p,
+  footer h1,
+  footer p {
+    text-align: left;
+  }
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+
+.sec-main h2 {
+  margin: .9em 0;
+  font-size: 1.75em;
+  font-weight: 200;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.features-post h1 {
+  font-size: 1.5em;
+}
+
+.features-post p {
+  font-size: 1em;
+}
+
+footer h1 {
+  font-size: 2.125em;
+}
+
+/*==Layout==*/
+html,
+body,
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 section {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-.block {background: white; padding: 60px;width: 80%; margin:0 auto; text-align:left}
-
-.paneltitle{
-font-size: 8vw;
-text-align: center;
-padding: 0;
-margin: 0 auto;
-}
-
-.kirbybwaii{
-font-size: 3vw;
-margin: auto;
-padding-top: 10px;
-position: relative;
-width: 100%;
-text-align: center;
-}
-
-/* ------- End of General CSS ------- */
-
-/* ------- TITLE Panel------- */
-
-/* Screen Settings */
-.lander {
-    background-attachment: fixed;
-    background-position:top center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
-    -webkit-animation: fadein ease-in-out 2s; /* Safari and Chrome */
-       -moz-animation: fadein ease-in-out 2s; /* Firefox */
-        -ms-animation: fadein  ease-in-out 2s; /* Internet Explorer */
-         -o-animation: fadein ease-in-out 2s; /* Opera */
-            animation: fadein ease-in-out 2s;
+    min-height: 480px;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.container {
+  margin: 0 auto;
+  padding: 6.625em 0;
+  max-width: 60em;
+  /*960px*/
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3em 0;
+  }
 }
 
-/* Firefox */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.row {
+  width: 100%;
 }
 
-/* Safari and Chrome */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.col-2 {
+  float: left;
+  padding: 0 1em;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.col-2 {
+  width: 50%;
 }
 
-/* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@media screen and (max-width: 768px) {
+  .col-2 {
+    float: none;
+    margin: auto;
+    padding: 0 1.75em;
+    width: 90%;
+  }
 }
-/* End of Screen Settings */
-body{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-h1{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 100;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-h2{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-/*-----Beginning of Navigation CSS-----*/
-
-#navmenu { margin: 0 auto; width: 14em; margin-bottom: 200px;}
-.topnav { color: #d0d0d0; text-decoration: none; transition: .2s all; }
-.topnav:hover { color: #fff; text-decoration: none; }
-
-.tnav {
-height: 180px; 
-background-color: #383838;
-border-radius: 3px;
-list-style: none;
-padding: 0;
-position: fixed;
-top: -155px;
-transition: .5s all;
-width: 180px;
-z-index: 2000;
-}
-.tnav:hover {
-  top: 0em;
-}
-.tnav i{
-margin-top: -2px;
-color: white;
-display: block; 
-float: left;
-width: 50px;
-height: 20px;
-text-align: center;
-}
-
-
-.tnav li {
-text-align: left;
-margin: 10px 0px 10px 25px;
-text-transform: uppercase;
-letter-spacing: 1px;
-width: 140px;
-}
-
-.tnav:after {
-  content: '';
-  width: 1.7em;
-  height: 15px;
-  display: block;
-  margin: 0 0 0 78px;
-  border-top: 3px solid #3399ff;
-  border-bottom: 9px double #3399ff;
-  opacity: .5;
-  transition: .2s all;
+.button {
+  width: 148px;
+  height: 46px;
+  font: 700 1em 'Source sans pro', sans-serif;
+  text-align: center;
+  background: #2ebcea;
+  color: #fff;
+  border: 0;
   cursor: pointer;
+  outline: 0;
+  transition: background .25s;
 }
-.tnav:hover:after {
-  opacity: 1;
+.button:focus, .button:hover {
+  background: #5ccbef;
 }
-/*-----End of Navigation CSS-----*/
-.company {
-font-size: 5em;
-position: relative;
-display: block;
-overflow: hidden; 
-width: 0em;
-height: 1.5em;
-margin: 1em auto;
-border-right: .125em solid #39F;
-box-sizing: content-box;
--webkit-animation-name: blink-start, typing, blink-end;
--moz-animation-name: blink-start, typing, blink-end;
--ms-animation-name: blink-start, typing, blink-end;
--o-animation-name: blink-start, typing, blink-end;
-animation-name: blink-start, typing, blink-end;
--webkit-animation-duration: 3s, 1s, 1s;
--moz-animation-duration: 3s, 1s, 1s;
--ms-animation-duration: 3s, 1s, 1s;
--o-animation-duration: 3s, 1s, 1s;
-animation-duration: 3s, 1s, 1s;
--webkit-animation-timing-function: linear, steps(32, end), linear;
--moz-animation-timing-function: linear, steps(32, end), linear;
--ms-animation-timing-function: linear, steps(32, end), linear;
--o-animation-timing-function: linear, steps(32, end), linear;
-animation-timing-function: linear, steps(32, end), linear;
--webkit-animation-delay: 0s, 3s, 4s;
--moz-animation-delay: 0s, 3s, 4s;
--ms-animation-delay: 0s, 3s, 4s;
--o-animation-delay: 0s, 3s, 4s;
-animation-delay: 0s, 3s, 4s;
--webkit-animation-iteration-count: 1, 1, infinite;
--moz-animation-iteration-count: 1, 1, infinite;
--ms-animation-iteration-count: 1, 1, infinite;
--o-animation-iteration-count: 1, 1, infinite;
-animation-iteration-count: 1, 1, infinite;
--webkit-animation-direction: normal;
--moz-animation-direction: normal;
--ms-animation-direction: normal;
--o-animation-direction: normal;
-animation-direction: normal;
--webkit-animation-fill-mode: forwards;
--moz-animation-fill-mode: forwards;
--ms-animation-fill-mode: forwards;
--o-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
+.button:active {
+  background: #16adde;
 }
 
-.slogan span {
-text-align: center;
-width: 10em;
-color: #222;
-position: relative;
-display: block;
+/*==Main==*/
+.sec-main {
+    position: relative;
+    background: url(../images/tile3.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #fff;
 }
-.slogan p{
-color: black;
-}
-@keyframes typing {
-  from { width: 0em; }
-  to   { width: 10em; }
-}
-
-@keyframes blink-start {
-  from, to { border-color: #39F; }
-  50% { border-color: transparent; }
-}
-
-@keyframes blink-end {
-  from, to { border-color: #39F; }
-  50% { border-color: transparent; }
-}
-
-.slideup{
-width: 100%;
-height: 150px;
-}
-
-.slideup h3{
--webkit-animation-name: slide-up;
--moz-animation-name: slide-up;
--ms-animation-name: slide-up;
--o-animation-name: slide-up;
-animation-name: slide-up;
--webkit-animation-duration: 5s;
--moz-animation-duration: 5s;
--ms-animation-duration: 5s;
--o-animation-duration: 5s;
-animation-duration: 5s;
--webkit-animation-timing-function: linear;
--moz-animation-timing-function: linear;
--ms-animation-timing-function: linear;
--o-animation-timing-function: linear;
-animation-timing-function: linear;
--webkit-animation-delay: 0s;
--moz-animation-delay: 0s;
--ms-animation-delay: 0s;
--o-animation-delay: 0s;
-animation-delay: 0s;
--webkit-animation-iteration-count: 1;
--moz-animation-iteration-count: 1;
--ms-animation-iteration-count: 1;
--o-animation-iteration-count: 1;
-animation-iteration-count: 1;
--webkit-animation-direction: normal;
--moz-animation-direction: normal;
--ms-animation-direction: normal;
--o-animation-direction: normal;
-animation-direction: normal;
-}
-
-.slideup span{
--webkit-animation-name: slide-up;
--moz-animation-name: slide-up;
--ms-animation-name: slide-up;
--o-animation-name: slide-up;
-animation-name: slide-up;
--webkit-animation-duration: 5.5s;
--moz-animation-duration: 5.5s;
--ms-animation-duration: 5.5s;
--o-animation-duration: 5.5s;
-animation-duration: 5.5s;
--webkit-animation-timing-function: linear;
--moz-animation-timing-function: linear;
--ms-animation-timing-function: linear;
--o-animation-timing-function: linear;
-animation-timing-function: linear;
--webkit-animation-delay: 0s;
--moz-animation-delay: 0s;
--ms-animation-delay: 0s;
--o-animation-delay: 0s;
-animation-delay: 0s;
--webkit-animation-iteration-count: 1;
--moz-animation-iteration-count: 1;
--ms-animation-iteration-count: 1;
--o-animation-iteration-count: 1;
-animation-iteration-count: 1;
--webkit-animation-direction: normal;
--moz-animation-direction: normal;
--ms-animation-direction: normal;
--o-animation-direction: normal;
-animation-direction: normal;
-}
-
-@keyframes slide-up{
-    from{
-    margin-top: 200%;
-    height: 400%;
-    }
-    to{
-    margin-top: 0%;
-    height: inherit;
-    }
-}
-
-.kbtag{
-font-size: 20px;
-font-weight: 200;
-padding-top: 20px;
-padding-bottom: 5px;
-position: relative;
-text-align: center;
-}
-
-.bad{
-color: indianred;
-}
-.client{
-color: blue;
-}
-.furniture{
-color:black;
-}
-.ground{
-color: darkslategrey;
-}
-
-.stitle{
-position: relative;
-width: 100%;
-text-align: center;
-}
-
-.landercenter{
-margin:0;
-height:86vh;
-width:100vw;
-left:0;
-margin: 0 auto;
-right:0;
-z-index: 1;
-}
-
-.landercenter h3{
-color: #222;
-font-size: 4vh;
-font-weight: 100;
-padding-top: 0px;
-position: relative;
-text-align: center;
-top:1vh;
-}
-
-.thumbsup{
-position: absolute;
-font-size: 5vw;
-text-align: center;
-width: 100%;
-left:0;
-top: -50px;
-z-index: 1;
-}
-
-
-/*------Beginning of ABOUT CSS------*/
-.parallax-two{
-text-align: center;
-padding: 50px 0px; 
-overflow: hidden; 
-position: relative; 
-width: 100%; 
-background-image: url(../images/aboutparallax.jpg);
-background-attachment: fixed; 
-background-size:cover; 
--webkit-background-size: cover;
--moz-background-size: cover; 
--o-background-size: cover;
-background-repeat: no-repeat; 
-background-position: top left;
-}
-
-.parallax-two h2{
-color: white;
-}
-
-#abouttitle{
-padding-top: 20px;
-margin: 0;
-}
-
-#aboutarticles{
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-padding-bottom: 100px;
-}
-
-#aboutarticles article{
-font-family:;
-padding: 0px 10px 5px;
-width:270px;
-}
-
-#welcomearticle{
-text-align: right;
-font-size: 24px;
-}
-
-#sidearticle{
-text-align: left;
-font-size: 18px;
-}
-.wholep{
-text-indent: 25px;
-}
-/*------End of ABOUT CSS------*/
-
-
-/*------Services CSS---------*/
-.parallax-one {
-text-align: center;
-padding: 50px 0px; 
-overflow: hidden; 
-position: relative; 
-width: 100%; 
-background-image: url(../images/processparallax.png);
-background-attachment: fixed; 
-background-size:contain; 
--webkit-background-size: contain;
--moz-background-size: contain; 
--o-background-size: cover;
-background-repeat: no-repeat; 
-background-position: top center;
-}
-
-.parallax-one h1{
-color: #222;}
-
-#services {
-padding-top: 50px;
-padding-bottom:40px;
-}
-
-#flexprocess{
-position: relative;
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction:row;
-flex-wrap: wrap;
-left: 0;
-right: 0;
-margin: auto 80px;
-}
-/*****************************************************************************************************************/
-
-.process_article {
-align-content: center;
-align-items: center;
-width: 386px;
-padding: 10px;
-margin: 0 auto;
-}
-
-.process_article h3 {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-text-align: center;
-text-transform: uppercase;
-color: black;
-margin-bottom: 3%;
-font-size: 25px;
-}
-
-.process_article img {
-position: relative;
-margin:0 135px;
-padding: 0;
-}
-
-.process_article p {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-word-spacing: 1px;
-text-align: justify;
-text-indent: 25px;
-font-size: 18px;
-}
-
-
-/*------End of Services CSS------*/
-
-
-
-/*------Beginning of PORTFOLIO CSS------*/
-
-
-#portfoliotitle{
-padding-top: 20px;
-}
-
-#flexportfolio{
-position: relative;
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction:row;
-flex-wrap: wrap;
-justify-content: center;
-}
-
-.casestudy1_slideshow{
-width: 100%;
-height: 420px;
-left: 0;
-right: 0;
-margin: 0 auto;
-overflow: hidden;
-position: absolute;
-background-image: url(../images/cs1slideshowback.jpg);
-}
-
-.slide_1, .slide_2, .slide_3{
-position: absolute;
-width: 90%;
-height: 400px;
-background-size: contain;
-}
-.slide_1{background-image:url(../images/sbpalgebra-cs.png); background-repeat: no-repeat; background-position:center;  left: 30px;}
-.slide_2{background-image:url(../images/menuscreenshot.png); background-repeat: no-repeat; background-position: center; left:1720px;}
-.slide_3{background-image:url(../images/lessonscreenshot.png); background-repeat: no-repeat; background-position: center; left: 3300px;}
-
-.cs1_slide{
-width: 618px;
-height: 410px;
-left: 2vw;
-right: 0px;
-margin: 0 auto;
-position: absolute;
--webkit-animation-duration: 10s;
--webkit-animation-iteration-count: 5;
--webkit-animation-name: casestudy_slide;
--moz_animation-duration: 10s;
--moz-animation-iteration-count: 5;
--moz-animation-name: casestudy_slide;
--ms-animation-duration: 10s;
--ms-animation-iteration-count: 5;
--ms-animation-name: casestudy_slide;
-}
-
-@-webkit-keyframes casestudy_slide{
-    0%{left: 30px;}
-    22%{left:30px;}
-    33%{left:-3440px;}
-    45%{left:-3440px;}
-    66%{left: -6620px;}
-    90%{left: -6620px;}   
-}
-@-moz-keyframes casestudy_slide{
-    0%{left: 30px;}
-    22%{left:30px;}
-    33%{left:-3440px;}
-    45%{left:-3440px;}
-    66%{left: -6620px;}
-    90%{left: -6620px;}  
-}
-@-ms-keyframes casestudy_slide{
-    0%{left: 30px;}
-    22%{left:30px;}
-    33%{left:-3440px;}
-    45%{left:-3440px;}
-    66%{left: -6620px;}
-    90%{left: -6620px;} 
-}
-@keyframes casestudy_slide{
-    0%{left: 30px;}
-    22%{left:30px;}
-    33%{left:-3350px;}
-    45%{left:-3350px;}
-    66%{left: -6520px;}
-    90%{left: -6520px;} 
-}
-
-#casestudy1{
-padding-top: 440px;
-padding-bottom: 50px;
-width:900px;
-}
-
-#casestudy1 h3, h4{
-text-align: center;
-}
-
-#casestudy1 p{
-font-size: 18px;
-text-indent: 25px;
-text-align: justify;
-}
-
-/*------End PORTFOLIO CSS------*/
-
-
-/*------Beginning of Contact Panel CSS------*/
-
-.contact{
-text-align: center;
-padding-top: 60px; 
-padding-bottom: 60px; 
-overflow: hidden; 
-position: relative; 
-width: 100%; 
-background-attachment: fixed; 
-background-size: cover; 
--webkit-background-size: cover;
--moz-background-size: cover; 
--o-background-size: cover;
-background-repeat: no-repeat; 
-background-position: bottom center;
-}
-
-.contact h4{
-color:#222;
-top: 40px;
-margin: 0 auto;
-width: 100%;
-text-align: center;
-}
-
-
-/*------End of Contact Panel CSS------*/
-
-.quotebtn{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-position: relative;
-margin: 0 auto;
-left:0;
-right:0;
-text-align: center;
-text-transform: uppercase;
-}
-.oneononeform{
-width: 100%;
-text-align: center;
-height: 45px;
-padding: 50px;
-}
-/*------Beginning of Footer Panel CSS------*/
-
-.contactinfo{
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction:row;
-flex-wrap: wrap;
-justify-content: center;
-height: 400px;
-}
-
-.contactinfo div{
-height:150px;
-padding-top: 100px;
-width: 300px;
-text-align: center;
-}
-
-.footertag{
-display: inline-block;
-font-size:14px;
-font-weight:200;
-font-family: Sans-serif;
-letter-spacing:4px;
-left: 0;
-right: 0;
-margin: auto;
-padding-top: 10px;
-padding-bottom: 10px;
-text-align: center;
-text-transform: uppercase;
-width: 100%;
-}
-
-/*------End of Footer Panel CSS------*/
-
-
-
-/*------MEDIA QUERY CSS------*/
-
-
-@media screen and (max-width: 600px){
-/*------CELLPHONE CSS------*/
-    
-/*------iPhone 4, 5, 6, 6-Plus, S3, S4, S5, S6, Note I, Note II, Note III, and Nexus Series------*/
-
-.kirbybwaii{
-font-size: 4vw;
-}
-    
-/*------Lander Panel CSS------*/
-
-.company{
-font-size:2em;    
-}
-
-.landercenter h3{
-font-size: 20px;
-padding: 0;
-top:-5vh;
-}
-    
-.quotebtn{
-top: 55vh;
-}
-
-.thumbsup{
-font-size: 6vw;
-top: -10vh;
-}
-/*------End of Lander Panel CSS------*/
-    
-/*------About Panel CSS------*/
-.block{
-width: 100%;
-padding: 0;
-}
-    
-.atitle{
-left: 0;
-}
 
-#welcomearticle{
-text-align:left;
-}
-
-#sidearticle{
-text-align: justify;    
-}
-/*------End of About Panel CSS------*/
-
-    
-/*------Process Panel CSS------*/
-#flexprocess{
-margin: auto 10px;
-}
-/*------End of Process Panel CSS------*/
-
-    
-/*------Portfolio Panel CSS------*/
-#flexportfolio{
-position: relative;
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction:column;
-}
-
-.casestudy1_slideshow{
-height: 300px;
-}
 
-.cs1_slide{
-height: 300px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-    
-#casestudy1{
-padding-top: 340px;
-padding-left: 10px;
-padding-right: 10px;
-width:100%;
-}
-    
-.slide_1, .slide_2, .slide_3{
-margin: 20px;
-height: 260px;
-width: 320px;   
-}
-    
-.slide_1{
-left:-20px;
-}
-
-.slide_2{
-left: 1810px;
-}
-    
-.slide_3{
-left:3390px;
-}
-/*------End of Portfolio Panel CSS------*/
-
-    
-/*------FAQs Panel CSS------*/
-    
-/*------End of FAQs Panel CSS------*/
-
-    
-/*------Contact Panel CSS------*/
-
-/*------End of Contact Panel CSS------*/
 
-    .contact h4{
+.center {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     position: absolute;
-    width: 100%;
-    left:0;
-    right:0;
-    text-align: center;
-    align-self: center;
-    }
-    
-/*------Footer Panel CSS------*/
+    top: 4em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 20vh auto
+}
 
-/*------End of Footer Panel CSS------*/
+.logo {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25vw;
+    height: 25vh;
+    background: url(../images/logo.png) no-repeat;
+    background-size:contain;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .sec-main br {
+    display: none;
+  }
+}
+
+
+.nav_expand {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 2000;
+}
+
+.nav a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 1.975em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: .35em solid transparent;
+    transition: border-bottom .25s;
+}
+.nav a:focus, .nav a:hover {
+    border-bottom: 0.35em solid #2ebcea;
+}
+
+@media screen and (max-width: 50em) {
+.logo{
+    height: 7em;
+    width: 9em;
+    }
+
+.nav_expand {
+    background:  rgba(0, 0, 0, 0.75) url(../images/wddsmenu.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: 95% 50%;
+    height: 4em;
+    padding-top: 4em;
+    overflow: hidden;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    justify-content:space-around;
+    -webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+    transition-timing-function: ease;
+  }
+
+.nav_expand:focus, .nav_expand:hover {
+    height: 34em;
+}
+    
+nav{
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+nav a{
+    text-align: center;
+    width: 20em;
+    }
+}
+@media screen and (max-width: 60em) {
+ {
+    margin-bottom: 4em;
+    height: 570px;
+    text-align: left;
+    background-position: bottom center;
+    background-size: 55%;
+  }
+}
+
+@media screen and (max-width: 30em){
+    .center h2{
+    font-size: 4vh;
+    }
+}
+/*==About==*/
+
+.sec-about {
+    background: url(../images/macbook.png) no-repeat center right;
+    background-size: 689px 390px;
+    background-position: 111% 52%;
+    height: 100vh;
+}
+
+#about_content{
+    padding-top: 0em;
+}
+
+.about_title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about_p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 1156px) {
+  .sec-about {
+    background-position: 155% 52%;
+  }
+}
+@media screen and (max-width: 60em) {
+  .sec-about {
+    margin-bottom: 4em;
+    text-align: left;
+    background-position: 50% 95%;
+    background-size: 55%;
+  }
+    .about_title{
+    font-size: 4vw;
+    }
+    .about_p{
+    font-size: 1.8vh;
+    letter-spacing: 0.02em;
+    padding-top: 1.5em;
+    text-align: left;
+    }
+}
+
+@media screen and (max-width: 950px) {
+  .sec-about {
+    background-size: 65%;
+    background-position: 50% 85%;  
+  }
+    #about_content{
+    padding-top: 0em;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+  .sec-about {
+    background-size: 75%;
+      
+  }
+}
+@media screen and (max-width: 500px) {
+  .sec-about {
+      background-size: 85%;
+      background-position: 50% 100%;
+    }
+    .about_title{
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 60em) {
+
+.sec-about .col-2:first-child {
+    margin: 5% auto;
+    padding-right: 1em;
+    font-size: 1em;
+    /*18px*/
+    }
+}
+
+@media screen and (max-width: 60em) {
+  .sec-about .col-2:first-child {
+    float: none;
+    width: 80%;
+    text-align: center;
+    height: 300px;
+}
+    
+}
+
+@media screen and (max-width: 50em) and (max-height: 750px){
+    .about-title{
+    
+    }
 
 }
+
+
+/*==Everywhere==*/
+
+
+.sec-everywhere {
+    min-height: 704px;
+    background: #2ebcea;
+    color: #fff;
+}
+
+.row h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-top: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.row-list h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    padding-top: 3em;
+    text-transform: uppercase;
+}
+
+.row-list p {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    height: auto;
+    line-height: 0em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.sec-everywhere .row:nth-child(2) p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 3em 10.5em 3em 10.5em;
+}
+
+.everywhere-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.row-list {
+  text-align: center;
+}
+
+.everywhere-list li {
+  width: 33.3333333%;
+}
+
+.everywhere-list li .col-3 {
+  width: 100%;
+}
+
+.sec-everywhere .img-container {
+    display: block;
+    height: 206px;
+}
+
+.sec-everywhere img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 979px) {
+    
+    .sec-everywhere {
+        height: auto;
+    }
+    
+    .everywhere-list {
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        flex-direction: column;
+    }
+    
+       .everywhere-list li {
+        display: block;
+        margin: 2em auto;
+        width: 100%;
+    }
+    
+    .sec-everywhere .img-container {
+        display: block;
+        height: 206px;
+        margin: 0 auto;
+        padding: 0em;
+        width: 20em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+ .sec-everywhere .img-container {
+     margin: 0em auto;
+ }
+
+.sec-everywhere .row:nth-child(2) p {
+    padding: 3em 2em 3em 2em;
+    text-align: center;
+}
+}
+
+
+/*==Task Management==*/
+
+.sec-task-mngmt {
+  min-height: 581px;
+  background: #f6f9fa;
+}
+
+.sec-task-mngmt .col-2:first-child {
+  float: right;
+  margin: 7% 0;
+}
+
+.col-2 h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.col-2 p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding-top: 1em;
+}
+
+.col-2 ul{
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+.col-2 ul li{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 1em 0em;
+    text-transform: uppercase;
+    list-style-type:circle;
+}
+
+.sec-task-mngmt .col-2:last-child {
+  float: left;
+  background: url(../images/iphone6.png) no-repeat top left;
+  /*iPhone*/
+}
+
+
+@media screen and (max-width: 768px) {
+  .sec-task-mngmt {
+    text-align: left;
+  }
+
+  .sec-task-mngmt br {
+    display: none;
+  }
+}
+
+.sec-task-mngmt .col-2:last-child {
+  float: left;
+  height: 100vh;
+  background: url(../images/iphone6.png) no-repeat top left;
+  background-size: contain;
+  /*iPhone*/
+}
+
+@media screen and (max-width: 768px) {
+  .sec-task-mngmt .row {
+    background: #f6f9fa;
+    float: left;
+  }
+    .col-2 p{
+    font-size: 1.8vh;
+    }
+    
+    .col-2 ul li{
+    font-size: 1.8vh;
+    }
+}
+
+@media screen and (max-width: 30em) {
+  .sec-task-mngmt .col-2:last-child {
+    float: left;
+    width: 100%;
+    height: 365px;
+    background: url(../images/iphone6.png) no-repeat top center;
+    background-size: 70%;
+  }
+    
+.col-2 h1{
+        font-size: 7vw;
+    }
+  .sec-task-mngmt .col-2:first-child {
+    margin: 2em auto;
+    padding: 0 3em;
+  }
+}
+
+/*==Features==*/
+
+.flexservices{
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
+.sec-features img {
+    border: none;
+    height: 8em;
+    width: 8em;
+}
+
+.planning{
+    background: url(../images/planning.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content{
+    background: url(../images/contentcreation.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.webdesign{
+    background: url(../images/webdesign.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.development{
+    background: url(../images/development.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.launch{
+    background: url(../images/testinglaunch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.support{
+    background: url(../images/support.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-post{
+    height: 20em;
+    width: 20em;
+}
+
+.features-post h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 0em;
+    text-transform: uppercase;
+    margin: -2em 0em -2em;
+}
+
+.features-post p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8vh;
+    font-weight: 300;
+    padding-top: 4em;
+    text-align: left;
+}
+
+.features-post img {
+    border: none;
+    display: block;
+    margin: 3em auto;
+}
+
+@media screen and (max-width: 30em) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .features-post img {
+
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .features-post img {
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 30em) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+}
+/*==Footer==*/
+footer {
+  min-height: 320px;
+  background: #243139;
+  color: #fff;
+}
+
+footer .container {
+  padding-bottom: 0;
+}
+
+footer h1 {
+  margin-bottom: 1em;
+}
+
+/*footer input[type="mail"],
+footer .button {border-radius: 0;}*/
+footer p {
+  margin: 2.5em auto 4em;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  footer h1 {
+    margin: 0 auto 1em auto;
+    width: 80%;
+  }
+
+  footer p {
+    width: 80%;
+  }
+}
+footer .row:last-child p {
+  text-align: center;
+}
+
+footer a {
+  margin-left: .5em;
+  padding: 1em 0;
+  width: 3.25em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: .1em solid;
+  border-radius: 50%;
+  transition: color .25s;
+}
+footer a:focus, footer a:hover {
+  color: #32444f;
+}
+footer a:active {
+  color: #161e23;
+}
+
