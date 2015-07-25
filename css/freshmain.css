@@ -28,11 +28,7 @@ IX.      Footer
 */
 
 /* ------- General CSS ------- */
-/*Fontawesome Iconfont*/
 
-@charset "UTF-8";
-
-/*==Typography=*/
 body {
   font: 16px "Source sans pro", sans-serif;
 }
@@ -147,8 +143,6 @@ section {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -322,9 +316,6 @@ nav a{
     height: 100vh;
 }
 
-#about_content{
-    padding-top: 0em;
-}
 
 .about_title{
     font-family: 'Lato', sans-serif;
@@ -346,6 +337,8 @@ nav a{
     background-position: 155% 52%;
   }
 }
+
+
 @media screen and (max-width: 60em) {
   .sec-about {
     margin-bottom: 4em;
@@ -381,14 +374,13 @@ nav a{
       
   }
 }
+
 @media screen and (max-width: 500px) {
   .sec-about {
       background-size: 85%;
       background-position: 50% 100%;
     }
-    .about_title{
-        font-size: 7vw;
-    }
+
 }
 
 @media screen and (max-width: 60em) {
@@ -396,28 +388,10 @@ nav a{
 .sec-about .col-2:first-child {
     margin: 5% auto;
     padding-right: 1em;
-    font-size: 1em;
-    /*18px*/
-    }
-}
-
-@media screen and (max-width: 60em) {
-  .sec-about .col-2:first-child {
     float: none;
     width: 80%;
-    text-align: center;
-    height: 300px;
+}   
 }
-    
-}
-
-@media screen and (max-width: 50em) and (max-height: 750px){
-    .about-title{
-    
-    }
-
-}
-
 
 /*==Everywhere==*/
 
