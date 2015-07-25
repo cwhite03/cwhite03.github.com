@@ -78,7 +78,7 @@ p {
 .sec-main h2 {
   margin: .9em 0;
   font-size: 1.75em;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5em;
   text-align: center;
 }
@@ -118,8 +118,42 @@ section {
   /*960px*/
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3em 0;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.col-2 {
+  float: left;
+  padding: 0 1em;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-2 {
+    float: none;
+    margin: auto;
+    padding: 0 1.75em;
+    width: 90%;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 /*==Main==*/
+
 .sec-main {
     position: relative;
     background: url(../images/tile3.jpg);
@@ -162,13 +196,6 @@ section {
     background-size:contain;
     overflow: hidden;
 }
-
-@media screen and (max-width: 768px) {
-  .sec-main br {
-    display: none;
-  }
-}
-
 
 .nav_expand {
     display: -webkit-box;
@@ -225,9 +252,12 @@ section {
 }
 
 @media screen and (max-width: 55em) {
+    
 .logo{
-    height: 7em;
-    width: 9em;
+    height: 25vh;
+    margin: -1em auto;
+    position: relative;
+    width: 40vw;
     }
     
 #primarynav a{
@@ -237,13 +267,14 @@ section {
 .home_icon{
     margin: -1em auto;
     }
+
     
 .nav_expand {
     background:  rgba(0, 0, 0, 0.75) url(../images/wddsmenu.png);
     background-repeat: no-repeat;
     background-size: 2em;
     background-position: 95% 50%;
-    height: 4em;
+    height: 0em;
     padding-top: 4em;
     overflow: hidden;
     -webkit-flex-flow: column;
@@ -256,6 +287,7 @@ section {
 
 .nav_expand:focus, .nav_expand:hover {
     height: 40em;
+    padding-top: 0;
 }
     
 .nav_expand:focus #primarynav a, .nav_expand:hover #primarynav a {
@@ -267,6 +299,7 @@ nav{
         flex-flow: column;
         justify-content: space-around;
     }
+    
 nav a{
     text-align: center;
     width: 20em;
@@ -274,21 +307,13 @@ nav a{
 }
 
 
-@media screen and (max-width: 60em) {
- {
-    margin-bottom: 4em;
-    height: 570px;
-    text-align: left;
-    background-position: bottom center;
-    background-size: 55%;
-  }
-}
-
 @media screen and (max-width: 30em){
     .center h2{
-    font-size: 4vh;
+    font-size: 1.25em;
     }
 }
+
+
 /*==About==*/
 
 .sec-about {
