@@ -274,8 +274,7 @@ ul {
     background-repeat: no-repeat;
     background-size: 2em;
     background-position: 95% 50%;
-    height: 0em;
-    padding-top: 4em;
+    height: 3em;
     overflow: hidden;
     -webkit-flex-flow: column;
     flex-flow: column;
@@ -286,11 +285,11 @@ ul {
   }
 
 .nav_expand:focus, .nav_expand:hover {
-    height: 40em;
-    padding-top: 0;
+    height: 25em;
 }
     
 .nav_expand:focus #primarynav a, .nav_expand:hover #primarynav a {
+    padding: 1em;
     visibility: visible;
     }
     
