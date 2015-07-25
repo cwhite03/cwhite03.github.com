@@ -60,48 +60,9 @@ Clients and Publications:
 <!--The Website will be divided into 7 equal sections to simplify the design process-->
 <body class="page-container">
 <!--Main Section | First Screen View-->
-<html lang="en">
-<head>
 
-<script>
-    
-$(function() {
-  $('header a').click(function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 750);
-  });
-  var $navTop = $('#js-nav').offset().top;
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > $navTop) {
-      $('#js-nav').addClass('fixed');
-    } else {
-      $('#js-nav').removeClass('fixed');
-    }
-  });
-  var form = document.getElementById('js-form');
-  var mail = document.getElementById('js-mail');
-  var button = document.getElementById('js-button');
-  if (!Modernizr.input.required) {}
-  button.addEventListener('click', function() {
-    if (mail.value.length <= 0) {
-      mail.style.outlineColor = "#ff0000";
-      mail.style.color = "#ff0000";
-    }
-  });
-  $('form').submit(function(e) {
-    $('input').hide();
-    $('button').addClass('button-full').html('Thank you!').attr({'value': 'Thank you!', 'disabled': true});
-    $('.sec-about').find('button').hide();
-    e.preventDefault();
-  });
-});
-</script>
-    
-</head>
  <div class="wrapper">
-  <section class="sec-main">
+  <section id="home" class="sec-main">
 
     <div class="overlay">
       <div class="center">
@@ -112,7 +73,8 @@ $(function() {
     <div class="nav_expand">
       <header id="js-nav" role="banner">
         <nav role="navigation">
-          <ul class="nav">
+          <ul id="primarynav" class="nav">
+            <li><a href="#home"><div class="home_icon"></div></a></li>
             <li><a href="#sec-about">About</a></li>
             <li><a href="#sec-everywhere">Our Process</a></li>
             <li><a href="#case_studies" >Case Studies</a></li>
@@ -193,7 +155,6 @@ $(function() {
   </section>
      
   <section id="sec-features" class="sec-features">
-    <div class="container">
       <div class="flexservices">
         <div class="col-3">
           <article class="features-post">
@@ -236,10 +197,10 @@ $(function() {
             <h1>Support</h1>
             <p>I am here to pursue my ultimate passion - building things to improve the lives of others. This goal requires honest and straightforward collaboration. That is why all of our clients receive a full year of additional technical support after their products are launched.</p>
           </article>
-        </div>
       </div>
     </div>
   </section>
+    
   <footer id="footer">
     <div class="container">
       <div class="row">

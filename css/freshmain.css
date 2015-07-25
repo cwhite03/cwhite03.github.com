@@ -105,12 +105,6 @@ body,
   height: 100%;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 section {
     height: 100vh;
     width: 100%;
@@ -123,57 +117,7 @@ section {
   max-width: 60em;
   /*960px*/
 }
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 3em 0;
-  }
-}
 
-.row {
-  width: 100%;
-}
-
-.col-2 {
-  float: left;
-  padding: 0 1em;
-}
-
-.col-2 {
-  width: 50%;
-}
-
-@media screen and (max-width: 768px) {
-  .col-2 {
-    float: none;
-    margin: auto;
-    padding: 0 1.75em;
-    width: 90%;
-  }
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.button {
-  width: 148px;
-  height: 46px;
-  font: 700 1em 'Source sans pro', sans-serif;
-  text-align: center;
-  background: #2ebcea;
-  color: #fff;
-  border: 0;
-  cursor: pointer;
-  outline: 0;
-  transition: background .25s;
-}
-.button:focus, .button:hover {
-  background: #5ccbef;
-}
-.button:active {
-  background: #16adde;
-}
 
 /*==Main==*/
 .sec-main {
@@ -185,7 +129,6 @@ ul {
     height: 100%;
     color: #fff;
 }
-
 
 .overlay {
   position: absolute;
@@ -243,11 +186,6 @@ ul {
     z-index: 2000;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-}
-
 .nav {
     display: -webkit-box;
     display: -moz-box;
@@ -276,12 +214,30 @@ ul {
     border-bottom: 0.35em solid #2ebcea;
 }
 
-@media screen and (max-width: 50em) {
+.home_icon{
+    background: url(../images/logo.png) no-repeat;
+    background-position: center;
+    background-size:contain;
+    height: 3em;
+    margin: -0.9em 0em;
+    text-align: center;
+    width: 3em;
+}
+
+@media screen and (max-width: 55em) {
 .logo{
     height: 7em;
     width: 9em;
     }
+    
+#primarynav a{
+    visibility: hidden;    
+    }
 
+.home_icon{
+    margin: -1em auto;
+    }
+    
 .nav_expand {
     background:  rgba(0, 0, 0, 0.75) url(../images/wddsmenu.png);
     background-repeat: no-repeat;
@@ -299,8 +255,12 @@ ul {
   }
 
 .nav_expand:focus, .nav_expand:hover {
-    height: 34em;
+    height: 40em;
 }
+    
+.nav_expand:focus #primarynav a, .nav_expand:hover #primarynav a {
+    visibility: visible;
+    }
     
 nav{
         -webkit-flex-flow: column;
@@ -312,6 +272,8 @@ nav a{
     width: 20em;
     }
 }
+
+
 @media screen and (max-width: 60em) {
  {
     margin-bottom: 4em;
@@ -740,6 +702,15 @@ nav a{
 }
 
 @media screen and (max-width: 30em) {
+.flexservices{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow:  column;
+}
 
 }
 
@@ -756,10 +727,6 @@ nav a{
 }
 
 @media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 30em) {
 
 }
 
