@@ -410,7 +410,7 @@ nav a{
 
 .row h1{
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 2em;
     text-align: center;
     text-transform: uppercase;
@@ -643,7 +643,7 @@ nav a{
         font-size: 2vh;
     }
     .sec-task-mngmt .col-2:last-child {
-        height: 32vh;
+        height: 3vh;
     
     }
 }
@@ -651,7 +651,7 @@ nav a{
 /*==Features==*/
 
 #sec-features{
-     background: #2ebcea;
+    background: #fff;
     height: auto;
     display: -webkit-box;
     display: -moz-box;
@@ -768,7 +768,7 @@ nav a{
 .features-post h1 {
     text-align: center;
     }
-
+}
 
 @media screen and (max-width: 30em) {
 
@@ -814,8 +814,9 @@ footer h1 {
 .contactinfo div{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    margin: 0em 3.5em;
+    margin: 0em auto;
     text-align: center;
+    width: 20em;
 }
 
 .contactinfo div h6{
@@ -843,30 +844,5 @@ footer h1 {
     margin: 0 auto 1em auto;
     width: 80%;
   }
-
-  footer p {
-    width: 80%;
-  }
-}
-footer .row:last-child p {
-  text-align: center;
-}
-
-footer a {
-  margin-left: .5em;
-  padding: 1em 0;
-  width: 3.25em;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border: .1em solid;
-  border-radius: 50%;
-  transition: color .25s;
-}
-footer a:focus, footer a:hover {
-  color: #32444f;
-}
-footer a:active {
-  color: #161e23;
 }
 
