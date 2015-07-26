@@ -261,6 +261,7 @@ ul {
     background-repeat: no-repeat;
     background-size: 2em;
     background-position: 95% 50%;
+    cursor: pointer;
     height: 3em;
     overflow: hidden;
     -webkit-flex-flow: column;
@@ -271,7 +272,7 @@ ul {
     transition-timing-function: ease;
   }
 
-.nav_expand:focus, .nav_expand:hover {
+.nav_expand:focus, .nav_expand:hover, .nav_expand:active {
     height: 25em;
 }
     
