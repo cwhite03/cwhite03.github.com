@@ -636,7 +636,17 @@ nav a{
 /*-----Services-----*/
 
 #sec-features{
-    background: #fff;
+background: rgba(73,155,234,0);
+background: -moz-linear-gradient(left, rgba(73,155,234,0.5) 0%, rgba(46,188,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,0.5)), color-stop(100%, rgba(46,188,234,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,0.5) 0%, rgba(46,188,234,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,0.5) 0%, rgba(46,188,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,0.5) 0%, rgba(46,188,234,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,0.5) 0%, rgba(46,188,234,1) 100%), url(../images/web-design-sketchbook.jpg);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#2ebcea', GradientType=1 );
+    background-position: bottom right;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     display: -webkit-box;
     display: -moz-box;
@@ -645,11 +655,13 @@ nav a{
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    margin-bottom: 6em;
     overflow:visible;
+    padding-bottom: 4em;
 }
 
+
 .flexservices{
+    color: #fff;
     height: auto;
     display: -webkit-box;
     display: -moz-box;
@@ -662,7 +674,8 @@ nav a{
 }
 
 #services{
-    margin-top: 5em;
+    color: #fff;
+    margin: 5em auto 1em;
 }
 
 .sec-features #img {
@@ -736,6 +749,7 @@ nav a{
 
 @media screen and (max-width: 1087px){
 
+    
     .features-post{
     display: block;
     height: auto;
