@@ -186,6 +186,7 @@ ul {
 }
 
 .nav_expand {
+    cursor: pointer;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
