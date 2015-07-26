@@ -304,16 +304,18 @@ nav a{
 .sec-about {
     background: url(../images/macbook.png) no-repeat center right;
     background-size: 689px 390px;
-    background-position: 111% 52%;
+    background-position: 90% 50%;
     height: 100vh;
 }
 
+#about_content{
+    margin: 18vh 0em 0em -6vw;
+}
 
 .about_title{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
-    margin-top: 4em;
     text-transform: uppercase;
 }
 
@@ -322,81 +324,68 @@ nav a{
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-top: 1em;
+    width: 30em;
 }
 
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 1280px) {
   .sec-about {
-    background-position: 155% 52%;
+    background-position: 110% 65%;
   }
 }
 
+@media screen and (max-width: 1101px) {
 
-@media screen and (max-width: 60em) {
-  .sec-about {
-    margin-bottom: 4em;
-    text-align: left;
-    background-position: 50% 95%;
-    background-size: 55%;
-  }
-    .about_title{
-    font-size: 4vw;
+    .sec-about{
+    background-position: 130% 65%;
     }
-    .about_p{
-    letter-spacing: 0.02em;
-    padding-top: 1.5em;
-    text-align: left;
-    }
-}
-
-@media screen and (max-width: 950px) {
-  .sec-about {
-    background-size: 65%;
-    background-position: 50% 85%;  
-  }
+    
     #about_content{
-    padding-top: 0em;
+    margin: 22vh 0em 0em -1vw;
+    }
 }
+
+@media screen and (max-width: 1100px) {
+
+    .sec-about{
+    background-position: 50% 90%;
+    background-size: 50%;
+    }
+    
+    #about_content{
+    float: none;
+    margin: 0 auto;
+    }
+    
+    .about_title{
+    text-align: center;
+    }
+    
+    .about_p{
+    margin: 0 auto;
+    }
+    
 }
 
 
 @media screen and (max-width: 700px) {
   .sec-about {
-    background-size: 75%;
-      
+    background-size: 75%;  
+    background-position: 50% 90%;
   }
+    
+.about_p{
+    margin: 1em;
+    width: 90%;
+    
+    }
 }
 
 @media screen and (max-width: 500px) {
   .sec-about {
       background-size: 85%;
-      background-position: 50% 100%;
+      background-position: 50% 90%;
     }
 
-}
-
-@media screen and (max-width: 60em) {
-
-.sec-about .col-2:first-child {
-    margin: 5% auto;
-    padding-right: 1em;
-    float: none;
-    width: 80%;
-}   
-}
-
-@media screen and (max-width: 30em) {
-
-.sec-about .col-2:first-child {
-    margin: -7em auto;
-    width: 80%;
-}
-
-.about_p{
-    font-size: 4vh;
-    
-    }
-    
-    
 }
 
 /*==Everywhere==*/
@@ -410,7 +399,7 @@ nav a{
 
 .row h1{
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     padding-top: 2em;
     text-align: center;
     text-transform: uppercase;
@@ -555,13 +544,11 @@ nav a{
 .col-2 h1{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    text-align: left;
     text-transform: uppercase;
 }
 
 .col-2 p{
     font-family: 'Lato', sans-serif;
-    font-size: 1.8vh;
     font-weight: 300;
     padding: 1em 7em 1em 0em;
     
@@ -601,13 +588,13 @@ nav a{
   }
     
 .col-2 h1{
-    font-size: 7vw;
     text-align: center;    
     }
     
 .col-2 p{
     padding: 1em 0;
     }
+    
   .sec-task-mngmt .col-2:first-child {
     margin: -5em auto;
     padding: 10em;
@@ -624,7 +611,6 @@ nav a{
   }
     
 .col-2 h1{
-    font-size: 7vw;
     text-align: center;    
     }
     
@@ -637,14 +623,13 @@ nav a{
 
 @media screen and (max-width: 30em) {
     .col-2 p{
-        font-size: 2vh;
+        font-size: 2.1vh;
     }
     .col-2 ul li{
         font-size: 2vh;
     }
     .sec-task-mngmt .col-2:last-child {
-        height: 3vh;
-    
+        height: 30vh;
     }
 }
 
@@ -737,7 +722,6 @@ nav a{
 
 .features-post p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.8vh;
     font-weight: 300;
     padding: 0.5em 0em 0em 0em ;
     text-align: left;
