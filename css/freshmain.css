@@ -265,6 +265,7 @@ ul {
     cursor: pointer;
     height: 3em;
     overflow: hidden;
+    pointer-events: auto;
     -webkit-flex-flow: column;
     flex-flow: column;
     justify-content:space-around;

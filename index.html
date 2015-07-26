@@ -63,9 +63,9 @@ Clients and Publications:
         });
     });
     $(document).on("click", function(event){
-        var $trigger = $(".nav_expand");
+        var $trigger = $(".nav_expand:hover");
         if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".nav_expand:hover").slideUp("fast");
+            $(".nav_expand").slideUp("fast");
         }            
     });
 </script>
@@ -87,7 +87,7 @@ Clients and Publications:
         <br/> 
         <h2>Content generation, web design and development, for you.</h2>
       </div>
-    <div onclick="" class="nav_expand">
+    <div class="nav_expand">
       <header id="js-nav" role="banner">
         <nav role="navigation">
           <ul id="primarynav" class="nav">
