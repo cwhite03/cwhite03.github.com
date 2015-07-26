@@ -796,6 +796,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     font-size: 2vh;
     padding: 3em;
     text-align: justify;
+    width: 70%;
 }
 }
 
