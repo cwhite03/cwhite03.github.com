@@ -623,7 +623,7 @@ nav a{
 
 @media screen and (max-width: 30em) {
     .col-2 p{
-        font-size: 2.1vh;
+        font-size: 2vh;
     }
     .col-2 ul li{
         font-size: 2vh;
@@ -633,7 +633,7 @@ nav a{
     }
 }
 
-/*==Features==*/
+/*-----Services-----*/
 
 #sec-features{
     background: #fff;
@@ -708,8 +708,9 @@ nav a{
 .features-post{
     display: block;
     height: 17em;
-    margin: 2em auto;
-    width: 25em;
+    margin: 0 auto;
+    padding: 1em;
+    width: 30%;
 }
 
 .features-post h1{
@@ -731,6 +732,18 @@ nav a{
     border: none;
     display: block;
     margin: 3em auto;
+}
+
+@media screen and (max-width: 1087px){
+
+    .features-post{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 0em;
+    width: 25em;
+}
+
 }
 
 @media screen and (max-width: 50em) {
