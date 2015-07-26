@@ -321,7 +321,7 @@ nav a{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
-    margin-top: 1.8em;
+    margin-top: 4em;
     text-transform: uppercase;
 }
 
@@ -405,7 +405,7 @@ nav a{
 .row h1{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    padding-top: 0em;
+    padding-top: 2em;
     text-align: center;
     text-transform: uppercase;
 }
@@ -512,28 +512,53 @@ nav a{
 }
 
 
-/*==Task Management==*/
+/*-----Case Studies-----*/
 
 .sec-task-mngmt {
   min-height: 581px;
   background: #f6f9fa;
 }
 
+.case_studies{
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+  
+}
+
 .sec-task-mngmt .col-2:first-child {
-  float: right;
-  margin: 7% 0;
+    margin-top: 15em;
+    width: 50vw;
+}
+
+.sec-task-mngmt .col-2:last-child {
+    background: url(../images/iphone6.png) no-repeat top left;
+    background-size: contain;
+    height: 80vh;
+    margin-top: 10em;
+    width: 40vw;
+  /*iPhone*/
 }
 
 .col-2 h1{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .col-2 p{
     font-family: 'Lato', sans-serif;
+    font-size: 1.8vh;
     font-weight: 300;
-    padding-top: 1em;
+    padding: 1em 7em 1em 0em;
+    
 }
 
 .col-2 ul{
@@ -543,68 +568,64 @@ nav a{
 
 .col-2 ul li{
     font-family: 'Lato', sans-serif;
+    font-size: 1.8vh;
     font-weight: 300;
     padding: 1em 0em;
     text-transform: uppercase;
     list-style-type:circle;
 }
 
-.sec-task-mngmt .col-2:last-child {
-    background: url(../images/iphone6.png) no-repeat top left;
-    height: 80vh;
-    padding: 0em;
-    margin-top: -1em;
+.col-2 ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.col-2 ul li a:hover, .col-2 ul li a:focus {
+    color: #513939;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
     
-  /*iPhone*/
-}
-
-
-@media screen and (max-width: 768px) {
-  .sec-task-mngmt {
-    text-align: left;
-  }
-
-  .sec-task-mngmt br {
-    display: none;
-  }
-}
-
-.sec-task-mngmt .col-2:last-child {
-  float: left;
-  background: url(../images/iphone6.png) no-repeat top left;
-  background-size: contain;
-  /*iPhone*/
-}
-
-@media screen and (max-width: 768px) {
-  .sec-task-mngmt .row {
-    background: #f6f9fa;
-    float: left;
-  }
-    .col-2 p{
-    font-size: 1.8vh;
-    }
-    
-    .col-2 ul li{
-    font-size: 1.8vh;
-    }
-}
-
-@media screen and (max-width: 30em) {
-  .sec-task-mngmt .col-2:last-child {
-    float: left;
-    width: 100%;
-    height: 365px;
+    .sec-task-mngmt .col-2:last-child {
     background: url(../images/iphone6.png) no-repeat top center;
-    background-size: 70%;
+    background-size: contain;
+    height: 19em;
+    margin-top: -3em;
   }
     
 .col-2 h1{
-        font-size: 7vw;
+    font-size: 7vw;
+    text-align: center;    
+    }
+    
+.col-2 p{
+    padding: 1em 0;
     }
   .sec-task-mngmt .col-2:first-child {
-    margin: 2em auto;
-    padding: 0 3em;
+    margin: -5em auto;
+    padding: 10em;
+    width: 100%;
+  }
+}
+    
+@media screen and (max-width:650px) {
+  .sec-task-mngmt .col-2:last-child {
+    background: url(../images/iphone6.png) no-repeat top center;
+    background-size: contain;
+    height: 40vh;
+    margin-top: -5.5em;
+  }
+    
+.col-2 h1{
+    font-size: 7vw;
+    text-align: center;    
+    }
+    
+  .sec-task-mngmt .col-2:first-child {
+    margin: 4em auto;
+    padding: 2em;
+    width: 100%;
   }
 }
 
