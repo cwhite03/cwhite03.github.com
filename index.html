@@ -54,6 +54,14 @@ Clients and Publications:
         <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href=""/>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
     
+<script>
+$('.nav_expand').on('click', function(event){
+    //The event won't be propagated to the document NODE and 
+    // therefore events delegated to document won't be fired
+    event.stopPropagation();
+});    
+</script>
+    
 <!--End CSS & JavaScript Links-->
 </head>
     
